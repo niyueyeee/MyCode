@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>form.html</title>
+</head>
+
+<body>
+	您喜欢的城市:
+	<br>
+	<ul id="city">
+		<li id="bj" value="beijing">北京</li>
+		<li id="sh" value="shanghai">上海</li>
+		<li id="cq" value="chongqing"> 重庆</li>
+	</ul>
+
+	您喜欢的游戏:
+	<br>
+	<ul>
+		<li id="fk" value="fankong">反恐精英</li>
+		<li id="ms" value="moshou">魔兽</li>
+		<li id="cq" value="chuanqi">传奇</li>
+	</ul>
+</body>
+
+<script type="text/javascript">
+	//点击北京节点， 将被反恐节点替换
+	document.getElementById("bj").onclick = function () {
+		document.getElementById("city").replaceChild(document.getElementById("fk"), document.getElementById("bj"));
+	}
+</script>
+
+
+
+
+</html>

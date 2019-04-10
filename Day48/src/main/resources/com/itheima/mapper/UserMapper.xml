@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itheima.mapper.UserMapper">
+    <select id="queryUserById" resultType="user" parameterType="integer">
+        select * from user where id=#{id}
+    </select>
+    
+    <select id="queryUserOrders" resultMap="userOrdersResultMap" >
+        select * from user u
+    </select>
+    <resultMap id="userOrdersResultMap" type="User">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <collection property="ordersList" ofType="Orders" select="queryOrdersByUid" column="id"></collection>
+    </resultMap>
+    <select id="queryOrdersByUid" resultType="Orders" parameterType="int">
+         SELECT id,user_id userId,number,createtime,note FROM orders WHERE user_id=#{user_id}
+    </select>
+
+</mapper>

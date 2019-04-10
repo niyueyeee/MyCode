@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+   Mapper动态代理实现dao接口
+     规范
+     	sql映射文件的namespace必须和mapper接口的全限定类名保持一致
+     	mapper接口的接口方法名必须和xml中的sql语句id保持一致
+     	mapper接口的接口方法形参类型必须和sql语句的输入参数类型保持一致
+     	mapper接口的接口方法返回类型必须和sql语句的resultType保持一致
+
+
+     1：namespace属性值，必须和被代理的接口的名字一模一样  包名+接口名
+     2；接口中定义方法的名字 必须和 执行sql语句标签的id值 一模一样
+     3：接口方法中参数的类型 必须和sql语句标签中parameterType 保持一致
+     4：接口方法中返回值的类型 必须和 sql语句标签中resultType 保持一致
+
+-->
+<mapper namespace="com.itheima.mapper.OrdersMapper">
+
+    <!--
+      查询所有订单信息
+    -->
+    <select id="queryOrdersByList" resultMap="ordersResultMap" >
+        SELECT * FROM orders
+    </select>
+      <!--
+         我们查询出来的表中数据 中的字段
+           与 javabean中 Orders类中 的字段 名userId 没有匹配上
+           也就是说 以前默认的映射操作 不管用了
+                以前是自动的
+                现在  使用手动映射操作
+                    表中的字段   -   javabean中的字段
+                     列                  property
+      resultMap 结果集的映射
+          id  当前映射结果的   唯一标识
+          type  代表的是  期望封装后的类型
+      -->
+    <resultMap id="ordersResultMap" type="orders">
+          <!-- 完成字段的一一映射-->
+         <!--
+           主键映射
+           id 代表主键的意思
+         -->
+        <id column="id" property="id"/>
+        <!--
+          其他映射关系 result标签决定
+        -->
+        <result column="user_id" property="userId"/>
+        <result column="number" property="number"/>
+        <result column="createtime" property="createtime"/>
+        <result column="note" property="note"/>
+    </resultMap>
+
+</mapper>

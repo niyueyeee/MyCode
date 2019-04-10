@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Day52_03_all_annotation" />
+        <module name="Day50_02_Annotation" />
+        <module name="Day46_1" />
+        <module name="Day45_1" />
+        <module name="Day50_04_all_anncotation" />
+        <module name="Day46" />
+        <module name="Day51_02_xml_aop" />
+        <module name="Day52_01_jdbctemplate" />
+        <module name="Day48" />
+        <module name="Day37" />
+        <module name="Day36" />
+        <module name="Day50_01_CRUD" />
+        <module name="Day51_03_all_annotation" />
+        <module name="Day49" />
+        <module name="Day32" />
+        <module name="Day47" />
+        <module name="springboot" />
+        <module name="Day45" />
+        <module name="Day52_02_transfer_xml" />
+        <module name="Day48_1" />
+        <module name="spring02" />
+        <module name="Day50_03_xml_annotation" />
+        <module name="Day51_01_transfer" />
+        <module name="Day53" />
+        <module name="Ttt" />
+        <module name="Day54" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="_1" target="11" />
+      <module name="Day32" target="1.5" />
+      <module name="Day36" target="11" />
+      <module name="Day37" target="1.8" />
+      <module name="Day37-store" target="11" />
+      <module name="Day45" target="1.8" />
+      <module name="Day45_1" target="1.8" />
+      <module name="Day46" target="1.8" />
+      <module name="Day46_1" target="1.8" />
+      <module name="Day47" target="1.8" />
+      <module name="Day48" target="1.8" />
+      <module name="Day48_1" target="1.8" />
+      <module name="Day49" target="1.8" />
+      <module name="Day50_01_CRUD" target="1.8" />
+      <module name="Day50_02_Annotation" target="1.8" />
+      <module name="Day50_03_all_annOtation" target="1.5" />
+      <module name="Day50_03_xml_annotation" target="1.8" />
+      <module name="Day50_04_all_anncotation" target="1.8" />
+      <module name="Day50_04_all_annotation" target="1.8" />
+      <module name="Day50_transfer" target="1.8" />
+      <module name="Day51_01_transfer" target="1.8" />
+      <module name="Day51_02_xml_aop" target="1.8" />
+      <module name="Day51_03_all_annotation" target="1.8" />
+      <module name="Day52" target="1.5" />
+      <module name="Day52_01_jdbctemplate" target="8" />
+      <module name="Day52_02_transfer_xml" target="1.8" />
+      <module name="Day52_03_all_annotation" target="1.8" />
+      <module name="Day53" target="1.8" />
+      <module name="Day54" target="1.8" />
+      <module name="haha" target="11" />
+      <module name="mybatis02_02_proxy" target="1.8" />
+      <module name="spring02" target="1.8" />
+      <module name="spring04_04_transfer_annotation" target="1.8" />
+      <module name="springboot" target="1.8" />
+      <module name="store" target="1.8" />
+      <module name="Ttt" target="1.8" />
+      <module name="WEB" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Ttt" options="" />
+      <module name="spring02" options="-parameters" />
+      <module name="springboot" options="-parameters" />
+    </option>
+  </component>
+</project>

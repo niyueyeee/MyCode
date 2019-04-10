@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    .content {
+        width: 643px;
+        margin: 200px auto;
+        text-align: center;
+    }
+
+    input[type='text'] {
+        width: 530px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    input[type='button'] {
+        width: 100px;
+        height: 46px;
+        background: #38f;
+        border: 0;
+        color: #fff;
+        font-size: 15px
+    }
+
+    .show {
+        position: absolute;
+        width: 535px;
+        /*height: 100px;*/
+        border: 1px solid #999;
+        border-top: 0;
+    }
+</style>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<body>
+<div class="content">
+    <img alt="" src="logo.png"><br/><br/>
+    <input id="word" type="text" name="word" onkeyup="searchWord(this)">
+    <input type="button" value="搜索一下">
+    <div id="show" class="show"></div>
+</div>
+</body>
+<script type="text/javascript">
+    function searchWord(obj){
+        //obj代表 关键字输入框
+        //获取 输入框中文本内容
+        var word = $(obj).val();
+
+        if(word.trim()==""){//如果你录入的是一个空格 我啥也不干
+            // 显示框隐藏
+            $("#show").hide();
+            return;
+        }
+
+        //发送ajax请求
+        $.get("/Day34/ss",
+            "word="+word,
+            function(data){
+                //data就是响应回来的数据！
+                // alert(data);
+                // 解析数据  要把数据一个个取出来放在 show 这个div中
+                var str="";
+                $.each(data,function(index,name){
+                    str +="<div onmouseover='fun1(this)' onmouseout='fun2(this)' onclick='fun3(this)'>"+name+"</div>";
+                });
+
+                $("#show").html(str);
+                $("#show").show();
+            },
+            "json")
+
+
+    }
+    //移入事件
+    function fun1(obj){
+        // 将底层变成 灰色
+        $(obj).css("background","grey");
+    }
+    //移出事件
+    function fun2(obj){
+        // 将底层变成 灰色
+        $(obj).css("background","white");
+    }
+    // 点击之后 将数据 添加到 输入框
+    function fun3(obj){
+        alert($(obj).html());
+        $("#word").val($(obj).html());
+        // 显示框隐藏
+        $("#show").hide();
+    }
+</script>
+</html>

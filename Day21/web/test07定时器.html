@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" onclick="f() " value="✔"/>
+<input type="button" onclick="f1() " value="😊"/>
+</body>
+<script>
+    function f() {
+        setTimeout("alert(1)", 100)
+    }
+
+    var interval = window.setInterval(function () {
+        alert("22")
+    }, 2000);
+
+    function f1() {
+        window.clearInterval(interval);
+    }
+</script>
+</html>

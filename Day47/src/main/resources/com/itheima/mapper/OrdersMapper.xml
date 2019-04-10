@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+   Mapper动态代理实现dao接口
+     规范
+     	sql映射文件的namespace必须和mapper接口的全限定类名保持一致
+     	mapper接口的接口方法名必须和xml中的sql语句id保持一致
+     	mapper接口的接口方法形参类型必须和sql语句的输入参数类型保持一致
+     	mapper接口的接口方法返回类型必须和sql语句的resultType保持一致
+
+
+     1：namespace属性值，必须和被代理的接口的名字一模一样  包名+接口名
+     2；接口中定义方法的名字 必须和 执行sql语句标签的id值 一模一样
+     3：接口方法中参数的类型 必须和sql语句标签中parameterType 保持一致
+     4：接口方法中返回值的类型 必须和 sql语句标签中resultType 保持一致
+
+-->
+<mapper namespace="com.itheima.mapper.OrdersMapper">
+
+<select id="queryOrdersUser" resultMap="OrdersUserResultMap">
+      SELECT
+          o.id,
+          o.user_id,
+          o.number,
+          o.createtime,
+          o.note,
+          u.id  uid,
+          u.username,
+          u.address
+        FROM orders o
+          LEFT JOIN USER u
+            ON u.id = o.user_id;
+</select>
+<resultMap id="OrdersUserResultMap" type="orders">
+    <id column="id" property="id"></id>
+    <result column="user_id" property="userId"></result>
+    <result column="number" property="number"></result>
+    <result column="createtime" property="createtime"></result>
+    <result column="note" property="note"></result>
+
+    <association property="user" javaType="user">
+        <id column="uid" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="address" property="address"></result>
+    </association>
+</resultMap>
+</mapper>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--
+         配置spingMVC的编码过滤器
+    -->
+    <filter>
+        <filter-name>encoding</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!--
+    配置  SpringMVC核心  前端控制器 DispatcherServlet
+    -->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <!--
+               spring容器在我这个sevlet创建的时候启动
+
+            -->
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+        <!--
+          Servlet默认什么时候初始化
+             第一访问的时候~~
+             前端控制器 就一个Servlet最好是 项目启动的时候就创建出来！
+               那么spring容器也就创建好！！
+               设置一下 让我们前端控制器 在项目启动的启动
+        -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <!--
+           虚拟路径  寻址路径 这里怎么配置
+           精确匹配 合适吗 不合适！！
+           目录匹配 不合适
+           推荐使用 后缀名匹配形式
+           *.随便  *.itcast
+           http://localhost:80/springmvc/gotoResult
+           http://localhost:80/springmvc/gotoResult.itcast
+
+           但是建议大家 后缀名一般写  *.do  *.action
+        -->
+        <url-pattern>*.action</url-pattern>
+    </servlet-mapping>
+</web-app>

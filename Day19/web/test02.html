@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <style type="text/css">
+        body {
+            background: url(img/bg.jpg);
+        }
+
+        .c1 {
+            border: 5px solid grey;
+            width: 1000px;
+            height: 600px;
+            margin: 150px auto;
+            opacity: 0.8;
+            background-color: white;
+        }
+
+        .c2 {
+            margin: 100px 250px;
+        }
+
+        .t1 {
+            width: 500px;
+        }
+
+        .q {
+            text-justify: distribute-all-lines;
+            text-align-last: left;
+        }
+
+        input {
+            border-radius: 15px;
+        }
+
+        font {
+            font-size: 21px;
+            color: dodgerblue;
+        }
+
+        tr {
+            height: 35px;
+        }
+    </style>
+</head>
+<div class="c1">
+    <div class="c2">
+        <form action="test01.html" method="get">
+            <table cellspacing="0px" cellpadding="0px" class="t1" border="0px">
+                <tr>
+                    <td colspan="3" align="justify">
+                        <font>会员注册</font>REGISTER
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q" align="middle">用户名</td>
+                    <td colspan="2">
+                        <input type="text" placeholder="请输入用户名" size="35"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="q">密码</td>
+                    <td colspan="2">
+                        <input type="password" placeholder="请输入密码" size="35"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q">确认密码</td>
+                    <td colspan="2">
+                        <input type="password" placeholder="请再次输入密码" size="35"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q">Email</td>
+                    <td colspan="2">
+                        <input type="email" placeholder="Email" size="35"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="q">姓名</td>
+                    <td colspan="2">
+                        <input type="text" placeholder="请输入姓名" size="35"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q">出生日期</td>
+                    <td colspan="2">
+                        <input type="date"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q">性别</td>
+                    <td colspan="2">
+                        <input type="radio" name="r1" value="男"/>男
+                        <input type="radio" name="r1" value="女"/>女
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="q">爱好</td>
+                    <td colspan="2">
+                        <input type="checkbox" name="r2" value="男"/>羽毛球
+                        <input type="checkbox" name="r2" value="女"/>篮球
+                        <input type="checkbox" name="r2" value="女"/>足球
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q">手机</td>
+                    <td colspan="2">
+                        <select name="phone">
+                            <option>--请选择--</option>
+                            <option>小米</option>
+                            <option>联想</option>
+                            <option>华为</option>
+                            <option selected="selected">苹果</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="q">验证码</td>
+                    <td>
+                        <input type="text" size="35"/>
+                    </td>
+                    <td>
+                        <img src="img/checkcode.jpg"</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="img" align="right">
+                        <input type="image" src="img/btn.jpg"/>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>

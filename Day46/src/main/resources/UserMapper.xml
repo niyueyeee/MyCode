@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+   namespace 命名空间  test 命名空间名是test
+      其实说白了就是识别不同的mapper
+
+      c程序执行sql的时候   +“.”+id 锁定唯一sql语句
+
+
+-->
+<mapper namespace="test">
+    <!--
+       mapper 一般包含
+          <select>  <insert>  <update> <delete>
+
+
+    -->
+    <!--
+       id  属性 查询语句的唯一标识
+       resultType 查询结果封装的类型 javabean对象类型 pojo类型
+                  查询结果是一个字符串  string  int  int
+
+        parameterType  参数类型  其实就是指的 我们参数的类型！！
+    -->
+    <select id="queryList" resultType="com.itheima.pojo.User" >
+    select * from user
+  </select>
+
+    <!--
+       	根据用户id查询一个用户
+
+       	 对于 我们写sql中 会有一些要传递参数
+       	   那么这位置 我们往往采用
+       	     #{}  固定取参写法
+       	     #{} 取参名称 如果是简单数据类型(8种基本类型及其包装类,String),名字可以随便起
+       	                                             但是一般见名知意
+       	                 如果是复杂类型 (pojo对象 javabean) 下节课在说
+             #{} 底层用的预处理
+    -->
+    <select id="queryUserById" resultType="com.itheima.pojo.User" parameterType="Integer">
+        SELECT * FROM USER WHERE id=#{id}
+    </select>
+
+    <!--
+      根据用户名称模糊查询用户列表
+        #{}  会自动把我们字符串数据 加上'' 一对单引号
+    -->
+    <select id="queryUserByUsername" parameterType="String" resultType="com.itheima.pojo.User">
+        SELECT * FROM USER  WHERE username like #{username}
+    </select>
+
+    <!--
+     根据用户名称模糊查询用户列表
+         ${}
+             里面  如果参数是简单类型 那么必须一个一个固定值 value
+
+             不会给我们加上单引号
+               它的原理只是 进行字符串拼接 ！！
+               它的底层 不是预处理对象
+
+          #{} 和${}
+             能用#不用$
+                啥时候用$
+                   当参数 表示 表名 字段名的时候 不需要单引号的时候就用$
+
+                   select * from user order by 字段名  usernam
+   -->
+    <select id="queryUserByUsername$" parameterType="String" resultType="com.itheima.pojo.User">
+        SELECT * FROM USER  WHERE username like '${value}
+    </select>
+
+    <!--
+    实现添加用户
+       增删改 没有 resultType
+             #{}  固定取参写法
+       	     #{} 取参名称 如果是简单数据类型(8种基本类型及其包装类,String),名字可以随便起
+       	                                             但是一般见名知意
+       	                 如果是复杂类型 (pojo对象 javabean)
+       	                     用对象中哪个属性  #{javabean的属性名}
+    -->
+    <insert id="saveUser" parameterType="com.itheima.pojo.User">
+
+        <!--
+           我们想的是  添加操作做完之后 完成一个查询 把刚刚的id 获取到 设置到user对象的id属性上
+           selectKey 用于查询主键
+               order  查询操作是在 增加之前还之后
+
+               标签体就写那个查询语句
+                resultType  主键的接收类型
+                keyProperty  设置到那个属性上
+
+
+        -->
+        <selectKey order="AFTER" resultType="Integer" keyProperty="id">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        INSERT INTO user (username,sex,birthday,address) VALUES (#{username},#{sex},#{birthday},#{address})
+    </insert>
+
+    <!--
+    根据用户id修改用户名
+    -->
+    <update id="updateUsernameById" parameterType="com.itheima.pojo.User">
+        UPDATE user set username=#{username} where id=#{id}
+    </update>
+    <!--
+       根据用户id删除用户信息
+    -->
+    <delete id="deleteUserById" parameterType="int">
+        delete from user where id=#{id}
+    </delete>
+</mapper>

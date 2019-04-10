@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+    <style type="text/css">
+        body {
+            background-image: url(img/bg.jpg);
+        }
+
+        #formid {
+            /*样式*/
+            width: 700px;
+            height: 500px;
+            border: 10px solid gray;
+            background-color: #FFFFFF;
+            /*位置*/
+            margin: 150px auto;
+            padding-top: 30px;
+            padding-left: 150px;
+        }
+
+        #formreg {
+            width: 500px;
+            height: 450px;
+            border: 0px solid #333;
+        }
+
+        tr {
+            height: 70px;
+        }
+
+        font {
+            color: cornflowerblue;
+            font-size: 30px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<div id="formid">
+
+    <div id="formreg">
+        <form action="#" method="post">
+
+            <table border="0px" width="500px">
+
+                <tr>
+                    <!--
+                          第一行  : 用户注册
+                    -->
+                    <td colspan="3">
+                        <font>用户注册 USER REGISTER</font>
+                    </td>
+                </tr>
+                <!--
+                          第二行  : 用户名
+                    -->
+                <tr>
+                    <td>用户名:</td>
+                    <td>
+                        <input type="text" name="username" id="username" value="" placeholder="请输入用户名"/>
+                    </td>
+
+                    <td>
+                        <!--<font id="namets"  style="display: none; color: red;">用户名必须填写</font>-->
+                        <span id="namets"></span>
+                    </td>
+
+                </tr>
+                <!--
+                          第三行  : 密码
+                    -->
+                <tr>
+                    <td>密码:</td>
+                    <td colspan="2">
+                        <input type="password" name="pwd" id="pw" value="" placeholder="请输入密码"/>
+                    </td>
+
+                    <td>
+                        <span id="namet"></span>
+                    </td>
+                </tr>
+                <!--
+                          第四行  : 性别
+                    -->
+                <tr>
+                    <td>性别:</td>
+                    <td colspan="2">
+                        <input type="radio" name="pwd" id="pwd" value="male" checked="checked"/>男
+                        <input type="radio" name="pwd" id="pwd" value="female"/>女
+                    </td>
+                </tr>
+                <!--
+                          第五行  : 验证码
+                    -->
+                <tr>
+                    <td>验证码:</td>
+                    <td>
+                        <input type="text" name="code" id="code" value="" placeholder="请输入验证码"/>
+                    </td>
+                    <td>
+                        <img src="img/checkcode.jpg"/>
+                    </td>
+                </tr>
+                <!--
+                          第六行  : 提交按钮
+                    -->
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="image" src="img/btn.jpg" onclick="checkForm()"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    var byId = document.getElementById("username");
+    byId.onblur = function () {
+        var reg = /^[0-9,A-z]{4,12}$/;
+        if (reg.test(document.getElementById("username").value)) {
+            document.getElementById("namets").innerHTML = "用户名合法";
+        } else {
+            document.getElementById("namets").innerHTML = "非法用户名";
+        }
+    }
+    var bypw = document.getElementById("pw");
+    bypw.onblur = function () {
+        var reg = /^[0-9,A-z]{4,12}$/;
+        if (reg.test(document.getElementById("username").value)) {
+            document.getElementById("namet").innerHTML = "合法";
+        } else {
+            document.getElementById("namet").innerHTML = "非法";
+        }
+    }
+</script>
+
+</html>	

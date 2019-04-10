@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+
+    <style type="text/css">
+        body {
+            background-image: url(img/bg2.jpg);
+        }
+
+        #formid {
+            /*样式*/
+            width: 700px;
+            height: 500px;
+            border: 10px solid gray;
+            background-color: #FFFFFF;
+            /*位置*/
+            margin: 150px auto;
+            padding-top: 30px;
+            padding-left: 150px;
+        }
+
+        #formreg {
+            width: 500px;
+            height: 450px;
+            border: 0px solid #333;
+        }
+
+        tr {
+            height: 70px;
+        }
+
+        font {
+            color: cornflowerblue;
+            font-size: 30px;
+        }
+
+        input {
+            font-size: 20px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        /*
+         *   二级联动
+         */
+
+
+    </script>
+</head>
+
+<body>
+
+<div id="formid">
+
+    <div id="formreg">
+        <form action="#" method="post">
+
+            <table border="0px" width="500px">
+
+                <tr>
+                    <!--
+                          第一行  : 用户注册
+                    -->
+                    <td colspan="3">
+                        <font>用户注册 USER REGISTER</font>
+                    </td>
+                </tr>
+                <!--
+                          第二行  : 用户名
+                    -->
+                <tr>
+                    <td>用户名:</td>
+                    <td>
+                        <input type="text" name="username" id="username" value="" placeholder="请输入用户名"/>
+                    </td>
+
+                    <td>
+                        <font id="namets" style="display: none; color: red;">用户名非法</font>
+                    </td>
+
+                </tr>
+                <!--
+                          第三行  : 密码
+                    -->
+                <tr>
+                    <td>密码:</td>
+                    <td colspan="2">
+                        <input type="password" name="pwd" id="pwd" value="" placeholder="请输入密码"/>
+                    </td>
+                </tr>
+                <!--
+                          第四行  : 性别
+                    -->
+                <tr>
+                    <td>性别:</td>
+                    <td colspan="2">
+                        <input type="radio" name="pwd" id="pwd1" value="male" checked="checked"/>男
+                        <input type="radio" name="pwd" id="pwd2" value="female"/>女
+                    </td>
+                </tr>
+
+                <!-- 城市 -->
+                <tr>
+                    <td>城市:</td>
+                    <td colspan="2">
+                        <!-- this当前对象：select--->
+                        <select id="city" name="city" onchange="change(this.value)">
+                            <option value="">--请选择城市--</option>
+                            <option value="0">北京市</option>
+                            <option value="1">天津市</option>
+                            <option value="2">上海市</option>
+                            <option value="3">重庆市</option>
+                        </select>
+                        <!-- 区域 -->
+                        <select id="area" name="area">
+                            <option>--请选择区域--</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!--
+                          第五行  : 验证码
+                    -->
+                <tr>
+                    <td>验证码:</td>
+                    <td>
+                        <input type="text" name="code" id="code" value="" placeholder="请输入验证码"/>
+                    </td>
+                    <td>
+                        <img src="img/checkcode.jpg"/>
+                    </td>
+                </tr>
+                <!--
+                          第六行  : 提交按钮
+                    -->
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="image" src="img/btn.jpg" onclick="checkForm()"/>
+
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    function change(o) {
+        var pros = [["朝阳", "海淀", "昌平"], ["长春市", "锦州市", "吉林市"], ["南京市", "苏州市", "徐州市"]];
+        var pros1 = pros[o];
+        var byId = document.getElementById("area");
+        byId.innerHTML = "<option value=\"\">--请选择城市--</option>";
+        for (var i = 0; i < pros1.length; i++) {
+            var optionElement = document.createElement("option");
+            optionElement.innerHTML = pros1[i];
+            byId.appendChild(optionElement)
+        }
+    }
+</script>
+</html>

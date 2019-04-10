@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 150px;
+				height: 100px;
+				border: 1px solid black;
+				background-color: #9999CC;
+			}
+			
+			.A {
+				margin: 100px 0px 100px 500px;
+			}
+			
+			#b1 {
+				margin: 100px -0px 100px -250px;
+			}
+			
+			#b11 {
+				margin: 100px 0px 100px -200px;
+			}
+			
+			#b12 {
+				margin: -200px 0px 100px 100px;
+			}
+			
+			#b2 {
+				margin: -200px 0px 100px 400px;
+			}
+			
+			#b21 {
+				margin: 100px 0px 100px -200px;
+			}
+			
+			#b22 {
+				margin: -200px 0px 100px 100px;
+			}
+		</style>
+		<!--
+
+ 		 *获得A元素内部的所有的B元素：$("A B ") --- 后代选择器  
+		 *获得A元素下面的所有的B子元素：$("A > B")  
+		 *获得A元素同级下一个B元素 ：$("A + B")  
+		 *获得A元素同级下所有后面B元素：$("A ~ B")
+		
+        -->
+		<script type="text/javascript">
+			$(
+
+				function() {
+					$("#bt1").click(
+
+						function() {
+							$("#a1 .B").css("background-color", "red");
+						}
+					);
+
+					$("#bt2").click(
+
+						function() {
+							$("#a1 > .B").css("background-color", "red");
+						}
+					);
+
+					$("#bt3").click(
+
+						function() {
+							$("#b1 + .B").css("background-color", "red");
+						}
+					);
+
+					$("#bt4").click(
+
+						function() {
+							
+							$("#b1 ~ .B").css("background-color", "red");
+							
+						}
+					);
+
+					$("#bt5").click(
+
+						function() {
+							$("div").css("background-color", "#9999CC");
+						}
+					);
+				}
+
+			);
+		</script>
+	</head>
+
+	<body>
+		<input type="button" id="bt1" value="A   B : A 下所有 B" />
+		<input type="button" id="bt2" value="A > B : A 下直接 B" />
+		<input type="button" id="bt3" value="A + B : B1 同级下后一个"  />
+		<input type="button" id="bt4" value="A ~ B : B1 同级下后所有" />
+		<input type="button" id="bt5" value="clear" />
+
+		<div id="a1" class="A">A
+			<div id="b1" class="B">
+				B1
+				<div id="b11" class="B">
+					B11
+				</div>
+				<div id="b12" class="B">
+					B12
+				</div>
+			</div>
+			<div id="b2" class="B">
+				B2
+				<div id="b21" class="B">
+					B21
+				</div>
+				<div id="b22" class="B">
+					B22
+				</div>
+			</div>
+			
+		
+				<div id="b3" class="B">
+				B3
+				<div id="b31" class="B">
+					B31
+				</div>
+				<div id="b32" class="B">
+					B32
+				</div>
+			</div>
+	
+
+		</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/AppData/Roaming/feiq/Recv Files/web项目第三天/第三天完成的前后端项目/store" />
+    <file type="web" url="file://$USER_HOME$/AppData/Roaming/feiq/Recv Files/web项目第四天/今天完成的前后端代码/store" />
+    <file type="web" url="file://$PROJECT_DIR$/_1" />
+    <file type="web" url="file://$PROJECT_DIR$/Day36" />
+    <file type="web" url="file://$PROJECT_DIR$/Day37" />
+    <file type="web" url="file://$PROJECT_DIR$/Day37-store" />
+    <file type="web" url="file://$PROJECT_DIR$/Day52" />
+    <file type="web" url="file://$PROJECT_DIR$/Day53" />
+    <file type="web" url="file://$PROJECT_DIR$/Day54" />
+    <file type="web" url="file://$PROJECT_DIR$/haha" />
+    <file type="web" url="file://$PROJECT_DIR$/WEB" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Day32/pom.xml" />
+        <option value="$PROJECT_DIR$/Day36/pom.xml" />
+        <option value="$PROJECT_DIR$/Day37/pom.xml" />
+        <option value="$PROJECT_DIR$/Day45/pom.xml" />
+        <option value="$PROJECT_DIR$/Day45_1/pom.xml" />
+        <option value="$PROJECT_DIR$/Day46/pom.xml" />
+        <option value="$PROJECT_DIR$/Day46_1/pom.xml" />
+        <option value="$PROJECT_DIR$/Day47/pom.xml" />
+        <option value="$PROJECT_DIR$/Day48/pom.xml" />
+        <option value="$PROJECT_DIR$/Day48_1/pom.xml" />
+        <option value="$PROJECT_DIR$/Day49/pom.xml" />
+        <option value="$PROJECT_DIR$/Day50_01_CRUD/pom.xml" />
+        <option value="$PROJECT_DIR$/Day50_02_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Day50_03_xml_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Day50_02_Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Day50_04_all_anncotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Day51_transfer/pom.xml" />
+        <option value="$PROJECT_DIR$/Day51_02_xml_aop/pom.xml" />
+        <option value="$PROJECT_DIR$/Day51_03_all_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Day52_01_jdbctemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/Day52_02_transfer_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/Day52_03_all_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Ttt/pom.xml" />
+        <option value="$PROJECT_DIR$/Day53/pom.xml" />
+        <option value="$PROJECT_DIR$/spring/pom.xml" />
+        <option value="$PROJECT_DIR$/Day54/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="com.a.a.a.g.d.f">
+    <domainId />
+    <mapperDomain />
+    <backquoteDomain />
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--
+   xmlns  命名空间
+   xmlns:xsi  schema约束的约束
+-->
+    <!--
+      bean标签 就是配置每一个 需要 被管理的对象的
+        id   被管理对象的唯一标示
+        class 对象的 全限定类名
+
+        scope :  对象的使用范围
+            singleton  单例的意思   项目全局内存中 只有一个对象  默认
+            prototype  多例的意思   你要一个给你一个 给完就不管  比如sqlsession
+
+            request:  这种配置针对web项目，每个请求中对应一个对象。
+            session:  这种配置针对web项目, 每次会话中对应一个对象。
+
+            globol session  这种配置针对web项目, 每次会话中对应一个对象。portlet
+
+           我们想
+             在创建对象之后 做点啥 init-method
+
+             在对象销毁之前 做点啥 destroy-method=
+
+             对象因为交给spring管理了 所以 spring容器关闭的时候 才会清理这些对象
+    -->
+    <bean id="accountService" class="com.itheima.service.AccountServiceImpl"
+     init-method="init" destroy-method="destroy"></bean>
+     <bean id="accountDao" class="com.itheima.dao.AccountDaoImpl"></bean>
+</beans>

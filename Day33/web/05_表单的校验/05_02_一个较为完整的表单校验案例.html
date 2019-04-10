@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>我的jquery表单校验页面</title>
+        
+		<style type="text/css">
+			p{text-align: center;font-size:24px;}
+			table{margin: 0 auto;border: 0;}
+			table tr{height:40px;border:0;}
+			table tr td{padding:0 14px;border:1px solid #999}
+			.error{color:red}
+		</style>
+		
+       <!--导入jquery文件   以及插件 文件-->
+       <script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+       <script type="text/javascript" src="../js/jquery.validate.js" ></script>
+      
+        
+</head>
+<body>
+    <p>员工信息录入</p>
+	<form name="empForm" id="empForm" method="get" action="#">
+		<table border=1>
+			<tr>
+				<td>真实姓名(不能为空 ,没有其他要求)</td>
+				<td><input type="text" id="realname" name="realname" />
+				</td>
+			</tr>
+			<tr>
+				<td>登录名(登录名不能为空,长度应该在5-8之间,可以包含中文字符(一个汉字算一个字符)):</td>
+				<td><input type="text" id="username" name="username" /></td>
+			</tr>
+			 <tr> 
+		      <td>密码(不能为空,长度6-12字符或数字,不能包含中文字符):</td>
+		      <td><input type="password" id="psw"  name="psw" /></td>
+		    </tr>
+		    <tr> 
+		      <td>重复密码密码(不能为空,长度6-12字符或数字,不能包含中文字符):</td>
+		      <td><input type="password" id="psw2" name="psw2" /></td>
+		    </tr>
+		    <tr>
+				<td>性别(必选其一)</td>
+				<td>
+				    <input  type="radio" id="gender_male" value="m" name="gender"/>&nbsp;男&nbsp;&nbsp;
+				    <input  type="radio" id="gender_female" value="f" name="gender"/>&nbsp;女
+				    <label for="gender" class="error" style="display: none">性别必须选择一个</label>
+				</td>
+			</tr>
+			<tr>
+				<td>年龄(必填26-50):</td>
+				<td><input type="text" id="age" name="age" /></td>
+			</tr>
+			
+		    <tr> 
+		      <td>你的学历:</td>
+		      <td> <select name="edu" id="edu">
+			          <option value="">－请选择你的学历－</option>
+			          <option value="a">专科</option>
+			          <option value="b">本科</option>
+			          <option value="c">研究生</option>
+			          <option value="e">硕士</option>
+			          <option value="d">博士</option>
+		          </select>
+			  </td>
+		    </tr>
+			
+			<tr> 
+              <td>出生日期(1982/09/21):</td>
+               <td><input type="text" id="birthday"  name="birthday" value="" /></td>
+            </tr>
+			
+		   <tr> 
+		      <td>兴趣爱好:</td>
+		      <td colspan="2"> 
+			      <input type="checkbox" name="checkbox1" id="qq1"/>&nbsp;乒乓球 &nbsp;
+		          <input type="checkbox" name="checkbox1" id="qq2" value="1" />&nbsp;羽毛球 &nbsp;
+		          <input type="checkbox" name="checkbox1" id="qq3" value="2" />&nbsp;上网 &nbsp;
+		          <input type="checkbox" name="checkbox1" id="qq4" value="3" />&nbsp;旅游 &nbsp;
+		          <input type="checkbox" name="checkbox1" id="qq5" value="4" />&nbsp;购物 &nbsp;
+		          <label for="checkbox1" class="error" style="display: none;">爱好必须选一个</label>
+			  </td>
+		    </tr>
+			 <tr> 
+			      <td align="left">电子邮箱:</td>
+			      <td><input type="text" id="email" name="email" /></td>
+			  </tr>
+			  <tr> 
+			      <td align="left">身份证(15-18):</td>
+			      <td><input type="text" id="idCard" name="idCard" /></td>
+			  </tr>
+			<tr>
+				<td></td>
+				<td><input type="submit"  name="firstname"  id="firstname" value="保存"></td>
+			</tr>
+		</table>
+
+</form>
+
+<script type="text/javascript">
+	  
+	  
+	  /**
+	   * 写一个 校验 身份证长度的规则
+	   */
+	  $.validator.addMethod("idCartLength",function(value,element,params){
+	  	 // 对value进行检验！！！
+	  	 // 长度是15 或18 代表正确 返回true
+	  	 if(value.length==15|value.length==18){
+	  	 	return true;
+	  	 }
+	  	 
+	  	 return false;
+	  })
+	  
+	   /**
+	   * 写一个 校验 身份证合法性的规则
+	   */
+	  $.validator.addMethod("idCartFormat",function(value,element,params){
+	  	 // 对value进行检验！！！
+	  	 // 长度是15 或18 代表正确 返回true
+	  	 if(value.length==15){
+	  	 	// 如果是15 必须是纯数字
+	  	 	var reg = /^[0-9]{15}$/;
+	  	 	return reg.test(value);
+	  	 }
+	  	 // 18 位 要么都是纯数字 要么前17位是数字 后一位X|x
+	  	 if(value.length==18){
+	  	 	// 18 位 要么都是纯数字 要么前17位是数字 后一位X|x
+	  	 	var reg = /^[0-9]{18}|[0-9]{17}[X|x]$/;
+	  	 	return reg.test(value);
+	  	 }
+	  	 
+	  	 return false;
+	  })
+	
+	 
+	 // 确定要校验的表单
+	  $("#empForm").validate({
+		  rules:{
+			  username:{
+				  required:true,
+				  rangelength:[5,8]
+			  },
+		  },
+		  messages:{
+			  username:{
+				  required:"用户名必须填写",
+				  rangelength:"长度必须5到8之间"
+			  },
+		  }
+	  })
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>黑马商城|家电|日用品</title>
+</head>
+
+<body>
+
+<!--
+    广告 图  : 
+    1.初始状态 不显示.
+    2.过三秒显示.  
+-->
+<div id="ad" style="display: none;">
+    <img src="img/registImg.jpg"/>
+</div>
+<!--
+     第一张表: 3行3列
+-->
+
+<table border="0" width="100%" align="center">
+    <!--
+        第一行  主页信息 
+    -->
+    <tr>
+        <td><img src="img/logo2.png"/></td>
+        <td><img src="img/header.jpg"/></td>
+        <td>
+
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#">购物车</a>
+        </td>
+    </tr>
+    <!--
+        第二行  分类标签 
+    -->
+    <tr bgcolor="black">
+        <td colspan="2" height="50px">
+            <a href="#">
+                <font color="white"> 首页</font>
+            </a>
+            <a href="#">
+                <font color="white"> 家电</font>
+            </a>
+            <a href="#">
+                <font color="white">手机</font>
+            </a>
+            <a href="#">
+                <font color="white">家电</font>
+            </a>
+            <a href="#">
+                <font color="white">手机</font>
+            </a>
+
+        </td>
+        <td>
+            <input type="text" name="" id="" value=""/>
+            <input type="button" name="" id="" value="submit"/>
+
+        </td>
+    </tr>
+
+    <!--
+        第三行 轮播图 
+    -->
+    <tr>
+        <td colspan="3">
+            <img id="lb_img" src="img/3.jpg" width="100%"/>
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    /*
+     * 页面上段 弹广告  .   
+     * 显示几秒后 再消失 . 
+     */
+    setTimeout(function () {
+        document.getElementById("ad").style.display = "block";
+        setTimeout(function () {
+            document.getElementById("ad").style.display = "none";
+        }, 3000);
+    }, 1000);
+
+</script>
+
+</body>
+
+</html>

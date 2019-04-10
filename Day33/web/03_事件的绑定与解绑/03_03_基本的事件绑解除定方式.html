@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>最简单最简单的绑定方式 </title>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+	</head>
+	<body>
+		<input type="button" value="点我试试！！" id="btn" />
+		<br />
+		<input type="button" value="让上面的按钮点击操作失效！" id="btn2" />
+	</body>
+	
+	<!--  给btn绑定一个单击事件！！-->
+	<script type="text/javascript">
+		$("#btn").on("click",function () {
+			alert("kkk")
+		});
+		$("#btn2").on("click",function () {
+			$("#btn").off("click");
+		})
+		
+		
+	</script>
+</html>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="day34">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day34/web/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day34/web/WEB-INF/lib/commons-dbutils-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day34/web/WEB-INF/lib/gson-2.2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day34/web/WEB-INF/lib/mchange-commons-java-0.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day34/web/WEB-INF/lib/mysql-connector-java-8.0.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day34/web/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

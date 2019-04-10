@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <script src="jquery-1.11.0.js" type="text/javascript"></script>
+</head>
+<body>
+<h3>用户注册</h3>
+<form action="#" method="post">
+    用户名:<input type="text" id="username" name="username" onblur="checkName(this)">
+    <span id="showMessage"></span><br>
+    密 码:<input type="password" id="password" name="password"><br>
+    <input type="submit">
+</form>
+</body>
+<script type="text/javascript">
+    function checkName(obj) {
+        //obj代表 就是那个用户输入框
+        // $(obj).val()这个就是  录入的用户名
+        var username = $(obj).val();
+        alert(username);
+        $.get("/Day34/check",
+            "username=" + username,
+            function (data) {
+                alert(data);
+                //data就是响应回来的数据
+                if (data == 1) {
+                    // 已存在
+                    $("#showMessage").html("用户名太受欢迎，请换一个.").css("color", "red");
+                } else {
+                    $("#showMessage").html("用户名可以使用").css("color", "green");
+                }
+            });
+    }
+</script>
+</html>

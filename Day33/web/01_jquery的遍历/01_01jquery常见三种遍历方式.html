@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jquery对象的常见三种遍历方式</title>
+		<!--导入jquery的js文件-->
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<!-- 
+			页面的加载顺序 瀑布式加载 (由上至下)
+			
+		-->
+		
+	</head>
+	<body>
+		<ul id="city">
+			<li>北京</li>
+			<li>南京</li>
+			<li>西京</li>
+			<li>东京</li>
+		</ul>
+	</body>
+	
+	<script type="text/javascript">
+		var $city = $("#city li");
+		// for (var i=0;i<$city.length;i++){
+		// 	var $cityElement = $city[i];
+		// 	alert($cityElement.innerHTML);  js对象用
+		// 	alert($($cityElement).html());		jQuery对象用+
+		// }
+
+		// $city.each(function (index,element) {
+		// 	alert(index+element.innerHTML);
+		// })
+
+		$.each($city,function (index,element) {
+			alert(index+element.innerHTML);
+		})
+	</script>
+</html>

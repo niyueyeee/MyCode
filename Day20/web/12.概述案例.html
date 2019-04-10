@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>JS演示</title>
+		
+	</head>
+
+	<body>
+		<div style="width:600px; height: 200px; background: azure;">
+		<h1>HELLO JS!!!</h1>
+		<p id="p1">I AM A P, SHOW TIME?</p>
+
+		<button type="button" onfocus="onmouseover" name="ii" id="i">显示日期</button>
+</div>
+	</body>
+	<script>
+		document.getElementById("i").onmouseover=function() {
+			document.getElementById("p1").innerHTML = Date();
+		}
+		document.getElementsByName("ii").onmouseout=function() {
+			alert("11");
+		}
+	</script>
+
+</html>

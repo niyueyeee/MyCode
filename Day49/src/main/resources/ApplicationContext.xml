@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+      我们想做的是  在 得到 accountService对象的时候 为其中的 accountDao属性 附上值
+
+        可以不 可以！！！
+          怎么做呢
+            需要技术 依赖注入
+               对象中 存储属性
+                  在创建对象的的时候 把属性 设置进去 这就叫注入
+
+               注入有个入口！！
+                 入口有两个
+                    通过 set方法 可以完成注入
+                    通过 构造可以完成注入
+
+               使用 set注入方式 完成 依赖注入
+                         依赖的意思是 依赖IOC容器
+                         1：你的属性 必须有set方法
+                         2：bean标签中有个子标签 表示属性
+                            property
+                              name 属性  其实set方法去掉set之后 第一个字母小写
+accountDao
+                            都是关联 属性的值
+                              value   基本的指的是8中基本类型和包装类 以及 String
+                              ref     javabean对象     对象的id
+
+
+    -->
+    <bean id="accountService" class="com.itheima.service.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"></property>
+    </bean>
+     <bean id="accountDao" class="com.itheima.dao.AccountDaoImpl"></bean>
+    <bean id="account" class="com.itheima.pojo.Account">
+        <!--&lt;!&ndash;-->
+          <!--完成数据的注入  set注入-->
+        <!--&ndash;&gt;-->
+        <!--<property name="id" value="12"></property>-->
+        <!--<property name="name" value="张三"></property>-->
+        <!--<property name="money" value="143.1"></property>-->
+        <!--
+           构造注入  用的标签
+             constructor-arg 构造参数 说白了就是给构造参数设置值
+        -->
+        <constructor-arg name="id" value="12" ></constructor-arg>
+        <constructor-arg name="name" value="手机铃声"></constructor-arg>
+        <constructor-arg name="money" value="122222"></constructor-arg>
+    </bean>
+
+    <!--
+      配置  FuZaDemo的Bean
+    -->
+    <bean id="fuZaDemo" class="com.itheima.pojo.FuZaDemo">
+        <!--
+          设置  myStrs数组
+            如果是复杂类型 你往标签体中加标签
+              添加子标签
+        -->
+        <property name="myStrs">
+            <array>
+                <value>翟天临</value>
+                <value>吴秀波</value>
+                <value>陈羽凡</value>
+            </array>
+        </property>
+
+        <!--
+          设置list  set
+        -->
+        <property name="myList">
+            <list>
+                <value>金刚娃</value>
+                <value>大力娃</value>
+                <value>葫芦娃</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>郭德纲</value>
+                <value>于谦</value>
+                <value>郭麒麟</value>
+            </set>
+        </property>
+
+        <!--
+          map  properties
+        -->
+        <property name="myMap">
+            <map>
+                <entry key="accountDao" value-ref="accountDao"></entry>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="霍建华">胡歌</prop>
+                <prop key="王思聪">林更新</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

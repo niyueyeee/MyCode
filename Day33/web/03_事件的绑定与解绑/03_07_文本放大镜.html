@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文本放大镜</title>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+	</head>
+	<body>
+		银行账户：<input type="text" id="account"  />
+		<br />
+		<div id="showAccount" style="font-size: 50px;color: red;"></div>
+	</body>
+	<script type="text/javascript">
+		$("#account").keyup(function () {
+			$("#showAccount").html(	$("#account").val());
+		})
+	</script>
+</html>

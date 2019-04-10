@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+   Mapper动态代理实现dao接口
+     规范
+     	sql映射文件的namespace必须和mapper接口的全限定类名保持一致
+     	mapper接口的接口方法名必须和xml中的sql语句id保持一致
+     	mapper接口的接口方法形参类型必须和sql语句的输入参数类型保持一致
+     	mapper接口的接口方法返回类型必须和sql语句的resultType保持一致
+
+
+     1：namespace属性值，必须和被代理的接口的名字一模一样  包名+接口名
+     2；接口中定义方法的名字 必须和 执行sql语句标签的id值 一模一样
+     3：接口方法中参数的类型 必须和sql语句标签中parameterType 保持一致
+     4：接口方法中返回值的类型 必须和 sql语句标签中resultType 保持一致
+
+-->
+<mapper namespace="com.itheima.mapper.UserMapper">
+    <select id="queryUserById" resultType="user" parameterType="Integer">
+        SELECT * FROM USER WHERE id=#{id}
+    </select>
+
+    <!--
+         传递的参数 是一个 pojo包装类型
+
+         queryUserByUserVo
+              查询 用户信息    通过主键查询  只不过 主键 来自UserVo 对象中user的id
+
+              如果  parameterType 类型是一个pojo包装类型  需要pojo包装类型中 pojo对象的一个属性
+                  #{pojo对象.属性名}
+    -->
+    <select id="queryUserByUserVo" parameterType="UserVo" resultType="user">
+            SELECT * FROM USER WHERE id=#{user.id}
+    </select>
+    <select id="queryList" resultType="user">
+            SELECT * FROM USER
+    </select>
+    <select id="queryUserByUsername" parameterType="string" resultType="user">
+            SELECT * FROM USER where  username like #{username}
+    </select>
+    <insert id="saveUser" parameterType="user">
+        <selectKey order="AFTER" resultType="integer" keyProperty="id">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        INSERT INTO user (username,sex,birthday,address) VALUES (#{username},#{sex},#{birthday},#{address})
+    </insert>
+    <update id="updateUsernameById" parameterType="user">
+          UPDATE user set username=#{username} where id=#{id}
+    </update>
+    <delete id="deleteUserById" parameterType="integer">
+           delete from user where id=#{id}
+    </delete>
+</mapper>
