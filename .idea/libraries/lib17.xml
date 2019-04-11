@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="lib17">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/mysql-connector-java-8.0.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/commons-dbutils-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/mchange-commons-java-0.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/standard.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day30_jdbc条件查询_分页/web/WEB-INF/lib/jstl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

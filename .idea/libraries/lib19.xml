@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib19">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day16_连接池_DBUtils/lib/mysql-connector-java-8.0.14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day16_连接池_DBUtils/lib/commons-dbutils-1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day16_连接池_DBUtils/lib/c3p0-0.9.5.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day16_连接池_DBUtils/lib/mchange-commons-java-0.2.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

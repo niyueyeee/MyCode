@@ -7,19 +7,20 @@ public class StringBulider {
         long start = System.currentTimeMillis();
         textString();
         long end = System.currentTimeMillis();
-        System.out.println(end-start);
+        System.out.println(end - start);
         long start1 = System.currentTimeMillis();
         textStringBuilder();
         long end1 = System.currentTimeMillis();
-        System.out.println(end1-start1);
+        System.out.println(end1 - start1);
     }
 
     private static void textString() {
         String s = "hello";
         for (int i = 0; i < 1000000; i++) {
-            s +="word";
+            s += "word";
         }
-}
+    }
+
     private static void textStringBuilder() {
         StringBuilder stringBuilder = new StringBuilder("hello");
         for (int i = 0; i < 1000000; i++) {

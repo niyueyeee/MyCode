@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day35_Redis/web/WEB-INF/lib/commons-pool2-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day35_Redis/web/WEB-INF/lib/jedis-2.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day35_Redis/web/WEB-INF/lib/gson-2.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
