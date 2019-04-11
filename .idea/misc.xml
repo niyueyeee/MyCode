@@ -10,6 +10,9 @@
     <file type="web" url="file://$PROJECT_DIR$/Day52" />
     <file type="web" url="file://$PROJECT_DIR$/Day53" />
     <file type="web" url="file://$PROJECT_DIR$/Day54" />
+    <file type="web" url="file://$PROJECT_DIR$/Day54_1" />
+    <file type="web" url="file://$PROJECT_DIR$/Day55_SpringMvc_01_Interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/Day55_SpringMvc_02_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/haha" />
     <file type="web" url="file://$PROJECT_DIR$/WEB" />
   </component>
@@ -42,6 +45,8 @@
         <option value="$PROJECT_DIR$/Day53/pom.xml" />
         <option value="$PROJECT_DIR$/spring/pom.xml" />
         <option value="$PROJECT_DIR$/Day54/pom.xml" />
+        <option value="$PROJECT_DIR$/Day55_SpringMvc_01_Interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/Day55_SpringMvc_02_SSM/pom.xml" />
       </list>
     </option>
   </component>

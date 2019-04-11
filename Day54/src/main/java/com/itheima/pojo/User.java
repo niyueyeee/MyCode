@@ -1,10 +1,12 @@
 package com.itheima.pojo;
 
+import java.io.Serializable;
+
 /**
  * @author niyueyeee
  * @create 2019-04-09 20:51
  */
-public class User {
+public class User implements Serializable {
     private Integer id;
     private String name;
     private String address;

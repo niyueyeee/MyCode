@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--
+       1.数 据库连接池以及事务管理都交给Spring容器来完成
+    -->
+    <!-- 读取外部 配置文件-->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!--配置连接池对象 DBCP  BasicDateSource-->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+
+    <!--
+      2.	SqlSessionFactory对象应该放到Spring容器中 单例对象管理
+      -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--关联连接池-->
+        <property name="dataSource" ref="dataSource"/>
+        <!--
+             关联上 SqlMapConfig.xml
+             读取 mybatis的配置文件 并解析
+             在一定程度上mybatis配置文件可以不要！！
+          -->
+        <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
+        <property name="typeAliasesPackage" value="com.itheima.ssm.pojo"/>
+
+    </bean>
+
+
+    <!--
+           扫描 mapper包 你没有扫描  不能找mapper映射文件，就不能实现代理对象！！
+
+       3.	Mapper动态代理对象交给Spring管理，我们从Spring容器中直接获得Mapper的代理对象
+            3.1 扫描 mapper包
+               spring中有个对象 专门扫描 mapper包
+       -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--  需要扫描的包-->
+        <property name="basePackage" value="com.itheima.ssm.mapper"></property>
+        <!-- 配置 sqlSession  sqlSessionFactory-->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+</beans>

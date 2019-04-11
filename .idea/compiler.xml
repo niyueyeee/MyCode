@@ -8,30 +8,32 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Day52_03_all_annotation" />
         <module name="Day50_02_Annotation" />
-        <module name="Day46_1" />
+        <module name="Day51_03_all_annotation" />
+        <module name="Day55_SpringMvc_02_SSM" />
         <module name="Day45_1" />
         <module name="Day50_04_all_anncotation" />
-        <module name="Day46" />
+        <module name="Day53" />
+        <module name="Day55_SpringMvc_01_Interceptor" />
         <module name="Day51_02_xml_aop" />
-        <module name="Day52_01_jdbctemplate" />
-        <module name="Day48" />
+        <module name="Day32" />
+        <module name="Day46" />
         <module name="Day37" />
         <module name="Day36" />
         <module name="Day50_01_CRUD" />
-        <module name="Day51_03_all_annotation" />
+        <module name="Day52_01_jdbctemplate" />
         <module name="Day49" />
-        <module name="Day32" />
+        <module name="Day48" />
         <module name="Day47" />
         <module name="springboot" />
         <module name="Day45" />
         <module name="Day52_02_transfer_xml" />
         <module name="Day48_1" />
-        <module name="spring02" />
+        <module name="Day46_1" />
         <module name="Day50_03_xml_annotation" />
         <module name="Day51_01_transfer" />
-        <module name="Day53" />
-        <module name="Ttt" />
         <module name="Day54" />
+        <module name="spring02" />
+        <module name="Ttt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
@@ -64,6 +66,9 @@
       <module name="Day52_03_all_annotation" target="1.8" />
       <module name="Day53" target="1.8" />
       <module name="Day54" target="1.8" />
+      <module name="Day54_1" target="1.7" />
+      <module name="Day55_SpringMvc_01_Interceptor" target="1.8" />
+      <module name="Day55_SpringMvc_02_SSM" target="8" />
       <module name="haha" target="11" />
       <module name="mybatis02_02_proxy" target="1.8" />
       <module name="spring02" target="1.8" />
