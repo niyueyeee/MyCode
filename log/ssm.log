@@ -1,0 +1,7 @@
+2019-04-12 21:11:59.089 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@6c3f5566: startup date [Fri Apr 12 21:11:59 CST 2019]; root of context hierarchy
+2019-04-12 21:11:59.166 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-04-12 21:12:01.742 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 21:12:02.318 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from user where id = ? 
+2019-04-12 21:12:02.396 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 1(Integer)
+2019-04-12 21:12:02.457 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-12 21:12:02.473 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource

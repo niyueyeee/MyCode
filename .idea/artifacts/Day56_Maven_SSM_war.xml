@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Day56_Maven_SSM:war">
+    <output-path>$PROJECT_DIR$/Day56_Maven_SSM/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Day56_Maven_SSM</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Day56_Maven_SSM.war">
+      <element id="artifact" artifact-name="Day56_Maven_SSM:war exploded" />
+    </root>
+  </artifact>
+</component>

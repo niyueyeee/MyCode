@@ -1,0 +1,68 @@
+2019-04-12 20:31:24.602 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:31:24 CST 2019]; root of context hierarchy
+2019-04-12 20:31:24.682 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-04-12 20:31:26.976 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:31:27.630 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:31:57.794 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:31:57 CST 2019]; root of context hierarchy
+2019-04-12 20:31:57.866 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-04-12 20:31:59.849 [main] WARN [org.springframework.context.support.AbstractApplicationContext.refresh] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [applicationContext-dao.xml]: Invocation of init method failed; nested exception is java.io.FileNotFoundException: class path resource [SqlMapConfig.xml] cannot be opened because it does not exist
+2019-04-12 20:32:10.949 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:32:10 CST 2019]; root of context hierarchy
+2019-04-12 20:32:11.030 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-04-12 20:32:13.507 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:32:14.037 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from user where id = ? 
+2019-04-12 20:32:14.102 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 1(Integer)
+2019-04-12 20:32:14.157 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-12 20:32:14.170 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:32:52.036 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:32:52 CST 2019]; root of context hierarchy
+2019-04-12 20:32:52.145 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-04-12 20:32:54.531 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:32:55.056 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from user where id = ? 
+2019-04-12 20:32:55.121 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 1(Integer)
+2019-04-12 20:32:55.188 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-12 20:32:55.198 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:35:57.869 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:35:57 CST 2019]; root of context hierarchy
+2019-04-12 20:35:57.974 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-04-12 20:36:00.677 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:36:01.304 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from use where id = ? 
+2019-04-12 20:36:01.363 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 1(Integer)
+2019-04-12 20:36:01.424 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:36:01.441 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-04-12 20:36:01.496 [main] INFO [org.springframework.jdbc.support.SQLErrorCodesFactory.<init>] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-04-12 20:36:01.497 [main] DEBUG [org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes] - Looking up default SQLErrorCodes for DataSource [com.mchange.v2.c3p0.ComboPooledDataSource@4ac9f4ff]
+2019-04-12 20:36:01.499 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:36:01.509 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:36:01.510 [main] DEBUG [org.springframework.jdbc.support.SQLErrorCodesFactory.getErrorCodes] - SQL error codes for 'MySQL' found
+2019-04-12 20:36:01.510 [main] DEBUG [org.springframework.jdbc.support.SQLErrorCodesFactory.registerDatabase] - Caching SQL error codes for DataSource [com.mchange.v2.c3p0.ComboPooledDataSource@4ac9f4ff]: database product name is 'MySQL'
+2019-04-12 20:36:01.511 [main] DEBUG [org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.logTranslation] - Translating SQLException with SQL state '42000', error code '1064', message [You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'use where id = 1' at line 1] for task [
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'use where id = 1' at line 1
+### The error may exist in com/itheima/dao/UserDao.xml
+### The error may involve com.itheima.dao.UserDao.findById-Inline
+### The error occurred while setting parameters
+### SQL: select * from use where id = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'use where id = 1' at line 1
+]
+2019-04-12 20:36:40.269 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:36:40 CST 2019]; root of context hierarchy
+2019-04-12 20:36:40.458 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [applicationContext-dao.xml]
+2019-04-12 20:36:43.584 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:36:44.263 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from user where id = ? 
+2019-04-12 20:36:44.335 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 1(Integer)
+2019-04-12 20:36:44.399 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-12 20:36:44.411 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:41:34.862 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@60704c: startup date [Fri Apr 12 20:41:34 CST 2019]; root of context hierarchy
+2019-04-12 20:41:34.947 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from class path resource [spring/applicationContext-dao.xml]
+2019-04-12 20:41:37.003 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:41:37.465 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from user where id = ? 
+2019-04-12 20:41:37.505 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 1(Integer)
+2019-04-12 20:41:37.543 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-12 20:41:37.553 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:46:10.275 [main] INFO [org.springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-04-12 20:46:10.321 [main] INFO [org.springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6aba2b86, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@158da8e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@74e52303, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47af7f3d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c729a55, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3bb9a3ff]
+2019-04-12 20:46:10.432 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from file [D:\MyCode\Day56_Maven_SSM\target\classes\spring\applicationContext-dao.xml]
+2019-04-12 20:46:10.573 [main] INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions] - Loading XML bean definitions from file [D:\MyCode\Day56_Maven_SSM\target\classes\spring\applicationContext-service.xml]
+2019-04-12 20:46:10.744 [main] INFO [org.springframework.context.support.AbstractApplicationContext.prepareRefresh] - Refreshing org.springframework.context.support.GenericApplicationContext@799f10e1: startup date [Fri Apr 12 20:46:10 CST 2019]; root of context hierarchy
+2019-04-12 20:46:13.691 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Fetching JDBC Connection from DataSource
+2019-04-12 20:46:14.121 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection] - Registering transaction synchronization for JDBC Connection
+2019-04-12 20:46:14.133 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==>  Preparing: select * from user where id = ? 
+2019-04-12 20:46:14.196 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - ==> Parameters: 2(Integer)
+2019-04-12 20:46:14.260 [main] DEBUG [org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug] - <==      Total: 1
+2019-04-12 20:46:14.274 [main] DEBUG [org.springframework.jdbc.datasource.DataSourceUtils.doReleaseConnection] - Returning JDBC Connection to DataSource
+2019-04-12 20:46:14.281 [Thread-1] INFO [org.springframework.context.support.AbstractApplicationContext.doClose] - Closing org.springframework.context.support.GenericApplicationContext@799f10e1: startup date [Fri Apr 12 20:46:10 CST 2019]; root of context hierarchy

@@ -59,6 +59,11 @@
       <module fileurl="file://$PROJECT_DIR$/Day54_SpringMvc02/Day54_SpringMvc02.iml" filepath="$PROJECT_DIR$/Day54_SpringMvc02/Day54_SpringMvc02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day55_SpringMvc03_01_Interceptor/Day55_SpringMvc03_01_Interceptor.iml" filepath="$PROJECT_DIR$/Day55_SpringMvc03_01_Interceptor/Day55_SpringMvc03_01_Interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day55_SpringMvc03_02_SSM/Day55_SpringMvc03_02_SSM.iml" filepath="$PROJECT_DIR$/Day55_SpringMvc03_02_SSM/Day55_SpringMvc03_02_SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM/Day56_Maven_SSM.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM/Day56_Maven_SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Day56_Maven_SSM_Parent.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Day56_Maven_SSM_Parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Dao/Maven_SSM_Dao.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Dao/Maven_SSM_Dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Service/Maven_SSM_Service.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Service/Maven_SSM_Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyCode.iml" filepath="$PROJECT_DIR$/MyCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ttt/Ttt.iml" filepath="$PROJECT_DIR$/Ttt/Ttt.iml" />
       <module fileurl="file://E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-jd/itcast-crawler-jd.iml" filepath="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-jd/itcast-crawler-jd.iml" />

@@ -14,6 +14,7 @@
         <module name="Day52_Spring04_02_Transfer_Xml" />
         <module name="Ttt" />
         <module name="spring02" />
+        <module name="Maven_SSM_Web" />
         <module name="Day46_Mybatis02_01" />
         <module name="Day50_Spring02_01_CRUD" />
         <module name="Day45_Mybatis01_02" />
@@ -21,6 +22,7 @@
         <module name="Day53_SpringMvc01" />
         <module name="Day36_Maven" />
         <module name="springboot" />
+        <module name="Maven_SSM_Dao" />
         <module name="itcast-crawler-jd" />
         <module name="Day50_Spring02_03_Xml_Annotation" />
         <module name="Day54_SpringMvc02" />
@@ -35,6 +37,7 @@
         <module name="Day55_SpringMvc03_01_Interceptor" />
         <module name="Day55_SpringMvc03_02_SSM" />
         <module name="Day49_Spring01" />
+        <module name="Maven_SSM_Service" />
         <module name="Day51_Spring03_03_All_Annotation" />
         <module name="itcast-crawler-job" />
       </profile>
@@ -104,10 +107,15 @@
       <module name="Day55_SpringMvc03_02_SSM" target="8" />
       <module name="Day55_SpringMvc_01_Interceptor" target="1.8" />
       <module name="Day55_SpringMvc_02_SSM" target="8" />
+      <module name="Day56_Maven_SSM" target="1.8" />
+      <module name="Day56_Maven_SSM_Parent" target="1.8" />
       <module name="haha" target="11" />
       <module name="itcast-crawler-jd" target="1.8" />
       <module name="itcast-crawler-job" target="1.8" />
       <module name="itcast-crawler-webmagic" target="1.5" />
+      <module name="Maven_SSM_Dao" target="1.8" />
+      <module name="Maven_SSM_Service" target="1.8" />
+      <module name="Maven_SSM_Web" target="1.8" />
       <module name="mybatis02_02_proxy" target="1.8" />
       <module name="spring02" target="1.8" />
       <module name="spring04_04_transfer_annotation" target="1.8" />

@@ -19,6 +19,8 @@
     <file type="web" url="file://$PROJECT_DIR$/Day55_SpringMvc03_02_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/Day55_SpringMvc_01_Interceptor" />
     <file type="web" url="file://$PROJECT_DIR$/Day55_SpringMvc_02_SSM" />
+    <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM" />
+    <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web" />
     <file type="web" url="file://$PROJECT_DIR$/haha" />
     <file type="web" url="file://$PROJECT_DIR$/WEB" />
   </component>
@@ -56,7 +58,14 @@
         <option value="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-jd/pom.xml" />
         <option value="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-webmagic/pom.xml" />
         <option value="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-job/pom.xml" />
+        <option value="$PROJECT_DIR$/Day56_Maven_SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/Day56_Maven_SSM_Parent/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Day56_Maven_SSM/Maven_SSM_Service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
