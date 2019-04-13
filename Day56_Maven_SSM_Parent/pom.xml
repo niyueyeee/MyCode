@@ -189,4 +189,15 @@
             <version>${spring.security.version}</version>
         </dependency>
     </dependencies>
+    <!-- 上传的位置 -->
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
