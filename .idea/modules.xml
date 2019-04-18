@@ -66,9 +66,6 @@
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyCode.iml" filepath="$PROJECT_DIR$/MyCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/Ttt/Ttt.iml" filepath="$PROJECT_DIR$/Ttt/Ttt.iml" />
-      <module fileurl="file://E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-jd/itcast-crawler-jd.iml" filepath="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-jd/itcast-crawler-jd.iml" />
-      <module fileurl="file://E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-job/itcast-crawler-job.iml" filepath="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-job/itcast-crawler-job.iml" />
-      <module fileurl="file://E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-webmagic/itcast-crawler-webmagic.iml" filepath="E:/黑马57/16 网络爬虫（选学）/day75_网络爬虫开发01/代码/itcast-crawler-webmagic/itcast-crawler-webmagic.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
     </modules>
   </component>
