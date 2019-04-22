@@ -21,6 +21,7 @@
     <file type="web" url="file://$PROJECT_DIR$/Day55_SpringMvc_02_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web" />
+    <file type="web" url="file://$PROJECT_DIR$/Day57_SSM/SSM_web" />
     <file type="web" url="file://$PROJECT_DIR$/haha" />
     <file type="web" url="file://$PROJECT_DIR$/WEB" />
   </component>
@@ -33,7 +34,6 @@
         <option value="$PROJECT_DIR$/Day50_02_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Day51_transfer/pom.xml" />
         <option value="$PROJECT_DIR$/Ttt/pom.xml" />
-        <option value="$PROJECT_DIR$/spring/pom.xml" />
         <option value="$PROJECT_DIR$/Day36_Maven/pom.xml" />
         <option value="$PROJECT_DIR$/Day37_Web商城六天项目/pom.xml" />
         <option value="$PROJECT_DIR$/Day47_Mybatis03/pom.xml" />
@@ -60,6 +60,8 @@
         <option value="$PROJECT_DIR$/Day55_SpringMvc03_02_SSM/pom.xml" />
         <option value="$PROJECT_DIR$/Day56_Maven_SSM/pom.xml" />
         <option value="$PROJECT_DIR$/Day56_Maven_SSM_Parent/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/Day57_SSM/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib30">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day62_Lucene/lib/IKAnalyzer2012FF_u1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day62_Lucene/lib/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day62_Lucene/lib/mysql-connector-java-8.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day62_Lucene/lib/lucene-queryparser-4.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day62_Lucene/lib/lucene-core-4.10.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day62_Lucene/lib/lucene-analyzers-common-4.10.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
