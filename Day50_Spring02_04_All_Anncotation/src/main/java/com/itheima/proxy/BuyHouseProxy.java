@@ -1,15 +1,16 @@
 package com.itheima.proxy;
+
 /*
    买房的中介！！代理
  */
-public class BuyHouseProxy implements BuyHouse{
+public class BuyHouseProxy implements BuyHouse {
 
     // 定义一个 有买房需求的
     private BuyHouse buyHouse;
 
     // 在 创建代理对象的时候 得有委托人
 
-    public BuyHouseProxy(BuyHouse buyHouse){
+    public BuyHouseProxy(BuyHouse buyHouse) {
         this.buyHouse = buyHouse;
     }
 

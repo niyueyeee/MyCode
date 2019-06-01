@@ -35,7 +35,7 @@ public abstract class BaseServlet extends HttpServlet {
             //Method method = clz.getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
 
             // 3. 执行method  ,invoke
-            method.invoke( this ,  request, response );
+            method.invoke(this, request, response);
 
 
         } catch (Exception e) {

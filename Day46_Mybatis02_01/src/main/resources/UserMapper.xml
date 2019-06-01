@@ -24,9 +24,9 @@
 
         parameterType  参数类型  其实就是指的 我们参数的类型！！
     -->
-    <select id="queryList" resultType="com.itheima.pojo.User" >
-    select * from user
-  </select>
+    <select id="queryList" resultType="com.itheima.pojo.User">
+        select * from user
+    </select>
 
     <!--
        	根据用户id查询一个用户
@@ -48,7 +48,7 @@
         #{}  会自动把我们字符串数据 加上'' 一对单引号
     -->
     <select id="queryUserByUsername" parameterType="String" resultType="com.itheima.pojo.User">
-        SELECT * FROM USER  WHERE username like #{username}
+        SELECT * FROM USER WHERE username like #{username}
     </select>
 
     <!--
@@ -68,7 +68,7 @@
                    select * from user order by 字段名  usernam
    -->
     <select id="queryUserByUsername$" parameterType="String" resultType="com.itheima.pojo.User">
-        SELECT * FROM USER  WHERE username like '${value}
+        SELECT * FROM USER WHERE username like '${value}
     </select>
 
     <!--

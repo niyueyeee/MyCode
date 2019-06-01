@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.itheima.mapper.OrdersMapper">
-    <select id="queryOrdersUser" resultMap="ordersUserResultMap" >
-       SELECT
-          o.id,
-          o.user_id,
-          o.number,
-          o.createtime,
-          o.note
+    <select id="queryOrdersUser" resultMap="ordersUserResultMap">
+        SELECT
+        o.id,
+        o.user_id,
+        o.number,
+        o.createtime,
+        o.note
         FROM orders o
     </select>
     <resultMap id="ordersUserResultMap" type="Orders">
@@ -19,7 +19,8 @@
         <result column="number" property="number"/>
         <result column="createtime" property="createtime"/>
         <result column="note" property="note"/>
-        <association property="user" javaType="User" select="com.itheima.mapper.UserMapper.queryUserById" column="user_id"></association>
+        <association property="user" javaType="User" select="com.itheima.mapper.UserMapper.queryUserById"
+                     column="user_id"></association>
     </resultMap>
 
 </mapper>

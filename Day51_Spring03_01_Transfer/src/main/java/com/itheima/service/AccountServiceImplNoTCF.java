@@ -32,7 +32,7 @@ public class AccountServiceImplNoTCF implements AccountService {
         toAccount.setMoney(toAccount.getMoney() + money);
         // 将数据进行更新
         accountDao.updateAccount(toAccount);
-        System.out.println(1/0);
+        System.out.println(1 / 0);
         accountDao.updateAccount(fromAccount);
     }
 }

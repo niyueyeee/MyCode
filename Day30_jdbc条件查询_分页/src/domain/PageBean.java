@@ -9,7 +9,7 @@ import java.util.List;
 public class PageBean {
     private int totalPage;  // 总页数
     private int currentPage;  // 当前页数
-    private  int num =12;    // 每个 12个
+    private int num = 12;    // 每个 12个
 
     @Override
     public String toString() {

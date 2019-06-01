@@ -8,18 +8,17 @@ import java.sql.SQLException;
 
 public class C3P0Utils {
 
-	private static ComboPooledDataSource dataSource = new ComboPooledDataSource();
+    private static ComboPooledDataSource dataSource = new ComboPooledDataSource();
 
-	
-	public static DataSource getDataSource(){
-		return dataSource;
-	}
-	
 
-	public static Connection getConnection() throws SQLException{
-		return dataSource.getConnection();
-	}
-	
+    public static DataSource getDataSource() {
+        return dataSource;
+    }
+
+
+    public static Connection getConnection() throws SQLException {
+        return dataSource.getConnection();
+    }
 
 
 }

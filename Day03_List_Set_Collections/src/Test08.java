@@ -15,13 +15,13 @@ public class Test08 {
         lin.add("杨玉环");
         lin.add("貂蝉");
         for (String s : lin) {
-            System.out.print(s+" ");
+            System.out.print(s + " ");
         }
         System.out.println();
         Iterator<String> it = lin.iterator();
-        while (it.hasNext()){
+        while (it.hasNext()) {
             String next = it.next();
-            System.out.print(next+" ");
+            System.out.print(next + " ");
         }
     }
 }

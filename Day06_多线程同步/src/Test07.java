@@ -9,7 +9,7 @@ public class Test07 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true){
+                while (true) {
                     System.out.println("播放音乐");
                     try {
                         Thread.sleep(0);
@@ -22,7 +22,7 @@ public class Test07 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true){
+                while (true) {
                     System.out.println("显示画面");
                     try {
                         Thread.sleep(0);

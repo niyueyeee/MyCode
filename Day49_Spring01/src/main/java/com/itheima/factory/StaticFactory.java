@@ -4,7 +4,7 @@ import com.itheima.pojo.Account;
 
 public class StaticFactory {
 
-    public static Account getAccount(){
+    public static Account getAccount() {
 
         return new Account();
     }

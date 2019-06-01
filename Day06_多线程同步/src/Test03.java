@@ -7,8 +7,8 @@ public class Test03 {
         System.out.println(Thread.currentThread().getName());
         Subrunnable sub = new Subrunnable();
         SuRunnable su = new SuRunnable();
-        new Thread(sub,"jiaosha").start();
-        new Thread(su,"shazi").start();
+        new Thread(sub, "jiaosha").start();
+        new Thread(su, "shazi").start();
     }
 
     private static class Subrunnable implements Runnable {
@@ -20,7 +20,7 @@ public class Test03 {
         }
     }
 
-    private static class SuRunnable extends Thread{
+    private static class SuRunnable extends Thread {
         @Override
         public void run() {
             System.out.println(Thread.currentThread().getName());

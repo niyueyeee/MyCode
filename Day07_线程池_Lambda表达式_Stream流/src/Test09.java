@@ -4,7 +4,7 @@
  */
 public class Test09 {
     public static void main(String[] args) {
-        invokeDirect(()->{
+        invokeDirect(() -> {
             System.out.println("导演拍电影啦!");
         });
     }

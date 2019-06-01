@@ -6,7 +6,7 @@ import org.junit.Test;
  */
 public class Test01 {
     @Test
-    public void method(){
+    public void method() {
         System.out.println("hello");
     }
 }

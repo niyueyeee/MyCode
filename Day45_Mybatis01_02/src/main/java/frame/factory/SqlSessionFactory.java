@@ -15,7 +15,7 @@ public class SqlSessionFactory {
         this.configuration = configuration;
     }
 
-    public SqlSession openSession(){
+    public SqlSession openSession() {
         SqlSessionImpl sqlSession = new SqlSessionImpl();
         sqlSession.setConfiguration(configuration);
         return sqlSession;

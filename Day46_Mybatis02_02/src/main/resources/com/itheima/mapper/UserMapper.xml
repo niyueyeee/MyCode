@@ -32,13 +32,13 @@
                   #{pojo对象.属性名}
     -->
     <select id="queryUserByUserVo" parameterType="UserVo" resultType="user">
-            SELECT * FROM USER WHERE id=#{user.id}
+        SELECT * FROM USER WHERE id=#{user.id}
     </select>
     <select id="queryList" resultType="user">
-            SELECT * FROM USER
+        SELECT * FROM USER
     </select>
     <select id="queryUserByUsername" parameterType="string" resultType="user">
-            SELECT * FROM USER where  username like #{username}
+        SELECT * FROM USER where username like #{username}
     </select>
     <insert id="saveUser" parameterType="user">
         <selectKey order="AFTER" resultType="integer" keyProperty="id">
@@ -47,9 +47,9 @@
         INSERT INTO user (username,sex,birthday,address) VALUES (#{username},#{sex},#{birthday},#{address})
     </insert>
     <update id="updateUsernameById" parameterType="user">
-          UPDATE user set username=#{username} where id=#{id}
+        UPDATE user set username=#{username} where id=#{id}
     </update>
     <delete id="deleteUserById" parameterType="integer">
-           delete from user where id=#{id}
+        delete from user where id=#{id}
     </delete>
 </mapper>

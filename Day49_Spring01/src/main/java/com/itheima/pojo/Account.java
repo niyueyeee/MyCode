@@ -2,11 +2,11 @@ package com.itheima.pojo;
 
 public class Account {
     //账户id
-    private  Integer id;
+    private Integer id;
     //账户名
-    private  String name;
+    private String name;
     // 账户金额
-    private  Float money;
+    private Float money;
 
     public Account() {
     }
@@ -44,9 +44,9 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
-               "id=" + id +
-               ", name='" + name + '\'' +
-               ", money=" + money +
-               '}';
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", money=" + money +
+                '}';
     }
 }

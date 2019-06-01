@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
  */
 public class Test05 {
     public static void main(String[] args) throws IOException {
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("d:\\v.txt"),"GBK");
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("d:\\v.txt"), "GBK");
         osw.write("nihao八四u不丢阿巴斯");
         osw.close();
     }

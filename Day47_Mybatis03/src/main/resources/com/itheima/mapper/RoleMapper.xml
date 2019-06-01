@@ -4,48 +4,48 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.itheima.mapper.RoleMapper">
-    <select id="queryRoleUser" resultMap="RoleUserResultMap" >
-		SELECT
-			r.RID,
-			r.RNAME,
-			u.id,
-			u.username
-		FROM
-			`role` r
-			LEFT JOIN user_role ur ON r.RID = ur.RID
-			LEFT JOIN `user` u ON u.id = ur.UID
+    <select id="queryRoleUser" resultMap="RoleUserResultMap">
+        SELECT
+        r.RID,
+        r.RNAME,
+        u.id,
+        u.username
+        FROM
+        `role` r
+        LEFT JOIN user_role ur ON r.RID = ur.RID
+        LEFT JOIN `user` u ON u.id = ur.UID
     </select>
-	<resultMap id="RoleUserResultMap" type="role">
-		<id column="RID" property="rid"></id>
-		<result column="RNAME" property="rname"></result>
+    <resultMap id="RoleUserResultMap" type="role">
+        <id column="RID" property="rid"></id>
+        <result column="RNAME" property="rname"></result>
 
-		<collection property="userList" ofType="user">
-			<id column="id" property="id"></id>
-			<result column="username" property="username"></result>
-		</collection>
-	</resultMap>
+        <collection property="userList" ofType="user">
+            <id column="id" property="id"></id>
+            <result column="username" property="username"></result>
+        </collection>
+    </resultMap>
 
 
-    <select id="queryUserRole" resultMap="UserRoleResultMap" >
-		SELECT
-			u.id,
-			u.username,
-			r.RID,
-			r.RNAME
-		FROM
-			`user` u
-			LEFT JOIN user_role ur ON u.id = ur.UID
-			LEFT JOIN `role` r ON r.RID = ur.RID
+    <select id="queryUserRole" resultMap="UserRoleResultMap">
+        SELECT
+        u.id,
+        u.username,
+        r.RID,
+        r.RNAME
+        FROM
+        `user` u
+        LEFT JOIN user_role ur ON u.id = ur.UID
+        LEFT JOIN `role` r ON r.RID = ur.RID
     </select>
-	<resultMap id="UserRoleResultMap" type="user">
-		<id column="id" property="id"></id>
-		<result column="username" property="username"></result>
+    <resultMap id="UserRoleResultMap" type="user">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
 
-		<collection property="roleList" ofType="role">
-			<id column="RID" property="rid"></id>
-			<result column="RNAME" property="rname"></result>
-		</collection>
-	</resultMap>
+        <collection property="roleList" ofType="role">
+            <id column="RID" property="rid"></id>
+            <result column="RNAME" property="rname"></result>
+        </collection>
+    </resultMap>
 
 
 </mapper>

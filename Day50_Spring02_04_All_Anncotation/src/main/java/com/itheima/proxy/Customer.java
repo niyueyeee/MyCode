@@ -1,10 +1,11 @@
 package com.itheima.proxy;
+
 /*
    委托人
       实现什么接口
          代表 有什么需求！！！
  */
-public class Customer implements BuyHouse,FindWife{
+public class Customer implements BuyHouse, FindWife {
 
     @Override
     public void buyHouse() {
@@ -15,7 +16,7 @@ public class Customer implements BuyHouse,FindWife{
 
     @Override
     public void findWife(String message) {
-        System.out.println("找媳妇的要求："+message);
+        System.out.println("找媳妇的要求：" + message);
         System.out.println("只要暖被窝~~");
     }
 }

@@ -6,6 +6,6 @@ import java.util.stream.Stream;
  */
 public class Stream03 {
     public static void main(String[] args) {
-        Stream.of(1,-1,-3,4,-5).map(Math::abs).forEach(System.out::println);
+        Stream.of(1, -1, -3, 4, -5).map(Math::abs).forEach(System.out::println);
     }
 }

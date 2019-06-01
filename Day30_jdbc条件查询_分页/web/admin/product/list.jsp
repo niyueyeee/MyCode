@@ -25,7 +25,7 @@
 <form id="Form1" name="Form1"
       action="${pageContext.request.contextPath}/conditionQuery"
       method="post">
-    <tr   style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; HEIGHT: 25px; BACKGROUND-COLOR: #afd1f3">
+    <tr style="FONT-WEIGHT: bold; FONT-SIZE: 12pt; HEIGHT: 25px; BACKGROUND-COLOR: #afd1f3">
 
         <td align="center" width="18%">
             关键字 : <input type="text" name="mohu" id="i1">
@@ -56,13 +56,13 @@
             </TD>
         </tr>
         <%--<tr>--%>
-            <%--<td class="ta_01" align="right">--%>
-                <%--<button type="button" id="add" name="add" value="添加"--%>
-                        <%--class="button_add" onclick="addProduct()">--%>
-                    <%--&#28155;&#21152;--%>
-                <%--</button>--%>
+        <%--<td class="ta_01" align="right">--%>
+        <%--<button type="button" id="add" name="add" value="添加"--%>
+        <%--class="button_add" onclick="addProduct()">--%>
+        <%--&#28155;&#21152;--%>
+        <%--</button>--%>
 
-            <%--</td>--%>
+        <%--</td>--%>
         <%--</tr>--%>
         <tr>
             <td class="ta_01" align="center" bgColor="#f5fafe">

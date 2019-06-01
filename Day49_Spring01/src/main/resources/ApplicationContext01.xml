@@ -3,10 +3,10 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-<!--
-   xmlns  命名空间
-   xmlns:xsi  schema约束的约束
--->
+    <!--
+       xmlns  命名空间
+       xmlns:xsi  schema约束的约束
+    -->
     <!--
       bean标签 就是配置每一个 需要 被管理的对象的
         id   被管理对象的唯一标示
@@ -29,6 +29,6 @@
              对象因为交给spring管理了 所以 spring容器关闭的时候 才会清理这些对象
     -->
     <bean id="accountService" class="com.itheima.service.AccountServiceImpl"
-     init-method="init" destroy-method="destroy"></bean>
-     <bean id="accountDao" class="com.itheima.dao.AccountDaoImpl"></bean>
+          init-method="init" destroy-method="destroy"></bean>
+    <bean id="accountDao" class="com.itheima.dao.AccountDaoImpl"></bean>
 </beans>

@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <!--
-     需要将  静态工厂  里面的对象   存到 IOC容器中
-   -->
-   <!--<bean id="account" class="com.itheima.factory.StaticFactory" factory-method="getAccount"></bean>-->
+    <!--
+      需要将  静态工厂  里面的对象   存到 IOC容器中
+    -->
+    <!--<bean id="account" class="com.itheima.factory.StaticFactory" factory-method="getAccount"></bean>-->
 
     <!--
       需要将  非静态工厂  里面的对象   存到 IOC容器中

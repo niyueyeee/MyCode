@@ -4,7 +4,7 @@ package Day03.Test13.Comparator;
  * @authro niyueyeee
  * @create 2019-01-10 上午 09:54
  */
-public class Person  {
+public class Person {
     private String name;
     private int age;
     private float score;
@@ -50,8 +50,6 @@ public class Person  {
 
     public Person() {
     }
-
-
 
 
 }

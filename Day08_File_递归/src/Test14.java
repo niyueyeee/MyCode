@@ -21,6 +21,6 @@ public class Test14 {
                 num += fun(listFile);
             }
         }
-        return num ;
+        return num;
     }
 }

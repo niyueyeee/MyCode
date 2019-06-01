@@ -41,7 +41,7 @@ public class Download2Servlet extends HttpServlet {
         String encodeName = DownLoadUtils.encodeFileName(request, filename);
 
         // 2.3 设置处置方式
-        response.setHeader("Content-Disposition", "attachment;filename="+encodeName);
+        response.setHeader("Content-Disposition", "attachment;filename=" + encodeName);
 
 
         // 3. io读写图片
@@ -52,8 +52,8 @@ public class Download2Servlet extends HttpServlet {
 
         byte[] arr = new byte[8 * 1024];
         int len;
-        while ((len  = bis.read(arr))!=-1) {
-            bos.write(arr , 0 , len);
+        while ((len = bis.read(arr)) != -1) {
+            bos.write(arr, 0, len);
         }
 
         bos.close();

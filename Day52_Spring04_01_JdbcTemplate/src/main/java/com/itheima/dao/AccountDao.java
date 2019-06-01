@@ -9,7 +9,7 @@ import java.util.List;
  * @create 2019-04-06 19:50
  */
 public interface AccountDao {
-    Account queryAccountById(Integer id)throws Exception;
+    Account queryAccountById(Integer id) throws Exception;
 
     List<Account> queryAccountByList() throws Exception;
 }

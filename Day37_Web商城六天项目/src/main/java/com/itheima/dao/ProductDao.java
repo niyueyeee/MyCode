@@ -36,5 +36,5 @@ public interface ProductDao {
     long ProductTotal() throws SQLException;
 
     //添加商品
-    void saveProduct(Product product)throws SQLException;
+    void saveProduct(Product product) throws SQLException;
 }

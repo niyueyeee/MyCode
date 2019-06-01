@@ -14,7 +14,7 @@ public class Sort {
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
 
-            Integer integer = ham.containsKey(c) ? ham.put(c,ham.get(c)) : ham.put(c, 1);
+            Integer integer = ham.containsKey(c) ? ham.put(c, ham.get(c)) : ham.put(c, 1);
             System.out.println(integer);
 
         }

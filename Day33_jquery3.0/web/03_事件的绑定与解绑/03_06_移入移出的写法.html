@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>jquery中对移入移出的支持</title>
-		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
-	</head>
-	<body>
-		<div id="myDiv" style="width:300px;height:300px;background:red">鼠标移入变成绿色，移出恢复红色</div>
-	</body>
-	
-	<script type="text/javascript">
-		// $("#myDiv").mouseover(function () {
-		// 	$(this).css("background","#898")
-		// }).mouseout(function () {
-		// 	$(this).css("background","red")
-		// })
-		$("#myDiv").hover(function () {
-			$(this).css("background","#898")
-		},function () {
-			$(this).css("background","#846")
-		})
-	</script>
+<head>
+    <meta charset="UTF-8">
+    <title>jquery中对移入移出的支持</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="myDiv" style="width:300px;height:300px;background:red">鼠标移入变成绿色，移出恢复红色</div>
+</body>
+
+<script type="text/javascript">
+    // $("#myDiv").mouseover(function () {
+    // 	$(this).css("background","#898")
+    // }).mouseout(function () {
+    // 	$(this).css("background","red")
+    // })
+    $("#myDiv").hover(function () {
+        $(this).css("background", "#898")
+    }, function () {
+        $(this).css("background", "#846")
+    })
+</script>
 </html>

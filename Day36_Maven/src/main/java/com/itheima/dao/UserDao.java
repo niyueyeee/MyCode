@@ -15,8 +15,8 @@ public class UserDao {
 
     public void save(User user) throws SQLException {
         String sql = "insert into user (id,name,source,industry,level,phone)values(?,?,?,?,?,?)";
-        Object[] params={user.getId(),user.getName(),user.getSource(),user.getIndustry(),user.getLevel(),user.getPhone()};
+        Object[] params = {user.getId(), user.getName(), user.getSource(), user.getIndustry(), user.getLevel(), user.getPhone()};
 
-        qr.update(sql,params);
+        qr.update(sql, params);
     }
 }

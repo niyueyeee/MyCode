@@ -251,8 +251,8 @@
 <%if (request.getSession().getAttribute("bj").equals(null)) {%>
 <script>window.location.href = "/Day28/in";</script>
 <%}%>
-<%if (request.getSession().getAttribute("bj").equals(1)||request.getSession().getAttribute("bj").equals(2)) {%>
-      "";
+<%if (request.getSession().getAttribute("bj").equals(1) || request.getSession().getAttribute("bj").equals(2)) {%>
+"";
 <%}%>
 
 

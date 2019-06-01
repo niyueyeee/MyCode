@@ -72,8 +72,6 @@
       <module fileurl="file://$PROJECT_DIR$/Day57_SSM/SSM_service/SSM_service.iml" filepath="$PROJECT_DIR$/Day57_SSM/SSM_service/SSM_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day57_SSM/SSM_utils/SSM_utils.iml" filepath="$PROJECT_DIR$/Day57_SSM/SSM_utils/SSM_utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day57_SSM/SSM_web/SSM_web.iml" filepath="$PROJECT_DIR$/Day57_SSM/SSM_web/SSM_web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringBoot/SpringBoot.iml" filepath="$PROJECT_DIR$/SpringBoot/SpringBoot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Ttt/Ttt.iml" filepath="$PROJECT_DIR$/Ttt/Ttt.iml" />
     </modules>
   </component>
 </project>

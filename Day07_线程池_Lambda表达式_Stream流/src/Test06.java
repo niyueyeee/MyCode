@@ -15,7 +15,7 @@ public class Test06 {
         //请在此处插入代码，实现打印输出1-99。
 
 
-        Runnable a=() ->{
+        Runnable a = () -> {
             for (int i = start; i <= end; i++) {
                 System.out.println(i);
 

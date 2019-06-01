@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class MainTest {
     @Test
-    public void test(){
+    public void test() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
         AccountService accountService = context.getBean("accountService", AccountService.class);
         List<Account> accounts = accountService.queryAccountList();

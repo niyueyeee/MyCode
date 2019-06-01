@@ -42,16 +42,17 @@ public class CategoryDaoImpl implements CategoryDao {
 
     //按名字修改分类信息
     @Override
-    public void editCategroy(Category category)throws SQLException {
+    public void editCategroy(Category category) throws SQLException {
         String sql = "update category set cname=? where cid = ?";
-        Object[] params = {category.getCname(),category.getCid()};
-        qr.update(sql,params);;
+        Object[] params = {category.getCname(), category.getCid()};
+        qr.update(sql, params);
+        ;
     }
 
     //删除订单
     @Override
     public void delByCid(String cid) throws SQLException {
         String sql = "delete from category where cid = ?";
-        qr.update(sql,cid);
+        qr.update(sql, cid);
     }
 }

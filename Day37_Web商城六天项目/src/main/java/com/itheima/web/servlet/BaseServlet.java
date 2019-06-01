@@ -1,7 +1,6 @@
 package com.itheima.web.servlet;
 
 
-
 import com.itheima.annotation.Auth;
 import com.itheima.constant.Constant;
 import com.itheima.domain.User;
@@ -15,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-public abstract class BaseServlet extends HttpServlet{
+public abstract class BaseServlet extends HttpServlet {
     /*
      如何 在一个servlet中判断是 不同的请求呢？
     */
@@ -31,13 +30,13 @@ public abstract class BaseServlet extends HttpServlet{
 
         // 获取 方法  知道方法名
         try {
-            Method m = clazz.getMethod(method,HttpServletRequest.class,HttpServletResponse.class);
-            if(m.isAnnotationPresent(Auth.class)){
+            Method m = clazz.getMethod(method, HttpServletRequest.class, HttpServletResponse.class);
+            if (m.isAnnotationPresent(Auth.class)) {
                 // 1:校验用户是否登陆
                 // 从session获取 user对象 是null 说明没有登陆
                 User user = (User) request.getSession().getAttribute("user");
 
-                if(user==null){
+                if (user == null) {
                     // 没有登陆
                     // 将响应数据 封装 result对象 转换成json返回
                     Result result = new Result(Constant.NO_LOGIN, "您还未登录，请先登录再来提交订单！");
@@ -48,7 +47,7 @@ public abstract class BaseServlet extends HttpServlet{
 
             }
             //反射执行
-            m.invoke(this,request,response);
+            m.invoke(this, request, response);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -59,7 +58,7 @@ public abstract class BaseServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
-         doGet(request,response);
+        doGet(request, response);
     }
 
 }

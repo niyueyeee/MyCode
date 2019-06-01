@@ -30,7 +30,7 @@ public class rServlet extends HttpServlet {
             BeanUtils.populate(user, parameterMap);
 
             boolean register = new Service().register(user);
-            if (register&&user.getUsername()!=""&&user.getPassword()!="") {
+            if (register && user.getUsername() != "" && user.getPassword() != "") {
                 System.out.println("成功");
                 response.sendRedirect("/Day27/login.jsp");
             } else {
@@ -42,8 +42,9 @@ public class rServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     @Test
-    public void ee(){
+    public void ee() {
         User u = new User();
         u.setUsername("2");
         u.setPassword("2");

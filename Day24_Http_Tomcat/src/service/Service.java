@@ -18,7 +18,7 @@ public class Service {
         try {
             conn = C3P0Util.getConnection();
             conn.setAutoCommit(false);
-            if (select.query(conn, username, password).size()>0) {
+            if (select.query(conn, username, password).size() > 0) {
                 return 1;
             }
             DbUtils.commitAndCloseQuietly(conn);

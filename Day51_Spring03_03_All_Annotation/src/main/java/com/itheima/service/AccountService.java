@@ -10,7 +10,7 @@ import java.util.List;
  * @create 2019-04-03 19:49
  */
 public interface AccountService {
-    void saveAccount(Account account) ;
+    void saveAccount(Account account);
 
     void updateAccountById(Account account);
 

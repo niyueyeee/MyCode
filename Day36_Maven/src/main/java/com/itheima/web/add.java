@@ -39,11 +39,11 @@ public class add extends HttpServlet {
         System.out.println(request.getParameter("name"));
         User u = new User();
         try {
-            BeanUtils.populate(u,parameterMap);
+            BeanUtils.populate(u, parameterMap);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        String id = UUID.randomUUID().toString().replaceAll("-","");
+        String id = UUID.randomUUID().toString().replaceAll("-", "");
         u.setId(id);
         new UserService().save(u);
         System.out.println(JedisUtils.getJedis().get("s"));

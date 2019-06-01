@@ -25,10 +25,10 @@ public class check extends HttpServlet {
         String username = request.getParameter("username");
         System.out.println(username);
         //2:判断用户名是不是jack  如果是jack说明存在
-        if("jack".equals(username)){
+        if ("jack".equals(username)) {
             //说明jack存在
             response.getWriter().write('1');
-        }else{
+        } else {
             response.getWriter().write('0');
         }
     }

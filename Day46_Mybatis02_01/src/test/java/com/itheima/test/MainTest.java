@@ -43,6 +43,7 @@ public class MainTest {
         System.out.println(objectList);
         sqlSession.close();
     }
+
     @Test
     public void queryUserByUsername() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -50,6 +51,7 @@ public class MainTest {
         userList.forEach(System.out::println);
         sqlSession.close();
     }
+
     @Test
     public void saveUser() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -75,6 +77,7 @@ public class MainTest {
         System.out.println(user);
         sqlSession.close();
     }
+
     @Test
     public void deleteUserById() {
         SqlSession sqlSession = sqlSessionFactory.openSession();

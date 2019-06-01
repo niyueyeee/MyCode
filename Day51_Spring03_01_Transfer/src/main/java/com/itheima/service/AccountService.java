@@ -5,6 +5,6 @@ package com.itheima.service;
  * @create 2019-04-03 19:49
  */
 public interface AccountService {
-    void  transfer(String fromName, String toName, Float money)throws Exception;
+    void transfer(String fromName, String toName, Float money) throws Exception;
 
 }

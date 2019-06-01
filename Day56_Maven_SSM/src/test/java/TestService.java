@@ -18,7 +18,7 @@ public class TestService {
     UserService userService;
 
     @Test
-    public void test(){
+    public void test() {
         User user = userService.findById(2);
         System.out.println(user.getName());
 

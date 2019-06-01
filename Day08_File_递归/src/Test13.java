@@ -14,9 +14,9 @@ public class Test13 {
 
     private static void fun(File file) {
         for (File listFile : file.listFiles()) {
-            if (listFile.isFile()){
+            if (listFile.isFile()) {
                 listFile.delete();
-            }else {
+            } else {
                 fun(listFile);
             }
             listFile.delete();

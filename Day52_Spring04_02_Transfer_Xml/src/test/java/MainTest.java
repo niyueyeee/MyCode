@@ -19,7 +19,7 @@ public class MainTest {
 
     @Test
     public void test() throws Exception {
-       accountService.transfer("zs","ls",100f);
+        accountService.transfer("zs", "ls", 100f);
     }
 
 }

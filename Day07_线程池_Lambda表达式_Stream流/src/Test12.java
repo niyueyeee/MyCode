@@ -4,7 +4,7 @@
  */
 public class Test12 {
     public static void main(String[] args) {
-        getProducr(10, 10, (a, b) ->a * b);
+        getProducr(10, 10, (a, b) -> a * b);
     }
 
     static void getProducr(int a, int b, IntCalc intCalc) {

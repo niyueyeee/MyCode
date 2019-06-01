@@ -33,8 +33,9 @@ public class pageServlet extends HttpServlet {
         request.setAttribute("pageBean", fenye);
         request.getRequestDispatcher("/product_list.jsp").forward(request, response);
     }
+
     @Test
-    public void sss(){
+    public void sss() {
         System.out.println(new ProductService().fenye("1"));
     }
 }

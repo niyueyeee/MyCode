@@ -34,6 +34,6 @@ public class AccountDaoImpl implements AccountDao {
         String sql = "update account set money=? where id = ?";
         Object[] params = {account.getMoney(), account.getId()};
         //保证一个线程连接对象是同一个
-        queryRunner.update(connectionUtil.getConnection(),sql, params);
+        queryRunner.update(connectionUtil.getConnection(), sql, params);
     }
 }

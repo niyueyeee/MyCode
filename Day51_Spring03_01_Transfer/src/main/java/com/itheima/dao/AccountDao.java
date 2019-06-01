@@ -8,8 +8,8 @@ import com.itheima.pojo.Account;
  */
 public interface AccountDao {
     // 根据用户名 查询账户信息
-    Account queryAccountByName(String name)throws Exception;
+    Account queryAccountByName(String name) throws Exception;
 
     // 更新账户信息
-    void  updateAccount(Account account)throws Exception;
+    void updateAccount(Account account) throws Exception;
 }

@@ -8,22 +8,23 @@ import org.aspectj.lang.ProceedingJoinPoint;
  */
 public class LogUtil {
     /**
-   业务方法执行之前 将其织入
-         就相当于 在业务方法执行之前执行了
-   */
-    public void  beforeMethod(){
+     * 业务方法执行之前 将其织入
+     * 就相当于 在业务方法执行之前执行了
+     */
+    public void beforeMethod() {
         System.out.println("方法前执行");
     }
+
     //类似于  finally
-    public void  afterMethod(){
+    public void afterMethod() {
         System.out.println("方法结束执行");
     }
 
-    public void  afterReturning(){
+    public void afterReturning() {
         System.out.println("方法正常执行，没有异常");
     }
 
-    public void  afterThrowing(){
+    public void afterThrowing() {
         System.out.println("方法执行异常，有异常了");
     }
 
@@ -35,24 +36,24 @@ public class LogUtil {
      * ProceedingJoinPoint  正在执行的连接点
      * proceed()
      */
-    public Object aroundMethod(ProceedingJoinPoint proceedingJoinPoint ){
+    public Object aroundMethod(ProceedingJoinPoint proceedingJoinPoint) {
         Object result = null;
 
         try {
             //方法执行之前
             System.out.println("环绕通知，方法执行之前执行");
-            result= proceedingJoinPoint.proceed();
+            result = proceedingJoinPoint.proceed();
             System.out.println("环绕通知，方法正常，没有异常，结束执行");
         } catch (Throwable throwable) {
             throwable.printStackTrace();
             // 方法异常 结束
             System.out.println("环绕通知，方法异常，有异常，结束执行");
-        }finally {
+        } finally {
             // 方法结束
             System.out.println("环绕通知！方法结束执行");
         }
 
 
-        return  result;
+        return result;
     }
 }

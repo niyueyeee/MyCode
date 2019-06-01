@@ -29,8 +29,8 @@ public class AccountDaoImpl implements AccountDao {
     @Override
     public void updateAccountById(Account account) throws Exception {
         String sql = "update account set money=? where id=?";
-        Object[] params = {account.getMoney(),account.getId()};
+        Object[] params = {account.getMoney(), account.getId()};
 
-        jdbcTemplate.update(sql,params);
+        jdbcTemplate.update(sql, params);
     }
 }

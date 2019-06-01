@@ -7,7 +7,7 @@ import java.util.List;
  * @create 2019-01-07 下午 09:52
  */
 public class Demo03Collection {
-//    public static void main(String[] args) {
+    //    public static void main(String[] args) {
 ////        int[] arr = {10,20,30,22,33};
 ////        System.out.println(zhuanHuan(arr));
 ////        ArrayList<Integer> list = listTest(arr);
@@ -32,17 +32,17 @@ public class Demo03Collection {
 ////        }
 ////        return list;
 ////    }
-public static void main(String[] args) {
-    int[] i = {10,11,12,33};
-    ArrayList<Integer> list = ListTest(i);
-    System.out.println(list);
-}
+    public static void main(String[] args) {
+        int[] i = {10, 11, 12, 33};
+        ArrayList<Integer> list = ListTest(i);
+        System.out.println(list);
+    }
 
-private static ArrayList<Integer> ListTest(int[] i) {
+    private static ArrayList<Integer> ListTest(int[] i) {
         ArrayList<Integer> objects = new ArrayList<>();
         for (int i1 : i) {
             objects.add(i1);
-            }
+        }
         return objects;
     }
 }

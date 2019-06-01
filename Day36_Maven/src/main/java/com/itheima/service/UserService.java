@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class UserService {
     private UserDao u = new UserDao();
 
-    public void save(User user){
+    public void save(User user) {
         try {
             u.save(user);
         } catch (SQLException e) {

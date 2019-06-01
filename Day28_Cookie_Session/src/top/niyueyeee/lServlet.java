@@ -31,11 +31,11 @@ public class lServlet extends javax.servlet.http.HttpServlet {
                     System.out.println("成功");
                     Cookie username_cookie = new Cookie("username", request.getParameter("username"));
                     Cookie password_cookie = new Cookie("password", request.getParameter("password"));
-                         username_cookie.setMaxAge(1000*60*60); //
-                         password_cookie.setMaxAge(1000*60*60); //
+                    username_cookie.setMaxAge(1000 * 60 * 60); //
+                    password_cookie.setMaxAge(1000 * 60 * 60); //
                     //     添加到响应中
-                         response.addCookie(username_cookie);
-                         response.addCookie(password_cookie);
+                    response.addCookie(username_cookie);
+                    response.addCookie(password_cookie);
                     request.getSession().setAttribute("login", request.getParameter("username"));
                     response.sendRedirect("/Day28/index.jsp");
                 } else {

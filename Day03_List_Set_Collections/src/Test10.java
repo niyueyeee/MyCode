@@ -24,7 +24,7 @@ public class Test10 {
             System.out.println(s);
         }
         Iterator<String> iterator = lin.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String next = iterator.next();
             System.out.println(next);
         }

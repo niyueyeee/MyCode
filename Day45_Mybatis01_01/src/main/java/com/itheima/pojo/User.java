@@ -5,11 +5,11 @@ import java.util.Date;
 public class User {
 
     /**
-     *   `id` INT(11) NOT NULL AUTO_INCREMENT,
-     `username` VARCHAR(32) NOT NULL COMMENT '用户名称',
-     `sex` CHAR(1) DEFAULT NULL COMMENT '性别',
-     `birthday` DATE DEFAULT NULL COMMENT '生日',
-     `address` VARCHAR(256) DEFAULT NULL COMMENT '地址',
+     * `id` INT(11) NOT NULL AUTO_INCREMENT,
+     * `username` VARCHAR(32) NOT NULL COMMENT '用户名称',
+     * `sex` CHAR(1) DEFAULT NULL COMMENT '性别',
+     * `birthday` DATE DEFAULT NULL COMMENT '生日',
+     * `address` VARCHAR(256) DEFAULT NULL COMMENT '地址',
      */
     private Integer id;
     private String username;
@@ -60,11 +60,11 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-               "id=" + id +
-               ", username='" + username + '\'' +
-               ", sex='" + sex + '\'' +
-               ", birthday=" + birthday +
-               ", address='" + address + '\'' +
-               '}';
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", sex='" + sex + '\'' +
+                ", birthday=" + birthday +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

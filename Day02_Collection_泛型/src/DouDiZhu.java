@@ -58,13 +58,13 @@ public class DouDiZhu {
         //3.4 根据扑克的编号进行发牌
         for (int i = 0; i < pokers.size(); i++) {
             String poker = pokers.get(i);
-            if (i>50){
+            if (i > 50) {
                 DiPai.add(poker);
-            }else if (i%3==0){
+            } else if (i % 3 == 0) {
                 p1.add(poker);
-            }else if (i%3==1){
+            } else if (i % 3 == 1) {
                 p2.add(poker);
-            }else {
+            } else {
                 p3.add(poker);
             }
         }

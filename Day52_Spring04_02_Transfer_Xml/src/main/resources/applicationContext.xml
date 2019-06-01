@@ -21,13 +21,9 @@
 
     <tx:advice id="transAdvice" transaction-manager="transactionManager">
         <tx:attributes>
-            <tx:method name="*" read-only="false" isolation="DEFAULT" timeout="-1" propagation="REQUIRED" />
+            <tx:method name="*" read-only="false" isolation="DEFAULT" timeout="-1" propagation="REQUIRED"/>
         </tx:attributes>
     </tx:advice>
-
-
-
-
 
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

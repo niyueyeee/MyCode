@@ -71,7 +71,7 @@
 
                               域取出数据,没有数据,显示null
                             -->
-                            <%=request.getAttribute("msg")==null?"":request.getAttribute("msg")%>
+                            <%=request.getAttribute("msg") == null ? "" : request.getAttribute("msg")%>
 
                         </div>
                     </div>

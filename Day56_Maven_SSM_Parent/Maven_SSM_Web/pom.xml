@@ -22,13 +22,13 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-<dependencies>
-    <dependency>
-        <groupId>com.itheima</groupId>
-        <artifactId>Maven_SSM_Service</artifactId>
-        <version>1.0</version>
-    </dependency>
-</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>Maven_SSM_Service</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>Maven_SSM_Web</finalName>

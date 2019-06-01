@@ -34,9 +34,10 @@ public class C3P0Util {
 
         return con;
     }
+
     //定义方法,释放资源
     public static void close(ResultSet rs, Statement stmt, Connection con) {
-        if(rs!=null) {
+        if (rs != null) {
             try {
                 rs.close();
 
@@ -45,7 +46,7 @@ public class C3P0Util {
             }
 
         }
-        if(stmt!=null) {
+        if (stmt != null) {
             try {
                 stmt.close();
 
@@ -54,7 +55,7 @@ public class C3P0Util {
             }
 
         }
-        if(con!=null) {
+        if (con != null) {
             try {
                 con.close();
 

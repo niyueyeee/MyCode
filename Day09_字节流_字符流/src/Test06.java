@@ -11,7 +11,7 @@ public class Test06 {
         FileInputStream fis = new FileInputStream("c:/a.jpg");
         FileOutputStream fos = new FileOutputStream("d:/a.jpg");
         int i;
-        while (((i=fis.read())!=-1)){
+        while (((i = fis.read()) != -1)) {
             fos.write(i);
         }
         fos.close();

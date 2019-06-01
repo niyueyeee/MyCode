@@ -51,7 +51,7 @@ public class AddProductServlet extends HttpServlet {
         Product product = new Product();
 
         try {
-            BeanUtils.populate(product,map);
+            BeanUtils.populate(product, map);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InvocationTargetException e) {
@@ -84,21 +84,21 @@ public class AddProductServlet extends HttpServlet {
                 if (item.isFormField()) {
                     String name = item.getFieldName();
                     String value = item.getString("utf-8");
-                    map.put(name,new String[]{value});
+                    map.put(name, new String[]{value});
                 } else {
                     String name = item.getName();
                     File uploadFile = getUPloadFile(name);
 
                     InputStream in = item.getInputStream();
                     FileOutputStream out = new FileOutputStream(uploadFile);
-                    IOUtils.copy(in,out);
+                    IOUtils.copy(in, out);
                     IOUtils.closeQuietly(out);
                     IOUtils.closeQuietly(in);
 
                     String path = uploadFile.getAbsolutePath();
                     int resources = path.indexOf("resources");
                     String substring = path.substring(resources);
-                    map.put("pimage",new String[]{substring});
+                    map.put("pimage", new String[]{substring});
                 }
             }
         } catch (FileUploadException e) {
@@ -113,17 +113,17 @@ public class AddProductServlet extends HttpServlet {
         int i = name.lastIndexOf(".");
         String substring = name.substring(i);
 
-        name=substring= UUIDUtils.getUUID();
+        name = substring = UUIDUtils.getUUID();
 
         String uploadDir = "C:\\Users\\wwy23\\Documents\\HBuilderProjects\\web\\resources\\products";
         String today = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
 
         File dir = new File(uploadDir, today);
-        if (!dir.exists()){
+        if (!dir.exists()) {
             dir.mkdir();
         }
 
         File file = new File(dir, name);
-        return  file;
+        return file;
     }
 }

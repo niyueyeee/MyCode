@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>jquery对象3.0中的遍历方式</title>
-		<!--导入jquery的js文件-->
-	<!--	<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>-->
-	  <!--必须导入3.0以上版本 -->
-	  <script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
-		<!-- 
-			页面的加载顺序 瀑布式加载 (由上至下)
-			
-		-->
-		
-	</head>
-	<body>
-		<ul id="city">
-			<li>北京</li>
-			<li>南京</li>
-			<li>西京</li>
-			<li>东京</li>
-		</ul>
-	</body>
-	
-	<script type="text/javascript">
-		
-		// 获取所有的li标签
+<head>
+    <meta charset="UTF-8">
+    <title>jquery对象3.0中的遍历方式</title>
+    <!--导入jquery的js文件-->
+    <!--	<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>-->
+    <!--必须导入3.0以上版本 -->
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <!--
+        页面的加载顺序 瀑布式加载 (由上至下)
 
-		var $city = $("#city li");
-		for (li of $city){
-			alert(li.innerHTML)
-		}
-		  
-	</script>
+    -->
+
+</head>
+<body>
+<ul id="city">
+    <li>北京</li>
+    <li>南京</li>
+    <li>西京</li>
+    <li>东京</li>
+</ul>
+</body>
+
+<script type="text/javascript">
+
+    // 获取所有的li标签
+
+    var $city = $("#city li");
+    for (li of $city) {
+        alert(li.innerHTML)
+    }
+
+</script>
 </html>

@@ -16,13 +16,15 @@ public class TranscationManager {
     @Qualifier("connectionUtil")
     public ConnectionUtil connectionUtil;
 
-    public void begin()throws SQLException{
+    public void begin() throws SQLException {
         connectionUtil.getConnection().setAutoCommit(false);
     }
+
     // 提交事务
     public void commit() throws SQLException {
         connectionUtil.getConnection().commit();
     }
+
     //回滚事务
     public void rollback() throws SQLException {
         connectionUtil.getConnection().rollback();

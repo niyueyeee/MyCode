@@ -71,11 +71,11 @@ public class PageBean<T> {
     @Override
     public String toString() {
         return "PageBean{" +
-               "pageNumber=" + pageNumber +
-               ", pageSize=" + pageSize +
-               ", total=" + total +
-               ", totalPage=" + totalPage +
-               ", data=" + data +
-               '}';
+                "pageNumber=" + pageNumber +
+                ", pageSize=" + pageSize +
+                ", total=" + total +
+                ", totalPage=" + totalPage +
+                ", data=" + data +
+                '}';
     }
 }

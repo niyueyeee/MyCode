@@ -15,7 +15,7 @@ import java.io.IOException;
  * @create 2019-02-22 下午 05:40
  */
 @WebServlet(urlPatterns = "/Servlet")
-public class Servlet extends HttpServlet{
+public class Servlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
@@ -27,14 +27,15 @@ public class Servlet extends HttpServlet{
         String name = request.getParameter("name");
         String password = request.getParameter("password");
         int duibi = new Service().duibi(name, password);
-        if (duibi==1){
+        if (duibi == 1) {
             response.getWriter().print("登陆成功");
-        }else {
+        } else {
             response.getWriter().print("登陆失败");
         }
     }
+
     @Test
-    public void ss(){
-        System.out.println(new Service().duibi("admin","admin"));
+    public void ss() {
+        System.out.println(new Service().duibi("admin", "admin"));
     }
 }

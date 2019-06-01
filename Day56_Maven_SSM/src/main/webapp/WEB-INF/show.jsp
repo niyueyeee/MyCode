@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-    ${user.name}
+${user.name}
 </body>
 </html>

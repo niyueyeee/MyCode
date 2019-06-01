@@ -125,6 +125,7 @@ public class OrderServlet extends BaseServlet {
         Result result = new Result(Constant.SUCCESS, "查询订单成功！", byPage);
         response.getWriter().write(JSONObject.fromObject(result).toString());
     }
+
     /**
      * 订单详情
      *
@@ -141,22 +142,23 @@ public class OrderServlet extends BaseServlet {
         Result result = new Result(Constant.SUCCESS, "查询订单成功！", info);
         response.getWriter().write(JSONObject.fromObject(result).toString());
     }
+
     /**
      * 发起支付
+     *
      * @param request
      * @param response
      */
-    public void pay(HttpServletRequest request,HttpServletResponse response) throws Exception{
+    public void pay(HttpServletRequest request, HttpServletResponse response) throws Exception {
         //接受参数
-        String address=request.getParameter("address");
-        String name=request.getParameter("name");
-        String telephone=request.getParameter("telephone");
-        String oid=request.getParameter("oid");
-
+        String address = request.getParameter("address");
+        String name = request.getParameter("name");
+        String telephone = request.getParameter("telephone");
+        String oid = request.getParameter("oid");
 
 
         //业务层方法,修改订单信息
-        orderService.updateOrders(oid,address,name,telephone);
+        orderService.updateOrders(oid, address, name, telephone);
 
 
         // 组织发送支付公司需要哪些数据
@@ -205,13 +207,13 @@ public class OrderServlet extends BaseServlet {
         sb.append("hmac=").append(hmac);
 
         //        respone.sendRedirect(sb.toString());
-        Result re = new Result(Constant.SUCCESS,"",sb.toString());
+        Result re = new Result(Constant.SUCCESS, "", sb.toString());
         response.getWriter().print(JSONObject.fromObject(re));
 
     }
 
     //支付成功后的回调方法
-    public void callback(HttpServletRequest request,HttpServletResponse response) throws Exception{
+    public void callback(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String p1_MerId = request.getParameter("p1_MerId");
         String r0_Cmd = request.getParameter("r0_Cmd");
         String r1_Code = request.getParameter("r1_Code");
@@ -242,9 +244,9 @@ public class OrderServlet extends BaseServlet {
             if (r9_BType.equals("1")) {
                 // 请求转发
                 System.out.println("111");
-                request.setAttribute("msg", "您的订单号为:"+r6_Order+",金额为:"+r3_Amt+"已经支付成功,等待发货~~");
+                request.setAttribute("msg", "您的订单号为:" + r6_Order + ",金额为:" + r3_Amt + "已经支付成功,等待发货~~");
 
-                request.setAttribute("oid",r6_Order);
+                request.setAttribute("oid", r6_Order);
                 request.getRequestDispatcher("/success.jsp").forward(request, response);
             } else if (r9_BType.equals("2")) {
                 // 服务器点对点 --- 支付公司通知你

@@ -34,10 +34,10 @@ accountDao
     <bean id="accountService" class="com.itheima.service.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"></property>
     </bean>
-     <bean id="accountDao" class="com.itheima.dao.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="com.itheima.dao.AccountDaoImpl"></bean>
     <bean id="account" class="com.itheima.pojo.Account">
         <!--&lt;!&ndash;-->
-          <!--完成数据的注入  set注入-->
+        <!--完成数据的注入  set注入-->
         <!--&ndash;&gt;-->
         <!--<property name="id" value="12"></property>-->
         <!--<property name="name" value="张三"></property>-->
@@ -46,7 +46,7 @@ accountDao
            构造注入  用的标签
              constructor-arg 构造参数 说白了就是给构造参数设置值
         -->
-        <constructor-arg name="id" value="12" ></constructor-arg>
+        <constructor-arg name="id" value="12"></constructor-arg>
         <constructor-arg name="name" value="手机铃声"></constructor-arg>
         <constructor-arg name="money" value="122222"></constructor-arg>
     </bean>

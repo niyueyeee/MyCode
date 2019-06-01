@@ -17,5 +17,5 @@ import java.util.List;
 public interface OrdersMapper {
 
     //查询所有订单信息
-   List<Orders> queryOrdersByList();
+    List<Orders> queryOrdersByList();
 }

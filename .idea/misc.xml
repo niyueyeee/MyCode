@@ -25,15 +25,11 @@
     <file type="web" url="file://$PROJECT_DIR$/haha" />
     <file type="web" url="file://$PROJECT_DIR$/WEB" />
   </component>
-  <component name="MacroExpansionManager">
-    <option name="directoryName" value="ytAwTcLJ" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/Day50_02_annotation/pom.xml" />
         <option value="$PROJECT_DIR$/Day51_transfer/pom.xml" />
-        <option value="$PROJECT_DIR$/Ttt/pom.xml" />
         <option value="$PROJECT_DIR$/Day36_Maven/pom.xml" />
         <option value="$PROJECT_DIR$/Day37_Web商城六天项目/pom.xml" />
         <option value="$PROJECT_DIR$/Day47_Mybatis03/pom.xml" />

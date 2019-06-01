@@ -41,7 +41,7 @@ public class CheckCodeServlet extends HttpServlet {
             stringBuilder.append(c);
         }
         System.out.println(stringBuilder);
-        request.getSession().setAttribute("code-Session",stringBuilder.toString());
+        request.getSession().setAttribute("code-Session", stringBuilder.toString());
         BufferedImage checkImg = ImgUtils.getCheckImg(stringBuilder.toString());
         // 3. 将图片回写到页面 .
         /*

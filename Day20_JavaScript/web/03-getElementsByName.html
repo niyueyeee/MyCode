@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>form.html</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <title>form.html</title>
+</head>
 
-	<body>
-		<form name="form1" action="test.html" method="post">
-			<input type="text" name="tname" value="传智播客10周年_1" id="tid_1"><br>
-			<input type="text" name="tname" value="传智播客10周年_2" id="tid_2"><br>
-			<input type="text" name="tname" value="传智播客10周年_3" id="tid_3"><br>
-			<input type="button" name="ok" value="保存1" />
-		</form>
-	</body>
+<body>
+<form name="form1" action="test.html" method="post">
+    <input type="text" name="tname" value="传智播客10周年_1" id="tid_1"><br>
+    <input type="text" name="tname" value="传智播客10周年_2" id="tid_2"><br>
+    <input type="text" name="tname" value="传智播客10周年_3" id="tid_3"><br>
+    <input type="button" name="ok" value="保存1"/>
+</form>
+</body>
 
-	<script type="text/javascript"  >
-// 		//通过元素的name属性获取所有元素的引用  name="tname"
-		var dg = document.getElementsByName("tname");
-// 		//测试该数据的长度
-// 		alert(dg.length);
-// 		//遍历元素,输出所有value属性的值
-// 		for(var i=0;i<dg.length;i++){
-// 			alert(dg[i].value);
-// 		}
-		//为每个文本框(<input type="text">)增加chanage事件,当值改变时,输出改变的值
-		for(var i=0;i<dg.length;i++){
-			dg[i].onchange=function(){
-				alert(this.value);
-			}
-		}
-	</script>
+<script type="text/javascript">
+    // 		//通过元素的name属性获取所有元素的引用  name="tname"
+    var dg = document.getElementsByName("tname");
+    // 		//测试该数据的长度
+    // 		alert(dg.length);
+    // 		//遍历元素,输出所有value属性的值
+    // 		for(var i=0;i<dg.length;i++){
+    // 			alert(dg[i].value);
+    // 		}
+    //为每个文本框(<input type="text">)增加chanage事件,当值改变时,输出改变的值
+    for (var i = 0; i < dg.length; i++) {
+        dg[i].onchange = function () {
+            alert(this.value);
+        }
+    }
+</script>
 
 </html>

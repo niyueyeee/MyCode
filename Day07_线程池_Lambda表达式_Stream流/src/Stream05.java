@@ -17,16 +17,16 @@ public class Stream05 {
         Collections.sort(arr, new Comparator<Test17.Students>() {
             @Override
             public int compare(Test17.Students o1, Test17.Students o2) {
-                return (int) (o1.getSroce()-o2.getSroce());
+                return (int) (o1.getSroce() - o2.getSroce());
             }
         });
-        Collections.sort(arr, ( o1, o2)->
-                (int) (o1.getSroce()-o2.getSroce())
+        Collections.sort(arr, (o1, o2) ->
+                (int) (o1.getSroce() - o2.getSroce())
 
         );
 //        Collections.sort(arr, Comparator.comparingInt(Test17.Students::getSroce));
 
 
-        arr.stream().forEach(students -> System.out.println(students.getName()+students.getSroce()));
+        arr.stream().forEach(students -> System.out.println(students.getName() + students.getSroce()));
     }
 }

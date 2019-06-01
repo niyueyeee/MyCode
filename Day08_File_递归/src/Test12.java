@@ -15,10 +15,10 @@ public class Test12 {
 
     private static void fun(File file) {
         for (File li : file.listFiles()) {
-            int i=0;
+            int i = 0;
             if (li.isFile() && li.getName().endsWith(".java")) {
                 System.out.println(li);
-            } else if (li.isDirectory()){
+            } else if (li.isDirectory()) {
                 fun(li);
             }
 

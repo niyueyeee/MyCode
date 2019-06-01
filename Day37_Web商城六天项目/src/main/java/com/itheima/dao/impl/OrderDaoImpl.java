@@ -54,17 +54,17 @@ public class OrderDaoImpl implements OrderDao {
     @Override
     public void updateOrders(String oid, String address, String name, String telephone) throws SQLException {
         String sql = "update orders set address=?,name=?,telephone=? where oid=?";
-        Object[] params = {address,name,telephone,oid};
+        Object[] params = {address, name, telephone, oid};
 
-        qr.update(sql,params);
+        qr.update(sql, params);
     }
 
     @Override
     public void updateState(String oid) throws SQLException {
         String sql = "update orders set state = ? where oid=?";
-        Object[] params = {Constant.YI_FU_KUAN,oid};
+        Object[] params = {Constant.YI_FU_KUAN, oid};
 
-        qr.update(sql,params);
+        qr.update(sql, params);
     }
 
     //查询订单

@@ -9,7 +9,7 @@ public class Demo3 {
         SAXReader saxReader = new SAXReader();
         Document dom = saxReader.read("D:\\MyCode\\Day23\\src\\bean.xml");
 
-       // 使用 XPath 格式 , 解析元素
+        // 使用 XPath 格式 , 解析元素
 
 //        List<Element> list = dom.selectNodes("/beans/bean/property");
 //        System.out.println(list.size());
@@ -20,7 +20,7 @@ public class Demo3 {
 
 
         // 使用bean id = 002
-        Element e  = (Element) dom.selectSingleNode("//bean[@id='002']");
+        Element e = (Element) dom.selectSingleNode("//bean[@id='002']");
 
         System.out.println(e);
 

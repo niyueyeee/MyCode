@@ -11,7 +11,7 @@ public class Test06 {
         InputStreamReader isr = new InputStreamReader(new FileInputStream("d:\\v.txt"), "GBK");
         int i = 0;
         while ((i = isr.read()) != -1) {
-            System.out.print((char)i);
+            System.out.print((char) i);
         }
         isr.close();
     }

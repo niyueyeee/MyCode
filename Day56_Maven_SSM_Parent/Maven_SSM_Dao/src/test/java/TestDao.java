@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class TestDao {
     @Test
-    public void test(){
+    public void test() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext-dao.xml");
         UserDao userDao = context.getBean(UserDao.class);
         System.out.println(userDao.findById(1));

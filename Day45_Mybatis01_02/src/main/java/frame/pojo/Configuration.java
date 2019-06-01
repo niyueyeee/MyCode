@@ -4,12 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Configuration {
-     private String driver;
-     private String url;
-     private String username;
-     private String password;
+    private String driver;
+    private String url;
+    private String username;
+    private String password;
 
-     private Map<String,Mapper> mapperMap = new HashMap<>();
+    private Map<String, Mapper> mapperMap = new HashMap<>();
 
     public Map<String, Mapper> getMapperMap() {
         return mapperMap;
@@ -66,10 +66,10 @@ public class Configuration {
     @Override
     public String toString() {
         return "Configuration{" +
-               "driver='" + driver + '\'' +
-               ", url='" + url + '\'' +
-               ", username='" + username + '\'' +
-               ", password='" + password + '\'' +
-               '}';
+                "driver='" + driver + '\'' +
+                ", url='" + url + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

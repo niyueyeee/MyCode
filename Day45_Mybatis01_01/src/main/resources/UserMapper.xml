@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-com.itheima.mapper.dtd">
 <com.itheima.mapper namespace="userMapper">
-   <select id="queryList" resultType="com.itheima.pojo.User">
-      select * from user
-</select>
+    <select id="queryList" resultType="com.itheima.pojo.User">
+        select * from user
+    </select>
 </com.itheima.mapper>

@@ -9,7 +9,7 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <!-- 引入自定义css文件 style.css -->
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-   
+
     <style>
         body {
             margin-top: 20px;
@@ -181,7 +181,7 @@
 
 <script type="text/javascript">
     function changeImg(obj) {
-        obj.src="/Day26/lunbo?time"+Date.now();
+        obj.src = "/Day26/lunbo?time" + Date.now();
     }
 </script>
 </html>

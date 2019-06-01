@@ -17,7 +17,7 @@ public class Test05 {
         }
         Set<Map.Entry<String, String>> entries = ham.entrySet();
         for (Map.Entry<String, String> entry : entries) {
-            System.out.println(entry.getKey()+entry.getValue());
+            System.out.println(entry.getKey() + entry.getValue());
 
         }
     }

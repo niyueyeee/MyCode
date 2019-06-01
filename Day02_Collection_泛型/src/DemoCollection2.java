@@ -20,7 +20,7 @@ public class DemoCollection2 {
         Object[] obj = coll.toArray();
 
         Iterator<String> iterator = coll.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             String next = iterator.next();
             System.out.println(next);
         }

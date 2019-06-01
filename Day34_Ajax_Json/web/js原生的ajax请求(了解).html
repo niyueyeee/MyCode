@@ -5,20 +5,20 @@
     <title>js原生的ajax请求</title>
 </head>
 <body>
-    <input type="button" value="js原生的ajax请求" onclick="sendAjax()">
-    <br>
-    <input type="text">
+<input type="button" value="js原生的ajax请求" onclick="sendAjax()">
+<br>
+<input type="text">
 </body>
- <script type="text/javascript">
-       function sendAjax(){
-            var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange=function () {
-                if (xhr.readyState==4&&xhr.status==200){
-                    alert(xhr.responseText)
-                }
-            };
-            xhr.open("get","/Day34/HelloServlet","false");
-            xhr.send();
-       }
- </script>
+<script type="text/javascript">
+    function sendAjax() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                alert(xhr.responseText)
+            }
+        };
+        xhr.open("get", "/Day34/HelloServlet", "false");
+        xhr.send();
+    }
+</script>
 </html>

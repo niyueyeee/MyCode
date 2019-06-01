@@ -25,7 +25,7 @@ public class Test11 {
             System.out.print("请输入第" + i + "名学生的年龄：");
             String age = sc.nextLine();
             // 把信息封装到Student对象中
-            Student s = new Student(id,name,sex,age);
+            Student s = new Student(id, name, sex, age);
             // 把Student对象存到集合里
             list.add(s);
         }

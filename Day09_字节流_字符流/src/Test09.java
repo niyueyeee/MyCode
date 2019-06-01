@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Test09 {
     public static void main(String[] args) throws IOException {
         FileInputStream fis = new FileInputStream("d:/test.txt");
-        aa(fis,'a');
+        aa(fis, 'a');
     }
 
     private static void aa(FileInputStream fis, char a) throws IOException {
@@ -17,11 +17,11 @@ public class Test09 {
 
         while (((i = fis.read()) != -1)) {
 //            System.out.println(i);
-            if (a==i) {
+            if (a == i) {
                 j++;
                 System.out.println(j);
                 if (j == 10) {
-                    System.out.println("a出现"+j+"次");
+                    System.out.println("a出现" + j + "次");
                 }
             }
         }

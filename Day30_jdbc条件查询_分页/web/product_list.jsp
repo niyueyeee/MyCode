@@ -65,8 +65,9 @@
             </li>
         </c:if>
         <c:if test="${pageBean.currentPage != 1}">
-            <li >
-                <a href="${pageContext.request.contextPath}/page?currentPage=${pageBean.currentPage-1}" aria-label="Previous">
+            <li>
+                <a href="${pageContext.request.contextPath}/page?currentPage=${pageBean.currentPage-1}"
+                   aria-label="Previous">
                     <span aria-hidden="true">&laquo;</span>
                 </a>
             </li>
@@ -74,7 +75,8 @@
         <%--当前页--%>
         <c:forEach var="currentPage" begin="1" end="${pageBean.totalPage}" step="1">
             <c:if test="${currentPage == pageBean.currentPage}">
-                <li class="active"><a href="${pageContext.request.contextPath}/page?currentPage=${currentPage}">${currentPage}</a>
+                <li class="active"><a
+                        href="${pageContext.request.contextPath}/page?currentPage=${currentPage}">${currentPage}</a>
                 </li>
             </c:if>
             <c:if test="${currentPage != pageBean.currentPage}">
@@ -83,20 +85,21 @@
             </c:if>
         </c:forEach>
         <%--下一页--%>
-            <c:if test="${pageBean.currentPage == pageBean.totalPage}">
-                <li class="disabled">
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </c:if>
-            <c:if test="${pageBean.currentPage != pageBean.totalPage}">
-                <li >
-                    <a href="${pageContext.request.contextPath}/page?currentPage=${pageBean.currentPage+1}" aria-label="Previous">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </c:if>
+        <c:if test="${pageBean.currentPage == pageBean.totalPage}">
+            <li class="disabled">
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </c:if>
+        <c:if test="${pageBean.currentPage != pageBean.totalPage}">
+            <li>
+                <a href="${pageContext.request.contextPath}/page?currentPage=${pageBean.currentPage+1}"
+                   aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </c:if>
     </ul>
 </div>
 <!-- 分页结束 -->

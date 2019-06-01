@@ -1,7 +1,7 @@
 package frame.pojo;
 
 public class Mapper {
-    private String sql ;
+    private String sql;
     private String resultType;
 
     public String getSql() {
@@ -23,8 +23,8 @@ public class Mapper {
     @Override
     public String toString() {
         return "Mapper{" +
-               "sql='" + sql + '\'' +
-               ", resultType='" + resultType + '\'' +
-               '}';
+                "sql='" + sql + '\'' +
+                ", resultType='" + resultType + '\'' +
+                '}';
     }
 }

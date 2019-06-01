@@ -10,7 +10,7 @@ public class FuZaDemo {
     private String[] myStrs;
     private List<String> myList;
     private Set<String> mySet;
-    private Map<Object,Object> myMap;
+    private Map<Object, Object> myMap;
     private Properties properties;
 
     public void setMyStrs(String[] myStrs) {

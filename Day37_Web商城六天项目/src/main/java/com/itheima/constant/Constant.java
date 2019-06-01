@@ -1,4 +1,5 @@
 package com.itheima.constant;
+
 /*
 存放常量
  */
@@ -9,12 +10,12 @@ public interface Constant {
     public static final int JI_HUO = 1;
     public static final int WEI_JI_HUO = 0;
 
-   /*
-     成功  失败
-    */
-   public static final int SUCCESS = 1;
-   public static final int FAILS = 0;
-   public static final int LOGOUT = 2;
+    /*
+      成功  失败
+     */
+    public static final int SUCCESS = 1;
+    public static final int FAILS = 0;
+    public static final int LOGOUT = 2;
     public static final int NO_LOGIN = 3;
     /*
       是否热门

@@ -39,9 +39,9 @@
             <li><a href="#">首页</a></li>
         </ol>
     </div>
-    <c:forEach var="i" items="${list}" >
+    <c:forEach var="i" items="${list}">
         <div class="col-md-2" style="height:230px;">
-            <a href="product_info.htm"> <img src="${i.pimage}"width="170" height="170" style="display: inline-block;">
+            <a href="product_info.htm"> <img src="${i.pimage}" width="170" height="170" style="display: inline-block;">
             </a>
             <p>
                 <a href="product_info.html" style='color: green'>${i.pname}</a>

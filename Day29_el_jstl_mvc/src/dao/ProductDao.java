@@ -18,9 +18,10 @@ public class ProductDao {
             System.out.println(product);
         }
     }
+
     public List<product> queryAll() throws SQLException {
         QueryRunner qr = new QueryRunner(C3P0Util.getDataSource());
         String sql = "SELECT * FROM product";
-        return qr.query(sql,new BeanListHandler<>(domain.product.class));
+        return qr.query(sql, new BeanListHandler<>(domain.product.class));
     }
 }

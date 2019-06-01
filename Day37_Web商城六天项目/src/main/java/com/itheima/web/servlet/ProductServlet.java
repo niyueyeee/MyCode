@@ -26,26 +26,27 @@ public class ProductServlet extends BaseServlet {
 
 
     /**
-     *  查询 最新最热商品信息
+     * 查询 最新最热商品信息
+     *
      * @param request
      * @param response
      */
     public void findNewsAndHots(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
         //找 service查询
         List<Product> news = productService.findNews();
         List<Product> hots = productService.findHots();
 
         //一起放在 map里面
-        Map<String,List<Product>> map = new HashMap<>();
+        Map<String, List<Product>> map = new HashMap<>();
 
-        map.put("news",news);
-        map.put("hots",hots);
+        map.put("news", news);
+        map.put("hots", hots);
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"查询最新最热商品成功",map);
+        Result result = new Result(Constant.SUCCESS, "查询最新最热商品成功", map);
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
@@ -53,13 +54,14 @@ public class ProductServlet extends BaseServlet {
     }
 
     /**
-     *  根据pid查询指定商品
+     * 根据pid查询指定商品
+     *
      * @param request
      * @param response
      */
     public void pinfo(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
         // 获取pid
         String pid = request.getParameter("pid");
@@ -67,9 +69,9 @@ public class ProductServlet extends BaseServlet {
         // 找service查询
         Product product = productService.pinfo(pid);
 
-        if(product==null){
+        if (product == null) {
             // 将响应数据 封装 result对象 转换成json返回
-            Result result = new Result(Constant.FAILS,"此商品不存在");
+            Result result = new Result(Constant.FAILS, "此商品不存在");
 
             response.getWriter().write(JSONObject.fromObject(result).toString());
 
@@ -78,23 +80,22 @@ public class ProductServlet extends BaseServlet {
 
         //有数据  封装到result中
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"查询指定商品成功",product);
+        Result result = new Result(Constant.SUCCESS, "查询指定商品成功", product);
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
-
-
 
 
     }
 
     /**
-     *  根据cid查询商品 并分页展示
+     * 根据cid查询商品 并分页展示
+     *
      * @param request
      * @param response
      */
     public void findProductsByCid(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
         //获取 分类cid
         String cid = request.getParameter("cid");
         //查询页码
@@ -108,15 +109,12 @@ public class ProductServlet extends BaseServlet {
 
         //有数据  封装到result中
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"分页查询成功",pb);
+        Result result = new Result(Constant.SUCCESS, "分页查询成功", pb);
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
 
-
-
     }
-
 
 
 }

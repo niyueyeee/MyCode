@@ -15,17 +15,19 @@ public interface UserDao {
 
     /**
      * 完成用户的注册
+     *
      * @param user
      * @throws SQLException
      */
-     void register(User user) throws SQLException;
+    void register(User user) throws SQLException;
 
     /**
      * 根据用户名和密码 获取登录人信息
+     *
      * @param username
      * @param password
      * @throws SQLException
      */
-     User login(String username, String password)throws SQLException;
+    User login(String username, String password) throws SQLException;
 
 }

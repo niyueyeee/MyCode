@@ -65,13 +65,14 @@
 <script type="text/javascript">
     function selectAll(o) {
         var byClassName = document.getElementsByClassName("itemSelect");
-        for (var i=0;i<byClassName.length;i++){
-            byClassName[i].checked=o.checked;
+        for (var i = 0; i < byClassName.length; i++) {
+            byClassName[i].checked = o.checked;
         }
     }
+
     function reverse() {
         var byClassName = document.getElementsByClassName("itemSelect");
-        for (var i=0;i<byClassName.length;i++){
+        for (var i = 0; i < byClassName.length; i++) {
             byClassName[i].click();
         }
     }

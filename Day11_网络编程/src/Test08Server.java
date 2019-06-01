@@ -13,15 +13,16 @@ public class Test08Server {
         BufferedInputStream bis = new BufferedInputStream(accept.getInputStream());
         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("D:\\aa.jpg"));
         byte[] bytes = new byte[80960];
-        int len=0;
-        while ((len=bis.read(bytes))!=-1){
-            bos.write(bytes,0,len);
+        int len = 0;
+        while ((len = bis.read(bytes)) != -1) {
+            bos.write(bytes, 0, len);
         }
         System.out.println("ok");
         OutputStream os = accept.getOutputStream();
         os.write("ok".getBytes());
         os.close();
-        bis.close();accept.close();
+        bis.close();
+        accept.close();
 
     }
 }

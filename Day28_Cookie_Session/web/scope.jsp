@@ -13,7 +13,7 @@
 <!-- 使用两个域对象 存储 键值对 pageContext.setAttribute("aa","BB");-->
 
 <%
-    request.setAttribute("aa","AAAAAA");
+    request.setAttribute("aa", "AAAAAA");
 
 %>
 <body>

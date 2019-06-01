@@ -18,12 +18,14 @@ public class Select {
         List<Users> query = qr.query(conn, sql, new BeanListHandler<>(Users.class), username, password);
         return query;
     }
+
     public List<Users> queryUserName(Connection conn, String username) throws SQLException {
         QueryRunner qr = new QueryRunner();
         String sql = "SELECT * FROM person WHERE username=?";
         List<Users> query = qr.query(conn, sql, new BeanListHandler<>(Users.class), username);
         return query;
     }
+
     public int updateUser(Connection conn, String username, String password) throws SQLException {
         QueryRunner qr = new QueryRunner();
         String sql = "INSERT INTO person VALUES(NULL,?,?)";

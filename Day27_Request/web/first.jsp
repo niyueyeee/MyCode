@@ -12,13 +12,13 @@
 
 </head>
 <body>
-    <%request.setAttribute("time" , System.currentTimeMillis());%>
+<%request.setAttribute("time", System.currentTimeMillis());%>
 
-    <%=request.getAttribute("time")%>
+<%=request.getAttribute("time")%>
 
-    <%
-     for(int j = 0 ; j < 5 ; j++){%>
-       <%="helloworld<br/>"%>
-    <%}  %>
+<%
+    for (int j = 0; j < 5; j++) {%>
+<%="helloworld<br/>"%>
+<%} %>
 </body>
 </html>

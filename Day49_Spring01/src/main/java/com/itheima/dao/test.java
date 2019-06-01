@@ -12,7 +12,7 @@ public class test {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true){
+                while (true) {
                     System.out.println(new Date());
                 }
             }

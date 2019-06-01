@@ -1,6 +1,6 @@
 package top.niyueyeee;
 
- import utils.ImgUtils;
+import utils.ImgUtils;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;

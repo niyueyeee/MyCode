@@ -14,9 +14,9 @@ public class Test08Client {
         byte[] bytes = new byte[1024];
         BufferedOutputStream bos = new BufferedOutputStream(os);
         byte[] by = new byte[80906];
-        int len=0;
-        while ((len=bis.read(by))!=-1){
-            bos.write(by,0,len);
+        int len = 0;
+        while ((len = bis.read(by)) != -1) {
+            bos.write(by, 0, len);
         }
         sc.shutdownInput();
         System.out.println("ok");

@@ -7,10 +7,11 @@ public interface UserService {
 
     /**
      * 完成用户的注册
+     *
      * @param user
-
      */
     void register(User user);
+
     /*
       用户登陆
      */

@@ -17,45 +17,47 @@ import java.util.Date;
 @RequestMapping("user")
 public class JustSeeSee {
     @RequestMapping("paramsNoMatch")
-    public ModelAndView paramsNoMatch(ModelAndView modelAndView,@RequestParam(value="uid",defaultValue = "100") Integer id){
+    public ModelAndView paramsNoMatch(ModelAndView modelAndView, @RequestParam(value = "uid", defaultValue = "100") Integer id) {
 
         Date nowDate = new Date();
         // 类似于 request.setAttribute  也就是将数据设置到渝中 数据就是模型数据
-        modelAndView.addObject("nowDate",nowDate+"-----> id="+id);
+        modelAndView.addObject("nowDate", nowDate + "-----> id=" + id);
         // 跳转到结果页面   跳转的结果页面路径
         modelAndView.setViewName("Result");
         return modelAndView;
     }
 
     /**
-     *   解析请求头中信息
-     *      User-Agent
+     * 解析请求头中信息
+     * User-Agent
+     *
      * @param modelAndView
      * @return
      */
     @RequestMapping("sendRequestHeader")
-    public ModelAndView sendRequestHeader(ModelAndView modelAndView,@RequestHeader("User-Agent") String userAgent){
+    public ModelAndView sendRequestHeader(ModelAndView modelAndView, @RequestHeader("User-Agent") String userAgent) {
 
         Date nowDate = new Date();
         // 类似于 request.setAttribute  也就是将数据设置到渝中 数据就是模型数据
-        modelAndView.addObject("nowDate",nowDate+"-----> userAgent="+userAgent);
+        modelAndView.addObject("nowDate", nowDate + "-----> userAgent=" + userAgent);
         // 跳转到结果页面   跳转的结果页面路径
         modelAndView.setViewName("Result");
         return modelAndView;
     }
 
     /**
-     *   解析Cookie信息
-     *     JSESSIONID
+     * 解析Cookie信息
+     * JSESSIONID
+     *
      * @param modelAndView
      * @return
      */
     @RequestMapping("sendCookie")
-    public ModelAndView sendCookie(ModelAndView modelAndView,@CookieValue("JSESSIONID") String cookieValue){
+    public ModelAndView sendCookie(ModelAndView modelAndView, @CookieValue("JSESSIONID") String cookieValue) {
 
         Date nowDate = new Date();
         // 类似于 request.setAttribute  也就是将数据设置到渝中 数据就是模型数据
-        modelAndView.addObject("nowDate",nowDate+"-----> JSESSIONID="+cookieValue);
+        modelAndView.addObject("nowDate", nowDate + "-----> JSESSIONID=" + cookieValue);
         // 跳转到结果页面   跳转的结果页面路径
         modelAndView.setViewName("Result");
         return modelAndView;

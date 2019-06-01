@@ -13,13 +13,14 @@ import java.util.List;
  */
 public class MainTest {
     ApplicationContext context;
+
     @Before
-    public void before(){
+    public void before() {
         context = new ClassPathXmlApplicationContext("applicationContext.xml");
     }
 
     @Test
-    public void test(){
+    public void test() {
         AccountService accountService = context
                 .getBean("accountService", AccountService.class);
 

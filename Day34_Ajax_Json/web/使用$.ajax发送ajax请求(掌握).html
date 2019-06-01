@@ -6,15 +6,15 @@
     <script src="jquery-1.11.0.js"></script>
 </head>
 <body>
-    <input type="button" value="$.ajax发送ajax请求" onclick="sendAjax()">
-    <br>
-    <div id="mydiv" style="color: red"></div>
+<input type="button" value="$.ajax发送ajax请求" onclick="sendAjax()">
+<br>
+<div id="mydiv" style="color: red"></div>
 </body>
- <script type="text/javascript">
-       function sendAjax(){
-           /**
-            * 使用 $.ajax方式发送异步请求
-            *   $.ajax({
+<script type="text/javascript">
+    function sendAjax() {
+        /**
+         * 使用 $.ajax方式发送异步请求
+         *   $.ajax({
                        url:请求路径，
                        async：true|false 是否是异步,不写默认是true
                        data:请求参数列表   username=zhangsan&psw=123,
@@ -24,21 +24,21 @@
                        error:function(){} 服务器出现问题了！！
 
 	          })
-            */
-           $.ajax({
-               url:"/ajax/hi",
-               data:"username=zhangsan",
-               dataType:"text",
-               type:"post",
-               success:function(data){
-                   $("#mydiv").html(data);
-               },
-               error:function(){
-                   alert("页面飞到月球了");
-                   location.href="http://www.baidu.com";
-               }
+         */
+        $.ajax({
+            url: "/ajax/hi",
+            data: "username=zhangsan",
+            dataType: "text",
+            type: "post",
+            success: function (data) {
+                $("#mydiv").html(data);
+            },
+            error: function () {
+                alert("页面飞到月球了");
+                location.href = "http://www.baidu.com";
+            }
 
-           })
-       }
- </script>
+        })
+    }
+</script>
 </html>

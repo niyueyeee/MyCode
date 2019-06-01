@@ -26,13 +26,14 @@ public class CartServlet extends BaseServlet {
 
 
     /**
-     *  将 (商品+数量)---》购物项  添加到购物车中
+     * 将 (商品+数量)---》购物项  添加到购物车中
+     *
      * @param request
      * @param response
      */
     public void addCart(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
         //1:获取pid  count
         String pid = request.getParameter("pid");
@@ -65,18 +66,19 @@ public class CartServlet extends BaseServlet {
         cart.addCart(cartItem);
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"已经将该购物项添加到购物车");
+        Result result = new Result(Constant.SUCCESS, "已经将该购物项添加到购物车");
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
 
     }
+
     /**
      * 展示购物车方法
      */
     public void showCart(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
         //1:获取 session中的 cart对象
         Cart cart = getCart(request);
@@ -84,7 +86,7 @@ public class CartServlet extends BaseServlet {
         //2 响应出去
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"购物车对象已经返回给前端！",cart);
+        Result result = new Result(Constant.SUCCESS, "购物车对象已经返回给前端！", cart);
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
@@ -96,7 +98,7 @@ public class CartServlet extends BaseServlet {
      */
     public void removeItem(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
         //1:获取 pid
         String pid = request.getParameter("pid");
@@ -109,10 +111,9 @@ public class CartServlet extends BaseServlet {
         //2 响应出去
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"该购物项已被删除！");
+        Result result = new Result(Constant.SUCCESS, "该购物项已被删除！");
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
-
 
 
     }
@@ -123,7 +124,7 @@ public class CartServlet extends BaseServlet {
      */
     public void clearCart(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
 
         //获取到 购物车
@@ -134,7 +135,7 @@ public class CartServlet extends BaseServlet {
         //2 响应出去
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"购物车已经清空！");
+        Result result = new Result(Constant.SUCCESS, "购物车已经清空！");
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
@@ -143,20 +144,21 @@ public class CartServlet extends BaseServlet {
 
 
     /**
-     *   从 session中 获取 Cart对象
+     * 从 session中 获取 Cart对象
+     *
      * @param request
      * @return
      */
     public Cart getCart(HttpServletRequest request) {
 
         // 从session域中取出 cart对象
-        Cart cart = (Cart)request.getSession().getAttribute("cart");
+        Cart cart = (Cart) request.getSession().getAttribute("cart");
 
-        if(cart==null){//第一次来  需要new一个出来 存储到 session中
+        if (cart == null) {//第一次来  需要new一个出来 存储到 session中
 
             cart = new Cart();
 
-            request.getSession().setAttribute("cart",cart);
+            request.getSession().setAttribute("cart", cart);
 
         }
 

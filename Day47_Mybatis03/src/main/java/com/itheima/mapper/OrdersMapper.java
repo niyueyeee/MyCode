@@ -17,5 +17,5 @@ public interface OrdersMapper {
      * 一对一关联查询
      * 查询全部用户数据 关联订单数据
      */
-    List<Orders> queryOrdersUser() ;
+    List<Orders> queryOrdersUser();
 }

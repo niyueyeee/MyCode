@@ -17,7 +17,7 @@
     <aop:config>
         <aop:aspect id="logAspect" ref="logUtil">
             <aop:pointcut id="pt" expression="execution( * com..service.*.*(..))"/>
-<!--            <aop:before method="beforeMethod" pointcut-ref="pt"></aop:before>-->
+            <!--            <aop:before method="beforeMethod" pointcut-ref="pt"></aop:before>-->
             <aop:around method="aroundMethod" pointcut-ref="pt"></aop:around>
         </aop:aspect>
     </aop:config>

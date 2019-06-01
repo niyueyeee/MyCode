@@ -29,7 +29,6 @@ public class ImgUtils {
         g.setFont(new Font("宋体", Font.BOLD, 28));
 
 
-
         //  书写4个字符
         for (int i = 0; i < 4; i++) {
             String ch = code.charAt(i) + "";

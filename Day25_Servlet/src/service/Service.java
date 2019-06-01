@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * @create 2019-02-22 下午 09:18
  */
 public class Service {
-    public int duibi (String username, String password) {
+    public int duibi(String username, String password) {
         Select select = new Select();
         Connection conn = null;
         try {

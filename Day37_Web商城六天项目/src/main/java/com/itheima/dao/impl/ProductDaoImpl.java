@@ -86,11 +86,11 @@ public class ProductDaoImpl implements ProductDao {
     @Override
     public void saveProduct(Product p) throws SQLException {
         String sql = "insert into product values(?,?,?,?,?,?,?,?,?,?)";
-        Object[] params = {p.getPid(),p.getPname(),p.getMarket_price(),
-                p.getShop_price(),p.getPimage(),p.getPdate(),
-                p.getIs_hot(),p.getPdesc(),p.getPflag(),
+        Object[] params = {p.getPid(), p.getPname(), p.getMarket_price(),
+                p.getShop_price(), p.getPimage(), p.getPdate(),
+                p.getIs_hot(), p.getPdesc(), p.getPflag(),
                 p.getCid()};
 
-         qr.update(sql,params);
+        qr.update(sql, params);
     }
 }

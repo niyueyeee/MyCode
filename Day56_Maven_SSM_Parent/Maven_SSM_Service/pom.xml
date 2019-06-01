@@ -10,12 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Maven_SSM_Service</artifactId>
-<dependencies>
-    <dependency>
-        <groupId>com.itheima</groupId>
-        <artifactId>Maven_SSM_Dao</artifactId>
-        <version>1.0</version>
-    </dependency>
-</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>Maven_SSM_Dao</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
 
 </project>

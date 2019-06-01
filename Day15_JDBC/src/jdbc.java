@@ -21,6 +21,7 @@ public class jdbc {
     private jdbc() {
 
     }
+
     //让注册驱动只执行一次
     static {
         //1.注册驱动
@@ -53,9 +54,10 @@ public class jdbc {
 
         return con;
     }
+
     //定义方法,释放资源
     public static void close(ResultSet rs, Statement stmt, Connection con) {
-        if(rs!=null) {
+        if (rs != null) {
             try {
                 rs.close();
 
@@ -64,7 +66,7 @@ public class jdbc {
             }
 
         }
-        if(stmt!=null) {
+        if (stmt != null) {
             try {
                 stmt.close();
 
@@ -73,7 +75,7 @@ public class jdbc {
             }
 
         }
-        if(con!=null) {
+        if (con != null) {
             try {
                 con.close();
 

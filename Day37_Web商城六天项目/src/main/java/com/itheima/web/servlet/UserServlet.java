@@ -21,23 +21,24 @@ import java.util.Map;
 public class UserServlet extends BaseServlet {
 
     private UserService userService = BeanFactory.newInstance(UserService.class);
-                                      //new UserServiceImpl()
+    //new UserServiceImpl()
 
     /**
-     *  完成用户注册
+     * 完成用户注册
+     *
      * @param request
      * @param response
      */
     public void register(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
         //1:获取前端提交的数据
         Map<String, String[]> map = request.getParameterMap();
 
         // 2: 完成对象封装
         User user = new User();
 
-        BeanUtils.populate(user,map);
+        BeanUtils.populate(user, map);
 
         // 还有两个字段需要封装 uid  一个是 state字段
         String uid = UUIDUtils.getUUID();
@@ -54,7 +55,7 @@ public class UserServlet extends BaseServlet {
         // 给前端  返回数据
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"hi~~~注册成功");
+        Result result = new Result(Constant.SUCCESS, "hi~~~注册成功");
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
@@ -63,6 +64,7 @@ public class UserServlet extends BaseServlet {
 
     /**
      * 用户登陆操作
+     *
      * @param request
      * @param response
      * @throws InvocationTargetException
@@ -71,17 +73,17 @@ public class UserServlet extends BaseServlet {
      */
     public void login(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
-          //1:获取用户名和密码
+        //1:获取用户名和密码
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
         //2:传递给 service
         User user = userService.login(username, password);
 
-        if(user==null){
-            Result result = new Result(Constant.FAILS,"用户名或密码错误");
+        if (user == null) {
+            Result result = new Result(Constant.FAILS, "用户名或密码错误");
 
             response.getWriter().write(JSONObject.fromObject(result).toString());
 
@@ -90,12 +92,12 @@ public class UserServlet extends BaseServlet {
 
         //用户不为空
         // 将用户信息 存储在session中
-        request.getSession().setAttribute("user",user);
+        request.getSession().setAttribute("user", user);
 
         // 将用户名 以cookie形式存储到跨域的浏览器上
         Cookie cookie = new Cookie("username", username);
         //设置
-        cookie.setMaxAge(60*60*24);
+        cookie.setMaxAge(60 * 60 * 24);
         cookie.setPath(request.getContextPath());
         // 允许哪些 域名获取 cookie
         cookie.setDomain("itheima343.com");
@@ -105,21 +107,21 @@ public class UserServlet extends BaseServlet {
         // 给前端  返回数据
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.SUCCESS,"登陆成功");
+        Result result = new Result(Constant.SUCCESS, "登陆成功");
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 
 
     }
 
-   /*
-     退出登陆
-        关闭会话
-        清除cookie
-    */
+    /*
+      退出登陆
+         关闭会话
+         清除cookie
+     */
     public void logout(HttpServletRequest request, HttpServletResponse response)
             throws InvocationTargetException, IllegalAccessException,
-                   IOException {
+            IOException {
 
         //销毁session
         request.getSession().invalidate();
@@ -137,7 +139,7 @@ public class UserServlet extends BaseServlet {
         // 给前端  返回数据
 
         // 将响应数据 封装 result对象 转换成json返回
-        Result result = new Result(Constant.LOGOUT,"退出登陆");
+        Result result = new Result(Constant.LOGOUT, "退出登陆");
 
         response.getWriter().write(JSONObject.fromObject(result).toString());
 

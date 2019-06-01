@@ -22,13 +22,13 @@ public class TestAnnotation {
         // 获得成员方法buyBook对应的Method对象
         Method m = c.getMethod("buyBook");
         // 判断成员方法buyBook上是否使用了Book注解
-        if (m.isAnnotationPresent(Book.class)){
+        if (m.isAnnotationPresent(Book.class)) {
             // 根据注解Class对象获取注解对象
             Book book = m.getAnnotation(Book.class);
             // 输出book注解属性值
-            System.out.println("书名:"+book.value());
-            System.out.println("价格:"+book.price());
-            System.out.println("作者:"+ Arrays.toString(book.authors()));
+            System.out.println("书名:" + book.value());
+            System.out.println("价格:" + book.price());
+            System.out.println("作者:" + Arrays.toString(book.authors()));
         }
     }
 }

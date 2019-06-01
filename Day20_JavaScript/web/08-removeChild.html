@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <title>insertBefore.html</title>
-  </head>
-  <body>
-       <ul id="city">
-		   	 <li id="bj" name="beijing">北京</li>
-				 <li id="sh" name="shanghai">上海</li>
-				 <li id="cq" name="chongqing">重庆</li>
-		   </ul>
-  </body>
-  
- <script type="text/javascript"  >
-     	//删除<ul id="city"> 下<li id="bj" name="beijing">北京</li>这个节点</ul>
-			var c = document.getElementById("city");
-			// c.removeChild(document.getElementById("bj"));
-	 		//获取北京的父节点
-			alert(document.getElementById("bj").parentNode.id);
-  </script>
+</head>
+<body>
+<ul id="city">
+    <li id="bj" name="beijing">北京</li>
+    <li id="sh" name="shanghai">上海</li>
+    <li id="cq" name="chongqing">重庆</li>
+</ul>
+</body>
+
+<script type="text/javascript">
+    //删除<ul id="city"> 下<li id="bj" name="beijing">北京</li>这个节点</ul>
+    var c = document.getElementById("city");
+    // c.removeChild(document.getElementById("bj"));
+    //获取北京的父节点
+    alert(document.getElementById("bj").parentNode.id);
+</script>
 </html>

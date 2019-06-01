@@ -24,7 +24,7 @@ public class Test08 {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("教我java,教完后，"+Thread.currentThread().getName()+"回到了办公室");
+            System.out.println("教我java,教完后，" + Thread.currentThread().getName() + "回到了办公室");
         }
     }
 }

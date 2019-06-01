@@ -8,20 +8,20 @@ public class Test06 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true){
-                    System.out.println(Thread.currentThread().getName()+"子线程执行");
+                while (true) {
+                    System.out.println(Thread.currentThread().getName() + "子线程执行");
                 }
             }
-        },"z").start();
+        }, "z").start();
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true){
-                    System.out.println(Thread.currentThread().getName()+"子线程执行");
+                while (true) {
+                    System.out.println(Thread.currentThread().getName() + "子线程执行");
                 }
             }
-        },"a").start();
-        while (true){
+        }, "a").start();
+        while (true) {
             System.out.println("主线程执行");
         }
 

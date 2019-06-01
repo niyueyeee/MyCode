@@ -11,14 +11,14 @@ import java.sql.SQLException;
  * @create 2019-02-13 上午 09:13
  */
 public class TlAccountService {
-    public void transfer(String from,String to,double money){
+    public void transfer(String from, String to, double money) {
         TlAccountDao tlAccountDao = new TlAccountDao();
         Connection conn = null;
         try {
-            conn= TlManager.getConnection();
+            conn = TlManager.getConnection();
             TlManager.setAutoCommit();
-            tlAccountDao.outMoney(from,money);
-            tlAccountDao.inMoney(to,money);
+            tlAccountDao.outMoney(from, money);
+            tlAccountDao.inMoney(to, money);
             TlManager.Commit();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -27,7 +27,7 @@ public class TlAccountService {
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
-        }finally {
+        } finally {
             try {
                 TlManager.close();
             } catch (SQLException e) {

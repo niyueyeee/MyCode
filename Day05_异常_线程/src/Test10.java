@@ -7,7 +7,8 @@ public class Test10 {
         Person per = new Person();
         per.setXue(-1);
     }
-    public static class Person{
+
+    public static class Person {
         private String name;
         private Integer xue;
 
@@ -24,8 +25,8 @@ public class Test10 {
         }
 
         public void setXue(Integer xue) {
-            if (xue<0){
-                throw new NoxueExcepyion("不能为负数"+xue);
+            if (xue < 0) {
+                throw new NoxueExcepyion("不能为负数" + xue);
             }
             this.xue = xue;
         }

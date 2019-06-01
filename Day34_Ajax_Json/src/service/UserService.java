@@ -13,7 +13,7 @@ import java.util.List;
 public class UserService {
     private UserDao userdao = new UserDao();
 
-    public List<String> queryNameByKeyWord(String KeyWord)  {
+    public List<String> queryNameByKeyWord(String KeyWord) {
         try {
             return userdao.queryNameByKeyWord(KeyWord);
         } catch (SQLException e) {

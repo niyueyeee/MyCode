@@ -9,11 +9,11 @@ import service.TlAccountService;
 public class TlApp {
     public static void main(String[] args) {
         try {
-            String outUser="jack";
-            String inUser="rose";
+            String outUser = "jack";
+            String inUser = "rose";
             Integer money = 100;
             TlAccountService tlAccountService = new TlAccountService();
-            tlAccountService.transfer(outUser,inUser,money);
+            tlAccountService.transfer(outUser, inUser, money);
             System.out.println("转账成功");
         } catch (Exception e) {
             e.printStackTrace();

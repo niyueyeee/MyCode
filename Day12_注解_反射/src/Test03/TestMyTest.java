@@ -12,7 +12,7 @@ public class TestMyTest {
         Method[] methods = c.getMethods();
         Object obj = c.newInstance();
         for (Method m : methods) {
-            if (m.isAnnotationPresent(MyTest.class)){
+            if (m.isAnnotationPresent(MyTest.class)) {
                 m.invoke(obj);
             }
         }

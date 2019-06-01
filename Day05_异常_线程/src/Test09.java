@@ -7,17 +7,17 @@ public class Test09 {
         MyThread th = new MyThread();
         th.start();
         for (int i = 1; i < 101; i++) {
-            if (i%2==1){
-                System.out.println("主线程"+i);
+            if (i % 2 == 1) {
+                System.out.println("主线程" + i);
             }
         }
     }
 
     private static class MyThread extends Thread {
-        public void run(){
+        public void run() {
             for (int i = 1; i < 101; i++) {
-                if (i%2==0){
-                    System.out.println("子线程"+i);
+                if (i % 2 == 0) {
+                    System.out.println("子线程" + i);
                 }
             }
         }

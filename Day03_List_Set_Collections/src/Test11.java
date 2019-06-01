@@ -27,7 +27,7 @@ public class Test11 {
 //            }
 //        }
         for (Character s : lin) {
-            System.out.print(s+" ");
+            System.out.print(s + " ");
         }
     }
 }

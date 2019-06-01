@@ -19,7 +19,7 @@ public class zServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         HttpSession session = request.getSession();
-        session.setAttribute("msg" , "余额不足");
+        session.setAttribute("msg", "余额不足");
 //        2. 通过Session 获取 JSESSIONID .
         String id = session.getId();
         System.out.println(id);

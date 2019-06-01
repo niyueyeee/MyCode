@@ -3,11 +3,11 @@ package com.itheima.pojo;
 import java.util.Date;
 
 /**
- *    `id` INT(11) NOT NULL AUTO_INCREMENT,
- `user_id` INT(11) NOT NULL COMMENT '下单用户id',
- `number` VARCHAR(32) NOT NULL COMMENT '订单号',
- `createtime` DATETIME NOT NULL COMMENT '创建订单时间',
- `note` VARCH
+ * `id` INT(11) NOT NULL AUTO_INCREMENT,
+ * `user_id` INT(11) NOT NULL COMMENT '下单用户id',
+ * `number` VARCHAR(32) NOT NULL COMMENT '订单号',
+ * `createtime` DATETIME NOT NULL COMMENT '创建订单时间',
+ * `note` VARCH
  */
 public class Orders {
     private Integer id;

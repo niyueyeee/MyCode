@@ -14,8 +14,8 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 完成用户的注册
+     *
      * @param user
-
      */
     @Override
     public void register(User user) {
@@ -29,6 +29,7 @@ public class UserServiceImpl implements UserService {
 
     /**
      * 用户登陆
+     *
      * @param username
      * @param password
      * @return
@@ -38,7 +39,7 @@ public class UserServiceImpl implements UserService {
         User user = null;
 
         try {
-            user = userDao.login(username,password);
+            user = userDao.login(username, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }

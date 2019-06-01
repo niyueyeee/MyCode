@@ -28,5 +28,5 @@ public interface CategoryDao {
     Category fandCategoryByCid(String cid) throws SQLException;
 
     //按名字修改分类信息
-    public void editCategroy(Category category)throws SQLException;
+    public void editCategroy(Category category) throws SQLException;
 }

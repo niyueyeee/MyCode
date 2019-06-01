@@ -18,8 +18,8 @@ public class AccountService {
         try {
             conn = C3P0Util.getConnection();
             conn.setAutoCommit(false);
-            accountDao.inMoney(conn,to,money);
-            accountDao.outMoney(conn,from,money);
+            accountDao.inMoney(conn, to, money);
+            accountDao.outMoney(conn, from, money);
             DbUtils.commitAndCloseQuietly(conn);
         } catch (SQLException e) {
             e.printStackTrace();

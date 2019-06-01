@@ -13,12 +13,12 @@ public class Test12 {
 //        ArrayList<Object> blue = new ArrayList<>();
         HashSet<Integer> has = new HashSet<>();
         Random ran = new Random();
-        while (has.size()<6){
-            has.add(ran.nextInt(33)+1);
+        while (has.size() < 6) {
+            has.add(ran.nextInt(33) + 1);
         }
-        int blue = (ran.nextInt(16)+1);
+        int blue = (ran.nextInt(16) + 1);
         for (Integer ha : has) {
-            System.out.print(ha+" ");
+            System.out.print(ha + " ");
         }
         System.out.println(blue);
     }

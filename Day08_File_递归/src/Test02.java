@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Test02 {
     public static void main(String[] args) throws IOException {
         File file = new File("d:/a.txt");
-        if (!file.exists()){
+        if (!file.exists()) {
             file.createNewFile();
         }
     }

@@ -31,12 +31,12 @@ public class conditionQuery extends HttpServlet {
         Map<String, String[]> pm = request.getParameterMap();
         conditionProduct cp = new conditionProduct();
         try {
-            BeanUtils.populate(cp,pm);
+            BeanUtils.populate(cp, pm);
         } catch (Exception e) {
             e.printStackTrace();
         }
         List<product> products = new ProductService().conditionService(cp);
-        request.setAttribute("list",products);
+        request.setAttribute("list", products);
         request.getRequestDispatcher("/admin/product/list.jsp").forward(request, response);
     }
 }

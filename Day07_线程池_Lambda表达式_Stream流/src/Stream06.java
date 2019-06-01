@@ -28,9 +28,10 @@ public class Stream06 {
 //        one.stream().filter(s -> s.length()==3).limit(6).forEach(System.out::println);
 //        two.stream().filter(s -> s.startsWith("张")).forEach(System.out::println);
 //        two.stream().filter(s -> s.startsWith("张")).skip(1).forEach(System.out::println);
-        Stream.concat(one.stream().filter(s -> s.length()==3).limit(6),two.stream().filter(s -> s.startsWith("张")).skip(1)).forEach(System.out::println);
+        Stream.concat(one.stream().filter(s -> s.length() == 3).limit(6), two.stream().filter(s -> s.startsWith("张")).skip(1)).forEach(System.out::println);
 //        Stream.concat(one.stream().filter(s -> s.length()==3).limit(6),two.stream().filter(s -> s.startsWith("张")).skip(1)).map(Student::new).forEach(System.out::println);
     }
+
     public class Student {
         private String name;
 

@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>最简单最简单的绑定方式 </title>
-		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
-	</head>
-	<body>
-		<input type="button" value="点我试试！！" id="btn" />
-		<br />
-		<input type="button" value="让上面的按钮点击操作失效！" id="btn2" />
-	</body>
-	
-	<!--  给btn绑定一个单击事件！！-->
-	<script type="text/javascript">
-		/**
-		 *绑定了单击事件
-		 */
+<head>
+    <meta charset="UTF-8">
+    <title>最简单最简单的绑定方式 </title>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+<input type="button" value="点我试试！！" id="btn"/>
+<br/>
+<input type="button" value="让上面的按钮点击操作失效！" id="btn2"/>
+</body>
+
+<!--  给btn绑定一个单击事件！！-->
+<script type="text/javascript">
+    /**
+     *绑定了单击事件
+     */
 //		$("#btn").click(function(){
 //			alert("你点击了我！！")
 //		})
@@ -25,23 +25,22 @@
 //		$("#btn").mouseover(function(){
 //			alert("你摸到我的地盘了！！");
 //		})
-		
-		// 链式编程 
-		$("#btn").click(function(){
-			alert("你点击了我！！")
-		}).mouseover(function(){
-			alert("你摸到我的地盘了~~")
-		})
-	    
-		// btn2有个点击事件  事件中的函数  完成 解除btn的单击事件的解绑
-		$("#btn2").click(function(){
-			// 函数中 解绑 btn的单击事件 
-			// 参数事件名称如果省略不写，可以解绑该jQuery对象上的所有事件
-			$("#btn").off("click");
-			
-		})
-	   
-		
-		
-	</script>
+
+    // 链式编程
+    $("#btn").click(function () {
+        alert("你点击了我！！")
+    }).mouseover(function () {
+        alert("你摸到我的地盘了~~")
+    })
+
+    // btn2有个点击事件  事件中的函数  完成 解除btn的单击事件的解绑
+    $("#btn2").click(function () {
+        // 函数中 解绑 btn的单击事件
+        // 参数事件名称如果省略不写，可以解绑该jQuery对象上的所有事件
+        $("#btn").off("click");
+
+    })
+
+
+</script>
 </html>

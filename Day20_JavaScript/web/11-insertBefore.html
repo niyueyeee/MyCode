@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <title>insertBefore.html</title>
- </head>
-  <body>
-       <ul id="city">
-		   	 <li id="bj" name="beijing">北京</li>
-				 <li id="sh" name="shanghai">上海</li>
-				 <li id="cq" name="chongqing">重庆</li>
-		   </ul>
-  </body>
-  
-<script type="text/javascript"  >
-  	// 在重庆前面插入新的节点 <li id="tj" name="tianjin">天津</li>
-  	var c = document.getElementById("city");
-  	var l = document.createElement("li");
-		var cq = document.getElementById("cq");
-		l.innerText="天津";
-		l.setAttribute("id","tj");
-		l.setAttribute("value","tianjin");
-		c.insertBefore(l,cq);
-  </script>
+</head>
+<body>
+<ul id="city">
+    <li id="bj" name="beijing">北京</li>
+    <li id="sh" name="shanghai">上海</li>
+    <li id="cq" name="chongqing">重庆</li>
+</ul>
+</body>
+
+<script type="text/javascript">
+    // 在重庆前面插入新的节点 <li id="tj" name="tianjin">天津</li>
+    var c = document.getElementById("city");
+    var l = document.createElement("li");
+    var cq = document.getElementById("cq");
+    l.innerText = "天津";
+    l.setAttribute("id", "tj");
+    l.setAttribute("value", "tianjin");
+    c.insertBefore(l, cq);
+</script>
 </html>

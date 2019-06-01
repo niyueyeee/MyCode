@@ -32,16 +32,16 @@ public class rServlet extends HttpServlet {
             BeanUtils.populate(user, parameterMap);
 
             boolean register = new Service().register(user);
-            if (register&&user.getUsername()!=""&&user.getPassword()!="") {
+            if (register && user.getUsername() != "" && user.getPassword() != "") {
                 System.out.println("成功");
-                Cookie cookie = new Cookie("card",user.getUsername());
+                Cookie cookie = new Cookie("card", user.getUsername());
 
                 // 设置路径.
 //                cookie.setPath("/Day28/login");
                 // 回写
                 response.addCookie(cookie);
 
-                request.getSession().setAttribute("card",user.getUsername().toString());
+                request.getSession().setAttribute("card", user.getUsername().toString());
 
                 response.sendRedirect("/Day28/login.jsp");
             } else {
@@ -53,8 +53,9 @@ public class rServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
+
     @Test
-    private void ee(){
+    private void ee() {
         User u = new User();
         u.setUsername("2");
         u.setPassword("2");

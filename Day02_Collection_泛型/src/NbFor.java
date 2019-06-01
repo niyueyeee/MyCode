@@ -4,7 +4,7 @@
  */
 public class NbFor {
     public static void main(String[] args) {
-        int[] arr = {1,22,20,30};
+        int[] arr = {1, 22, 20, 30};
         for (int i : arr) {
             System.out.println(i);
 

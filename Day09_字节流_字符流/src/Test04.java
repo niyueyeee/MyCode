@@ -9,8 +9,8 @@ public class Test04 {
     public static void main(String[] args) throws IOException {
         FileInputStream fis = new FileInputStream("D:/a.txt");
         int i;
-        while (((i=fis.read())!=-1)){
-            System.out.println((char)i);
+        while (((i = fis.read()) != -1)) {
+            System.out.println((char) i);
         }
         fis.close();
     }

@@ -96,16 +96,16 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-               "uid='" + uid + '\'' +
-               ", username='" + username + '\'' +
-               ", password='" + password + '\'' +
-               ", name='" + name + '\'' +
-               ", email='" + email + '\'' +
-               ", birthday='" + birthday + '\'' +
-               ", gender='" + gender + '\'' +
-               ", state=" + state +
-               ", code='" + code + '\'' +
-               ", remark='" + remark + '\'' +
-               '}';
+                "uid='" + uid + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", gender='" + gender + '\'' +
+                ", state=" + state +
+                ", code='" + code + '\'' +
+                ", remark='" + remark + '\'' +
+                '}';
     }
 }

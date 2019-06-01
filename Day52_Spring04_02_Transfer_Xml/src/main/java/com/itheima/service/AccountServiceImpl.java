@@ -25,8 +25,8 @@ public class AccountServiceImpl implements AccountService {
         Account toAccount = accountDao.queryAccountByName(toName);
 
         // 更新钱数
-        fromAccount.setMoney(fromAccount.getMoney()-money);
-        toAccount.setMoney(toAccount.getMoney()+money);
+        fromAccount.setMoney(fromAccount.getMoney() - money);
+        toAccount.setMoney(toAccount.getMoney() + money);
 
         // 更新到数据库
         accountDao.updateAccountById(fromAccount);

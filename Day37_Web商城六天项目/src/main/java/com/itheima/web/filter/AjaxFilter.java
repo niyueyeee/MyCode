@@ -5,6 +5,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 /*
   完成跨域请求
  */
@@ -20,13 +21,13 @@ public class AjaxFilter implements Filter {
             throws ServletException, IOException {
 
         //向下转型
-        HttpServletRequest request = (HttpServletRequest)req;
-        HttpServletResponse response = (HttpServletResponse)resp;
+        HttpServletRequest request = (HttpServletRequest) req;
+        HttpServletResponse response = (HttpServletResponse) resp;
 
         //允许AJAX跨域访问
         response.setHeader("Access-Control-Allow-Origin", "http://www.itheima343.com:8020");
         //AJAX访问允许客户端保存cookie
-        response.setHeader("Access-Control-Allow-Credentials","true");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
 
         //放行
         chain.doFilter(request, response);

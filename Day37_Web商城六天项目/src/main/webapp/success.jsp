@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -6,8 +5,8 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-        .content{
-            background-color:#FFFFCC;
+        .content {
+            background-color: #FFFFCC;
             width: 60%;
             margin: 0px auto;
             min-height: 200px;
@@ -15,18 +14,16 @@
 
     </style>
     <script>
-        var  num=5;
-        setInterval(function(){
+        var num = 5;
+        setInterval(function () {
             num--;
-            if(num<1){
-                location.href="http://www.itheima343.com:8020/web/view/order/info.html?oid=${oid}";
-            }else{
-                document.getElementById("time").innerHTML=num;
+            if (num < 1) {
+                location.href = "http://www.itheima343.com:8020/web/view/order/info.html?oid=${oid}";
+            } else {
+                document.getElementById("time").innerHTML = num;
             }
 
-        },1000);
-
-
+        }, 1000);
 
 
     </script>
@@ -41,7 +38,7 @@
             <div id="info">
                 ${msg}
             </div>
-            <div >
+            <div>
                 <span id="time">5</span>秒之后跳转商城页面!!!
             </div>
         </div>

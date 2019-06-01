@@ -22,27 +22,27 @@
     <!--
       查询所有订单信息
     -->
-    <select id="queryOrdersByList" resultMap="ordersResultMap" >
+    <select id="queryOrdersByList" resultMap="ordersResultMap">
         SELECT * FROM orders
     </select>
-      <!--
-         我们查询出来的表中数据 中的字段
-           与 javabean中 Orders类中 的字段 名userId 没有匹配上
-           也就是说 以前默认的映射操作 不管用了
-                以前是自动的
-                现在  使用手动映射操作
-                    表中的字段   -   javabean中的字段
-                     列                  property
-      resultMap 结果集的映射
-          id  当前映射结果的   唯一标识
-          type  代表的是  期望封装后的类型
-      -->
+    <!--
+       我们查询出来的表中数据 中的字段
+         与 javabean中 Orders类中 的字段 名userId 没有匹配上
+         也就是说 以前默认的映射操作 不管用了
+              以前是自动的
+              现在  使用手动映射操作
+                  表中的字段   -   javabean中的字段
+                   列                  property
+    resultMap 结果集的映射
+        id  当前映射结果的   唯一标识
+        type  代表的是  期望封装后的类型
+    -->
     <resultMap id="ordersResultMap" type="orders">
-          <!-- 完成字段的一一映射-->
-         <!--
-           主键映射
-           id 代表主键的意思
-         -->
+        <!-- 完成字段的一一映射-->
+        <!--
+          主键映射
+          id 代表主键的意思
+        -->
         <id column="id" property="id"/>
         <!--
           其他映射关系 result标签决定

@@ -13,12 +13,13 @@ public class MainTest {
     ClassPathXmlApplicationContext context;
 
     @Before
-    public void before(){
+    public void before() {
         context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml");
     }
+
     @Test
-    public void test(){
+    public void test() {
 
 
         AccountService accountService = context
@@ -29,22 +30,22 @@ public class MainTest {
 
 
     @Test
-    public void test_component(){
+    public void test_component() {
 
-        AccountDao bean = context.getBean("accountDao",AccountDao.class);
+        AccountDao bean = context.getBean("accountDao", AccountDao.class);
 
         System.out.println(bean);
 
-        AccountService accountService = context.getBean("accountService",AccountService.class);
+        AccountService accountService = context.getBean("accountService", AccountService.class);
 
         System.out.println(accountService);
 
     }
 
     @Test
-    public void scope(){
+    public void scope() {
 
-        AccountDao bean = context.getBean("accountDao",AccountDao.class);
+        AccountDao bean = context.getBean("accountDao", AccountDao.class);
 
         System.out.println(bean);
 
@@ -55,10 +56,10 @@ public class MainTest {
     }
 
     @Test
-    public void DI(){
+    public void DI() {
 
 
-        AccountService accountService = context.getBean("accountService",AccountService.class);
+        AccountService accountService = context.getBean("accountService", AccountService.class);
 
         accountService.saveAccount(new Account());
 

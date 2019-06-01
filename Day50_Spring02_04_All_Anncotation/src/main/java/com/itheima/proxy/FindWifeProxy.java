@@ -1,15 +1,16 @@
 package com.itheima.proxy;
+
 /*
    婚介  百合网
  */
-public class FindWifeProxy implements FindWife{
+public class FindWifeProxy implements FindWife {
 
     // 定义一个 有找媳妇需求的人
     private FindWife findWife;
 
     // 在 创建代理对象的时候 得有委托人
 
-    public FindWifeProxy(FindWife findWife){
+    public FindWifeProxy(FindWife findWife) {
         this.findWife = findWife;
     }
 

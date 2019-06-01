@@ -16,7 +16,7 @@ public class CollectionContains {
         list.add(1);
         list.add(2);
         list.add(13);
-        System.out.println(listVal(list,20));
+        System.out.println(listVal(list, 20));
     }
 
     private static int listVal(ArrayList<Integer> list, int i) {

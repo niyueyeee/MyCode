@@ -7,8 +7,8 @@
     <select id="queryUserById" resultType="user" parameterType="integer">
         select * from user where id=#{id}
     </select>
-    
-    <select id="queryUserOrders" resultMap="userOrdersResultMap" >
+
+    <select id="queryUserOrders" resultMap="userOrdersResultMap">
         select * from user u
     </select>
     <resultMap id="userOrdersResultMap" type="User">
@@ -17,7 +17,7 @@
         <collection property="ordersList" ofType="Orders" select="queryOrdersByUid" column="id"></collection>
     </resultMap>
     <select id="queryOrdersByUid" resultType="Orders" parameterType="int">
-         SELECT id,user_id userId,number,createtime,note FROM orders WHERE user_id=#{user_id}
+        SELECT id,user_id userId,number,createtime,note FROM orders WHERE user_id=#{user_id}
     </select>
 
 </mapper>

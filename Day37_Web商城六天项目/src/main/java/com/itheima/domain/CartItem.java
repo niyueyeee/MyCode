@@ -1,4 +1,5 @@
 package com.itheima.domain;
+
 /*
   购物项类
       对应商品信息
@@ -29,7 +30,7 @@ public class CartItem {
 
     public double getSubTotal() {
 
-        subTotal = count*product.getShop_price();
+        subTotal = count * product.getShop_price();
 
         return subTotal;
     }

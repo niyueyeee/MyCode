@@ -25,7 +25,7 @@ public class Demo2 {
                 Field declaredField = aClass.getDeclaredField(name);
                 Object o = aClass.newInstance();
                 declaredField.setAccessible(true);
-                declaredField.set(o,value);
+                declaredField.set(o, value);
                 System.out.println(o);
             }
         }

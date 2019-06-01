@@ -26,7 +26,7 @@ public class Test02 {
         psmt.setObject(2, password);
 
         ResultSet rs = psmt.executeQuery();
-        if(rs.next()) {
+        if (rs.next()) {
             System.out.println("登录成功~~~~~~~");
         } else {
             System.out.println("登录失败~~~~~~~");

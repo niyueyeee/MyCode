@@ -40,12 +40,12 @@ public class PokerGame {
         for (int i = 0; i < pokers.size(); i++) {
             //先获取牌
             String poker = pokers.get(i);
-            if(i>50) {//留出3张底牌
+            if (i > 50) {//留出3张底牌
                 players.get(3).getList().add(poker);
             } else {
-                if(i%3==0) {//索引等于0,发给玩家一
+                if (i % 3 == 0) {//索引等于0,发给玩家一
                     players.get(0).getList().add(poker);
-                } else if(i%3==1) {//索引等于1,发给玩家二
+                } else if (i % 3 == 1) {//索引等于1,发给玩家二
                     players.get(1).getList().add(poker);
                 } else {//索引等于2,发给玩家三
                     players.get(2).getList().add(poker);
@@ -54,11 +54,12 @@ public class PokerGame {
         }
         //5.看牌,遍历存储玩家的ArrayList集合
         //增强for
-        for(Player player : players) {
-            System.out.println(player.getName()+": "+player.getList());
+        for (Player player : players) {
+            System.out.println(player.getName() + ": " + player.getList());
         }
 
     }
+
     /*
         准备牌的方法
      */
@@ -77,8 +78,8 @@ public class PokerGame {
         colors.add("♣");
         //1.5数字 2-10,J,Q,K,A
         //存储2-10
-        for(int i=2;i<=10;i++) {
-            numbers.add(i+"");
+        for (int i = 2; i <= 10; i++) {
+            numbers.add(i + "");
         }
         //存储J,Q,K,A
         numbers.add("J");
@@ -86,10 +87,10 @@ public class PokerGame {
         numbers.add("K");
         numbers.add("A");
         //1.6使用for拼接花色和数字,生成扑克牌存入集合
-        for(String color : colors) {
-            for(String num : numbers) {
+        for (String color : colors) {
+            for (String num : numbers) {
                 //拼接花色和数字,生成扑克
-                String poker = color+num;
+                String poker = color + num;
                 //存入集合
                 pokers.add(poker);
             }
@@ -109,7 +110,7 @@ public class PokerGame {
         //2.创建新的ArrayList集合对象
         ArrayList<String> newList = new ArrayList<>();
         //3.遍历老集合
-        for(int i = 0;i<list.size();i++) {
+        for (int i = 0; i < list.size(); i++) {
             //3.1产生索引
             int index = r.nextInt(list.size());
             //3.2移除索引对应的元素

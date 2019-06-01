@@ -1,4 +1,5 @@
 package com.itheima.pojo;
+
 /*
    这个  UserVo 包含一个pojo类型
        所以它是 pojo包装类
@@ -28,8 +29,8 @@ public class UserVo {
     @Override
     public String toString() {
         return "UserVo{" +
-               "vid=" + vid +
-               ", user=" + user +
-               '}';
+                "vid=" + vid +
+                ", user=" + user +
+                '}';
     }
 }

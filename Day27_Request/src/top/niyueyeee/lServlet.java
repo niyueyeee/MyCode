@@ -38,12 +38,13 @@ public class lServlet extends javax.servlet.http.HttpServlet {
             e.printStackTrace();
         }
     }
-        @Test
-        public void ee(){
-            User u = new User();
-            u.setUid("1");
-            u.setUsername("admin");
-            u.setPassword("admin");
-            System.out.println(new Service().login(u));
-        }
+
+    @Test
+    public void ee() {
+        User u = new User();
+        u.setUid("1");
+        u.setUsername("admin");
+        u.setPassword("admin");
+        System.out.println(new Service().login(u));
+    }
 }

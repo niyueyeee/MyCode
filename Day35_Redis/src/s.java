@@ -21,7 +21,8 @@ public class s extends BaseServlet {
         resp.getWriter().write(s1);
 
     }
-    public void reg(HttpServletRequest req, HttpServletResponse reps){
+
+    public void reg(HttpServletRequest req, HttpServletResponse reps) {
         System.out.println("注册");
     }
 }

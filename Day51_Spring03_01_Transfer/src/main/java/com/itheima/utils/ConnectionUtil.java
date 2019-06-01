@@ -19,16 +19,17 @@ public class ConnectionUtil {
     private DataSource dataSource;
 
     private ThreadLocal<Connection> threadLocal = new ThreadLocal<>();
+
     public Connection getConnection() throws SQLException {
         Connection connection = threadLocal.get();
-        if (connection==null){
+        if (connection == null) {
             connection = dataSource.getConnection();
             threadLocal.set(connection);
         }
         return connection;
     }
 
-    public void remove(){
+    public void remove() {
         threadLocal.remove();
     }
 }

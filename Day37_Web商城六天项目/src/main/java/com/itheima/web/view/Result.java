@@ -1,4 +1,5 @@
 package com.itheima.web.view;
+
 /*
    响应结果类
       就是 前后端定义响应规则

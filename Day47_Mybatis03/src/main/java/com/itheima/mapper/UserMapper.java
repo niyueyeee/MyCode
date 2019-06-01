@@ -37,6 +37,6 @@ public interface UserMapper {
      * 一对多关联查询
      * 查询全部用户数据 关联订单数据
      */
-    List<User> queryUserOrders() ;
+    List<User> queryUserOrders();
 
 }

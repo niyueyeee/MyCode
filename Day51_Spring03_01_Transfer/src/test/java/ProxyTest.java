@@ -25,6 +25,6 @@ public class ProxyTest {
     @Test
     public void test() throws Exception {
         AccountService proxy = (AccountService) proxyFactory.createProxy(accountServiceNoTCF);
-        proxy.transfer("ls","zs",20000f);
+        proxy.transfer("ls", "zs", 20000f);
     }
 }

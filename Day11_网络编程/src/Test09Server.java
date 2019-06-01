@@ -9,9 +9,10 @@ import java.net.Socket;
 public class Test09Server {
     public static void main(String[] args) throws IOException {
         ServerSocket ss = new ServerSocket(9989);
-        while (true){
+        while (true) {
             new Thread(new Runnable() {
                 Socket accept = ss.accept();
+
                 @Override
                 public void run() {
 
@@ -19,10 +20,10 @@ public class Test09Server {
 
                         InputStream is = accept.getInputStream();
                         BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("d:\\a.flv"));
-                        int len=0;
+                        int len = 0;
                         byte[] bytes = new byte[8096];
-                        while ((len=is.read(bytes))!=-1){
-                            bos.write(bytes,0,len);
+                        while ((len = is.read(bytes)) != -1) {
+                            bos.write(bytes, 0, len);
                         }
                         OutputStream os = accept.getOutputStream();
                         os.write("ok".getBytes());
@@ -38,4 +39,5 @@ public class Test09Server {
 
 
         }
-}}
+    }
+}

@@ -59,7 +59,9 @@
                         <label for="username" class="col-sm-2 control-label">用户名</label>
                         <div class="col-sm-6">
                             <input type="text" class="form-control" id="username"
-                                   placeholder="请输入用户名" name="username" value="<%for (Cookie cookie : request.getCookies()) if (cookie.getName().equals("card")){%><%=cookie.getValue()%><%}%>"></div>
+                                   placeholder="请输入用户名" name="username"
+                                   value="<%for (Cookie cookie : request.getCookies()) if (cookie.getName().equals("card")){%><%=cookie.getValue()%><%}%>">
+                        </div>
                         <div style="color: red ; margin-bottom: 10px">
                             <!--
                               显示服务器中存储数据
@@ -70,7 +72,7 @@
 
                               域取出数据,没有数据,显示null
                             -->
-                            <%=request.getAttribute("msg")==null?"":request.getAttribute("msg")%>
+                            <%=request.getAttribute("msg") == null ? "" : request.getAttribute("msg")%>
 
                         </div>
                     </div>
@@ -87,11 +89,11 @@
                             <input type="text" class="form-control" id="inputPassword2"
                                    placeholder="请输入验证码" name="code">
                         </div>
-                        <div class="col-sm-3" >
+                        <div class="col-sm-3">
                             <img src="/Day28/pic" onclick="changeImg(this)"/>
                         </div>
-                        <div class="col-sm-3" >
-                            <%=request.getAttribute("msg1")==null?"":request.getAttribute("msg1")%>
+                        <div class="col-sm-3">
+                            <%=request.getAttribute("msg1") == null ? "" : request.getAttribute("msg1")%>
                         </div>
 
                     </div>
@@ -123,7 +125,7 @@
 </body>
 <script>
     function changeImg(o) {
-        o.src="/Day28/pic?time"+Date.now();
+        o.src = "/Day28/pic?time" + Date.now();
     }
 </script>
 </html>

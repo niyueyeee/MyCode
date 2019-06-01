@@ -10,12 +10,12 @@ public class Test08 {
             @Override
             public void run() {
                 for (int i = 0; i < 20; i++) {
-                    System.out.println("zi"+"  "+i);
+                    System.out.println("zi" + "  " + i);
                 }
             }
         }).start();
         for (int i = 0; i < 20; i++) {
-            System.out.println("zhu"+"  "+i);
+            System.out.println("zhu" + "  " + i);
         }
     }
 }

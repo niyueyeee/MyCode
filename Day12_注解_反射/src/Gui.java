@@ -7,8 +7,8 @@ import java.awt.*;
 public class Gui {
     public static void main(String[] args) {
         Frame hello = new Frame("hello");
-        hello.setSize(555,555);
-        hello.setLocation(300,222);
+        hello.setSize(555, 555);
+        hello.setLocation(300, 222);
         hello.setVisible(true);
     }
 }

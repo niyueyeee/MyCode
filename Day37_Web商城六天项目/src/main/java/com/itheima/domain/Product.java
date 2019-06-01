@@ -12,7 +12,7 @@ public class Product {
 
     private Integer is_hot;  //是否热门  1:热门    0:不热门
     private String pdesc;//描述
-    private Integer pflag;	//是否下架    1:下架	0:未下架
+    private Integer pflag;    //是否下架    1:下架	0:未下架
     private String cid;
 
     public String getPid() {

@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class ProductService {
     ProductDao dp = new ProductDao();
+
     public List<product> queryService() {
 
         try {
@@ -24,9 +25,9 @@ public class ProductService {
         return null;
     }
 
-    public boolean dlService(String p){
+    public boolean dlService(String p) {
         try {
-            if (dp.dlDao(p)==1){
+            if (dp.dlDao(p) == 1) {
                 return true;
             }
         } catch (SQLException e) {
@@ -34,8 +35,9 @@ public class ProductService {
         }
         return false;
     }
+
     //条件查询
-    public List<product> conditionService(conditionProduct c){
+    public List<product> conditionService(conditionProduct c) {
         try {
             return dp.conditionQuery(c);
         } catch (SQLException e) {
@@ -43,6 +45,7 @@ public class ProductService {
         }
         return null;
     }
+
     //分页查询
     public PageBean fenye(String p) {
         PageBean page = new PageBean();
@@ -60,7 +63,7 @@ public class ProductService {
         int i = Integer.parseInt(o.toString());
         double ceil = Math.ceil(i / 12.0);
         System.out.println(ceil);
-        page.setTotalPage((int)ceil);
+        page.setTotalPage((int) ceil);
         //获取页数据
         List<product> products = null;
         try {

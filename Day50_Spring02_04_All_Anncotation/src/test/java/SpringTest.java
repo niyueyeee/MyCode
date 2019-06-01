@@ -20,8 +20,9 @@ public class SpringTest {
     @Autowired
     @Qualifier("accountService")
     private AccountService accountService;
+
     @Test
-    public void test(){
+    public void test() {
         List<Account> accounts = accountService.queryAccountList();
         accounts.forEach(System.out::println);
     }

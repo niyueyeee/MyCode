@@ -24,7 +24,7 @@ public class DownLoadUtils {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-       System.out.println(name);
+        System.out.println(name);
         return name;
     }
 }

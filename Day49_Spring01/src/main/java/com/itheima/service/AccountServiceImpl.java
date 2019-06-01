@@ -15,24 +15,23 @@ public class AccountServiceImpl implements AccountService {
     private AccountDao accountDao;
 
 
-
-
     public void setAccountDao(AccountDao accountDao) {
         this.accountDao = accountDao;
     }
 
-    public void init(){
+    public void init() {
         System.out.println("我是初始化方法");
     }
 
-    public AccountServiceImpl(){
+    public AccountServiceImpl() {
         System.out.println("我是构造~");
     }
 
 
-    public void destroy(){
+    public void destroy() {
         System.out.println("我是销毁方法");
     }
+
     @Override
     public void saveAccount(Account account) {
 

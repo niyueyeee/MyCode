@@ -23,6 +23,7 @@ public class AccountDao {
             e.printStackTrace();
         }
     }
+
     /*** 收款方法
      * @param conn 连接对象
      * @param from 收款人

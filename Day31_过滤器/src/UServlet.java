@@ -11,6 +11,7 @@ public class UServlet extends BaseServlet {
     public void add(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("添加");
     }
+
     public void reg(HttpServletRequest request, HttpServletResponse response) {
         System.out.println("55");
     }
