@@ -58,6 +58,8 @@
         <option value="$PROJECT_DIR$/Day56_Maven_SSM_Parent/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
         <option value="$PROJECT_DIR$/Day57_SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/Day84_Spring_Data_Jpa01/pom.xml" />
+        <option value="$PROJECT_DIR$/Day85_Spring_Data_Jpa02/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

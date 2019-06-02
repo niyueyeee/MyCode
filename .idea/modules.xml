@@ -63,6 +63,8 @@
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Day56_Maven_SSM_Parent.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Day56_Maven_SSM_Parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day57_SSM/Day57_SSM.iml" filepath="$PROJECT_DIR$/Day57_SSM/Day57_SSM.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day62_Lucene/Day62_Lucene.iml" filepath="$PROJECT_DIR$/Day62_Lucene/Day62_Lucene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day84_Spring_Data_Jpa01/Day84_Spring_Data_Jpa01.iml" filepath="$PROJECT_DIR$/Day84_Spring_Data_Jpa01/Day84_Spring_Data_Jpa01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day85_Spring_Data_Jpa02/Day85_Spring_Data_Jpa02.iml" filepath="$PROJECT_DIR$/Day85_Spring_Data_Jpa02/Day85_Spring_Data_Jpa02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Dao/Maven_SSM_Dao.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Dao/Maven_SSM_Dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Service/Maven_SSM_Service.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Service/Maven_SSM_Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" />

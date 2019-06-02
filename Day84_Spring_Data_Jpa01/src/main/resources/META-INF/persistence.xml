@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <!--
+    持久化单元 翻译大白话 配置数据源
+        name:做标识的 唯一
+        transaction-type:事务类型
+            RESOURCE_LOCAL:基于连接实现事务控制
+            JTA: 分布式事务
+
+
+                二阶段提交
+                XA
+                最终一致性
+                事务补偿机制
+-->
+    <persistence-unit name="jpa" transaction-type="RESOURCE_LOCAL">
+        <!--指明jpa实现类 提供者-->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/springjpa"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="00008888"/>
+            <!--便于开发和测试 线上不要用-->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!--
+                 hibernate.hbm2ddl.auto:三个取值
+                  none:不启用
+                  create: 每当你启动项目 把数据库全删除了 从新来
+                  update: 每当你启动项目 检查是否存在数据表 存在则更新 不存在则创建
+            -->
+            <property name="hibernate.hbm2ddl.auto" value="update"></property>
+        </properties>
+    </persistence-unit>
+</persistence>
