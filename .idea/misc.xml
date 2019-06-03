@@ -33,27 +33,9 @@
         <option value="$PROJECT_DIR$/Day36_Maven/pom.xml" />
         <option value="$PROJECT_DIR$/Day37_Web商城六天项目/pom.xml" />
         <option value="$PROJECT_DIR$/Day47_Mybatis03/pom.xml" />
-        <option value="$PROJECT_DIR$/Day45_Mybatis01_01/pom.xml" />
-        <option value="$PROJECT_DIR$/Day45_Mybatis01_02/pom.xml" />
-        <option value="$PROJECT_DIR$/Day46_Mybatis02_01/pom.xml" />
-        <option value="$PROJECT_DIR$/Day46_Mybatis02_02/pom.xml" />
-        <option value="$PROJECT_DIR$/Day48_Mybatis04_01/pom.xml" />
-        <option value="$PROJECT_DIR$/Day48_Mybatis04_02/pom.xml" />
         <option value="$PROJECT_DIR$/Day49_Spring01/pom.xml" />
-        <option value="$PROJECT_DIR$/Day50_Spring02_01_CRUD/pom.xml" />
-        <option value="$PROJECT_DIR$/Day50_Spring02_02_Annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/Day50_Spring02_04_All_Anncotation/pom.xml" />
-        <option value="$PROJECT_DIR$/Day50_Spring02_03_Xml_Annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/Day51_Spring03_01_Transfer/pom.xml" />
-        <option value="$PROJECT_DIR$/Day51_Spring03_02_Xml_Aop/pom.xml" />
-        <option value="$PROJECT_DIR$/Day51_Spring03_03_All_Annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/Day52_Spring04_01_JdbcTemplate/pom.xml" />
-        <option value="$PROJECT_DIR$/Day52_Spring04_03_All_Annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/Day52_Spring04_02_Transfer_Xml/pom.xml" />
         <option value="$PROJECT_DIR$/Day53_SpringMvc01/pom.xml" />
         <option value="$PROJECT_DIR$/Day54_SpringMvc02/pom.xml" />
-        <option value="$PROJECT_DIR$/Day55_SpringMvc03_01_Interceptor/pom.xml" />
-        <option value="$PROJECT_DIR$/Day55_SpringMvc03_02_SSM/pom.xml" />
         <option value="$PROJECT_DIR$/Day56_Maven_SSM/pom.xml" />
         <option value="$PROJECT_DIR$/Day56_Maven_SSM_Parent/pom.xml" />
         <option value="$PROJECT_DIR$/springboot/pom.xml" />
@@ -61,6 +43,13 @@
         <option value="$PROJECT_DIR$/Day84_Spring_Data_Jpa01/pom.xml" />
         <option value="$PROJECT_DIR$/Day85_Spring_Data_Jpa02/pom.xml" />
         <option value="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/pom.xml" />
+        <option value="$PROJECT_DIR$/Day50_Spring02/pom.xml" />
+        <option value="$PROJECT_DIR$/Day51_Spring03/pom.xml" />
+        <option value="$PROJECT_DIR$/Day52_Spring04/pom.xml" />
+        <option value="$PROJECT_DIR$/Day45_Mybatis01/pom.xml" />
+        <option value="$PROJECT_DIR$/Day46_Mybatis02/pom.xml" />
+        <option value="$PROJECT_DIR$/Day48_Mybatis04/pom.xml" />
+        <option value="$PROJECT_DIR$/Day55_SpringMvc03/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

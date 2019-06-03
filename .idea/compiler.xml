@@ -7,45 +7,47 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Day52_Spring04_01_JdbcTemplate" />
-        <module name="Day50_Spring_03_Xml_Annotation" />
-        <module name="Day84_Spring_Data_Jpa02" />
-        <module name="Day47_Mybatis03" />
-        <module name="Day51_Spring03_01_Transfer" />
-        <module name="SSM_service" />
-        <module name="spring02" />
-        <module name="Day48_Mybatis04_02" />
-        <module name="Maven_SSM_Web" />
-        <module name="SSM_dao" />
-        <module name="Day45_Mybatis01_02" />
-        <module name="Day45_Mybatis01_01" />
-        <module name="Day53_SpringMvc01" />
-        <module name="Day51_Spring03_03_All_Annotation" />
-        <module name="Maven_SSM_Dao" />
-        <module name="Day50_Spring02_01_CRUD" />
-        <module name="Day52_Spring04_02_Transfer_Xml" />
         <module name="spring" />
-        <module name="Day54_SpringMvc02" />
-        <module name="Day50_Spring02_02_Annotation" />
-        <module name="Day46_Mybatis02_02" />
-        <module name="Day46_Mybatis02_01" />
-        <module name="Day37_Web商城六天项目" />
+        <module name="Day84_Spring_Data_Jpa02" />
         <module name="SSM_pojo" />
-        <module name="Day50_Spring02_03_Xml_Annotation" />
-        <module name="Day50_Spring02_04_All_Anncotation" />
-        <module name="Day52_Spring04_03_All_Annotation" />
-        <module name="Day51_Spring03_02_Xml_Aop" />
         <module name="Day85_Spring_Data_Jpa02" />
-        <module name="Day55_SpringMvc03_01_Interceptor" />
+        <module name="Mybatis04_02" />
+        <module name="Spring04_02_Transfer_Xml" />
+        <module name="SSM_service" />
+        <module name="Day50_Spring_03_Xml_Annotation" />
+        <module name="Spring02_01_CRUD" />
+        <module name="Spring03_01_Transfer" />
+        <module name="spring02" />
+        <module name="Maven_SSM_Web" />
+        <module name="Spring02_03_Xml_Annotation" />
+        <module name="Maven_SSM_Service" />
+        <module name="Spring02_02_Annotation" />
+        <module name="Day53_SpringMvc01" />
+        <module name="jpa02_one2many" />
+        <module name="SpringMvc03_02_SSM" />
+        <module name="Maven_SSM_Dao" />
+        <module name="Spring03_02_Xml_Aop" />
+        <module name="Day54_SpringMvc02" />
+        <module name="Mybatis02_02" />
+        <module name="Day37_Web商城六天项目" />
+        <module name="Spring04_03_All_Annotation" />
+        <module name="Mybatis02_01" />
+        <module name="jpa03_many2many" />
+        <module name="Mybatis01_02" />
+        <module name="Mybatis01_01" />
+        <module name="Spring04_01_JdbcTemplate" />
+        <module name="jpa01_specifications" />
+        <module name="SSM_dao" />
+        <module name="SpringMvc03_01_Interceptor" />
         <module name="Day84_Spring_Data_Jpa01" />
-        <module name="Day55_SpringMvc03_02_SSM" />
         <module name="Day49_Spring01" />
         <module name="SSM_web" />
-        <module name="Maven_SSM_Service" />
+        <module name="Day47_Mybatis03" />
         <module name="SSM_utils" />
-        <module name="Day86_Spring_Data_Jpa03" />
         <module name="Day36_Maven" />
-        <module name="Day48_Mybatis04_01" />
+        <module name="Spring03_03_All_Annotation" />
+        <module name="Mybatis04_01" />
+        <module name="Spring02_04_All_Anncotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
@@ -59,6 +61,7 @@
       <module name="Day45" target="1.8" />
       <module name="Day45_1" target="1.8" />
       <module name="Day45_Mybatis" target="1.8" />
+      <module name="Day45_Mybatis01" target="1.8" />
       <module name="Day45_Mybatis01_01" target="1.8" />
       <module name="Day45_Mybatis01_02" target="1.8" />
       <module name="Day45_Mybatis_01" target="1.8" />
@@ -66,6 +69,7 @@
       <module name="Day45_Mybatis_1" target="1.8" />
       <module name="Day46" target="1.8" />
       <module name="Day46_1" target="1.8" />
+      <module name="Day46_Mybatis02" target="1.8" />
       <module name="Day46_Mybatis02_01" target="1.8" />
       <module name="Day46_Mybatis02_02" target="1.8" />
       <module name="Day46_Mybatis_01" target="1.8" />
@@ -74,6 +78,7 @@
       <module name="Day47_Mybatis03" target="1.8" />
       <module name="Day48" target="1.8" />
       <module name="Day48_1" target="1.8" />
+      <module name="Day48_Mybatis04" target="1.8" />
       <module name="Day48_Mybatis04_01" target="1.8" />
       <module name="Day48_Mybatis04_02" target="1.8" />
       <module name="Day49" target="1.8" />
@@ -84,6 +89,7 @@
       <module name="Day50_03_xml_annotation" target="1.8" />
       <module name="Day50_04_all_anncotation" target="1.8" />
       <module name="Day50_04_all_annotation" target="1.8" />
+      <module name="Day50_Spring02" target="1.8" />
       <module name="Day50_Spring02_01_CRUD" target="1.8" />
       <module name="Day50_Spring02_02_Annotation" target="1.8" />
       <module name="Day50_Spring02_03_Xml_Annotation" target="1.8" />
@@ -94,6 +100,7 @@
       <module name="Day51_01_transfer" target="1.8" />
       <module name="Day51_02_xml_aop" target="1.8" />
       <module name="Day51_03_all_annotation" target="1.8" />
+      <module name="Day51_Spring03" target="1.8" />
       <module name="Day51_Spring03_01_Transfer" target="1.8" />
       <module name="Day51_Spring03_02_Xml_Aop" target="1.8" />
       <module name="Day51_Spring03_03_All_Annotation" target="1.8" />
@@ -101,6 +108,7 @@
       <module name="Day52_01_jdbctemplate" target="8" />
       <module name="Day52_02_transfer_xml" target="1.8" />
       <module name="Day52_03_all_annotation" target="1.8" />
+      <module name="Day52_Spring04" target="1.8" />
       <module name="Day52_Spring04_01_JdbcTemplate" target="8" />
       <module name="Day52_Spring04_02_Transfer_Xml" target="1.8" />
       <module name="Day52_Spring04_03_All_Annotation" target="1.8" />
@@ -109,6 +117,7 @@
       <module name="Day54" target="1.8" />
       <module name="Day54_1" target="1.7" />
       <module name="Day54_SpringMvc02" target="1.8" />
+      <module name="Day55_SpringMvc03" target="8" />
       <module name="Day55_SpringMvc03_01_Interceptor" target="1.8" />
       <module name="Day55_SpringMvc03_02_SSM" target="8" />
       <module name="Day55_SpringMvc_01_Interceptor" target="1.8" />
@@ -119,20 +128,41 @@
       <module name="Day84_Spring_Data_Jpa01" target="1.8" />
       <module name="Day84_Spring_Data_Jpa02" target="1.5" />
       <module name="Day85_Spring_Data_Jpa02" target="1.8" />
-      <module name="Day86_Spring_Data_Jpa03" target="1.5" />
+      <module name="Day86_Spring_Data_Jpa03" target="1.8" />
       <module name="haha" target="11" />
       <module name="itcast-crawler-jd" target="1.8" />
       <module name="itcast-crawler-job" target="1.8" />
       <module name="itcast-crawler-webmagic" target="1.5" />
+      <module name="jpa01_specifications" target="1.8" />
+      <module name="jpa02_one2many" target="1.8" />
+      <module name="jpa03_many2many" target="1.8" />
       <module name="Maven_SSM_Dao" target="1.8" />
       <module name="Maven_SSM_Service" target="1.8" />
       <module name="Maven_SSM_Web" target="1.8" />
+      <module name="Mybatis01_01" target="1.8" />
+      <module name="Mybatis01_02" target="1.8" />
+      <module name="Mybatis02_01" target="1.8" />
+      <module name="Mybatis02_02" target="1.8" />
       <module name="mybatis02_02_proxy" target="1.8" />
+      <module name="Mybatis04_01" target="1.8" />
+      <module name="Mybatis04_02" target="1.8" />
       <module name="spring" target="1.5" />
       <module name="spring02" target="1.8" />
+      <module name="Spring02_01_CRUD" target="1.8" />
+      <module name="Spring02_02_Annotation" target="1.8" />
+      <module name="Spring02_03_Xml_Annotation" target="1.8" />
+      <module name="Spring02_04_All_Anncotation" target="1.8" />
+      <module name="Spring03_01_Transfer" target="1.8" />
+      <module name="Spring03_02_Xml_Aop" target="1.8" />
+      <module name="Spring03_03_All_Annotation" target="1.8" />
+      <module name="Spring04_01_JdbcTemplate" target="1.8" />
+      <module name="Spring04_02_Transfer_Xml" target="1.8" />
+      <module name="Spring04_03_All_Annotation" target="1.8" />
       <module name="spring04_04_transfer_annotation" target="1.8" />
       <module name="SpringBoot" target="1.8" />
       <module name="springboot" target="1.5" />
+      <module name="SpringMvc03_01_Interceptor" target="8" />
+      <module name="SpringMvc03_02_SSM" target="8" />
       <module name="SSM_dao" target="1.8" />
       <module name="SSM_pojo" target="1.8" />
       <module name="SSM_service" target="7" />

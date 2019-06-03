@@ -28,7 +28,7 @@ import java.util.List;
  *      关键字+By+javaBean属性名+[查询规则]+And|Or+javaBean属性名+[查询规则]+And|Or........
  *
  */
-public interface UserDao extends JpaRepository<User,Integer>, JpaSpecificationExecutor {
+public interface UserDao extends JpaRepository<User,Integer>, JpaSpecificationExecutor<User> {
 
     @Query(value = "select * from user where username=? and password=?",nativeQuery =true )
     User findByUsernameAndPassword2(String username,String password);
