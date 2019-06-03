@@ -43,6 +43,7 @@
         <module name="SSM_web" />
         <module name="Maven_SSM_Service" />
         <module name="SSM_utils" />
+        <module name="Day86_Spring_Data_Jpa03" />
         <module name="Day36_Maven" />
         <module name="Day48_Mybatis04_01" />
       </profile>
@@ -118,6 +119,7 @@
       <module name="Day84_Spring_Data_Jpa01" target="1.8" />
       <module name="Day84_Spring_Data_Jpa02" target="1.5" />
       <module name="Day85_Spring_Data_Jpa02" target="1.8" />
+      <module name="Day86_Spring_Data_Jpa03" target="1.5" />
       <module name="haha" target="11" />
       <module name="itcast-crawler-jd" target="1.8" />
       <module name="itcast-crawler-job" target="1.8" />
