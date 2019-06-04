@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="t_order")
+@Table(name = "t_order")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,13 +17,19 @@ public class Order {
     private String oname;
     @Column
     private double total;
-    @ManyToMany(targetEntity = Product.class,cascade = CascadeType.ALL)
+
+
+
+    @ManyToMany(targetEntity = Product.class, cascade = CascadeType.ALL)
     @JoinTable(
-            name="t_product_order",
-            joinColumns = @JoinColumn(name = "fk_oid",referencedColumnName = "oid"),
-            inverseJoinColumns = @JoinColumn(name = "fk_pid",referencedColumnName = "pid")
+            name = "t_product_order",
+            joinColumns = @JoinColumn(name = "fk_oid", referencedColumnName = "oid"),
+            inverseJoinColumns = @JoinColumn(name = "fk_pid", referencedColumnName = "pid")
     )
-    private List<Product> productList=new ArrayList<>();
+
+
+
+    private List<Product> productList = new ArrayList<>();
 
     public List<Product> getProductList() {
         return productList;
