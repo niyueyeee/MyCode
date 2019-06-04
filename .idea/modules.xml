@@ -56,6 +56,7 @@
       <module fileurl="file://$PROJECT_DIR$/Day84_Spring_Data_Jpa01/Day84_Spring_Data_Jpa01.iml" filepath="$PROJECT_DIR$/Day84_Spring_Data_Jpa01/Day84_Spring_Data_Jpa01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day85_Spring_Data_Jpa02/Day85_Spring_Data_Jpa02.iml" filepath="$PROJECT_DIR$/Day85_Spring_Data_Jpa02/Day85_Spring_Data_Jpa02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/Day86_Spring_Data_Jpa03.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/Day86_Spring_Data_Jpa03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day87_Springboot/Day87_Springboot.iml" filepath="$PROJECT_DIR$/Day87_Springboot/Day87_Springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Dao/Maven_SSM_Dao.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Dao/Maven_SSM_Dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Service/Maven_SSM_Service.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Service/Maven_SSM_Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web/Maven_SSM_Web.iml" />
@@ -83,7 +84,6 @@
       <module fileurl="file://$PROJECT_DIR$/Day52_Spring04/Spring04_03_All_Annotation/Spring04_03_All_Annotation.iml" filepath="$PROJECT_DIR$/Day52_Spring04/Spring04_03_All_Annotation/Spring04_03_All_Annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_01_Interceptor/SpringMvc03_01_Interceptor.iml" filepath="$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_01_Interceptor/SpringMvc03_01_Interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_02_SSM/SpringMvc03_02_SSM.iml" filepath="$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_02_SSM/SpringMvc03_02_SSM.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day88demo/day88demo.iml" filepath="$PROJECT_DIR$/day88demo/day88demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa01_specifications/jpa01_specifications.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa01_specifications/jpa01_specifications.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa02_one2many/jpa02_one2many.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa02_one2many/jpa02_one2many.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa03_many2many/jpa03_many2many.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa03_many2many/jpa03_many2many.iml" />

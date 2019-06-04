@@ -56,7 +56,6 @@
         <module name="SSM_web" />
         <module name="Maven_SSM_Dao" />
         <module name="Spring03_01_Transfer" />
-        <module name="day88demo" />
         <module name="Day47_Mybatis03" />
         <module name="SpringMvc03_02_SSM" />
         <module name="pinyougou_service_sellergoods" />
@@ -64,97 +63,32 @@
         <module name="pinyougou_web_portal" />
         <module name="Spring03_03_All_Annotation" />
         <module name="pinyougou_web_shop" />
+        <module name="Day87_Springboot" />
         <module name="SSM_dao" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="_1" target="11" />
-      <module name="Day32" target="1.5" />
-      <module name="Day36" target="11" />
+    <bytecodeTargetLevel target="8">
       <module name="Day36_Maven" target="1.8" />
-      <module name="Day37" target="1.8" />
-      <module name="Day37-store" target="11" />
       <module name="Day37_Web商城六天项目" target="1.8" />
-      <module name="Day45" target="1.8" />
-      <module name="Day45_1" target="1.8" />
-      <module name="Day45_Mybatis" target="1.8" />
       <module name="Day45_Mybatis01" target="1.8" />
-      <module name="Day45_Mybatis01_01" target="1.8" />
-      <module name="Day45_Mybatis01_02" target="1.8" />
-      <module name="Day45_Mybatis_01" target="1.8" />
-      <module name="Day45_Mybatis_02" target="1.8" />
-      <module name="Day45_Mybatis_1" target="1.8" />
-      <module name="Day46" target="1.8" />
-      <module name="Day46_1" target="1.8" />
       <module name="Day46_Mybatis02" target="1.8" />
-      <module name="Day46_Mybatis02_01" target="1.8" />
-      <module name="Day46_Mybatis02_02" target="1.8" />
-      <module name="Day46_Mybatis_01" target="1.8" />
-      <module name="Day46_Mybatis_02" target="1.8" />
-      <module name="Day47" target="1.8" />
       <module name="Day47_Mybatis03" target="1.8" />
-      <module name="Day48" target="1.8" />
-      <module name="Day48_1" target="1.8" />
       <module name="Day48_Mybatis04" target="1.8" />
-      <module name="Day48_Mybatis04_01" target="1.8" />
-      <module name="Day48_Mybatis04_02" target="1.8" />
-      <module name="Day49" target="1.8" />
       <module name="Day49_Spring01" target="1.8" />
-      <module name="Day50_01_CRUD" target="1.8" />
-      <module name="Day50_02_Annotation" target="1.8" />
-      <module name="Day50_03_all_annOtation" target="1.5" />
-      <module name="Day50_03_xml_annotation" target="1.8" />
-      <module name="Day50_04_all_anncotation" target="1.8" />
-      <module name="Day50_04_all_annotation" target="1.8" />
       <module name="Day50_Spring02" target="1.8" />
-      <module name="Day50_Spring02_01_CRUD" target="1.8" />
-      <module name="Day50_Spring02_02_Annotation" target="1.8" />
-      <module name="Day50_Spring02_03_Xml_Annotation" target="1.8" />
-      <module name="Day50_Spring02_04_All_Anncotation" target="1.8" />
-      <module name="Day50_Spring03_03_Xml_Annotation" target="1.8" />
-      <module name="Day50_Spring_03_Xml_Annotation" target="1.5" />
-      <module name="Day50_transfer" target="1.8" />
-      <module name="Day51_01_transfer" target="1.8" />
-      <module name="Day51_02_xml_aop" target="1.8" />
-      <module name="Day51_03_all_annotation" target="1.8" />
       <module name="Day51_Spring03" target="1.8" />
-      <module name="Day51_Spring03_01_Transfer" target="1.8" />
-      <module name="Day51_Spring03_02_Xml_Aop" target="1.8" />
-      <module name="Day51_Spring03_03_All_Annotation" target="1.8" />
-      <module name="Day52" target="1.5" />
-      <module name="Day52_01_jdbctemplate" target="8" />
-      <module name="Day52_02_transfer_xml" target="1.8" />
-      <module name="Day52_03_all_annotation" target="1.8" />
       <module name="Day52_Spring04" target="1.8" />
-      <module name="Day52_Spring04_01_JdbcTemplate" target="8" />
-      <module name="Day52_Spring04_02_Transfer_Xml" target="1.8" />
-      <module name="Day52_Spring04_03_All_Annotation" target="1.8" />
-      <module name="Day53" target="1.8" />
       <module name="Day53_SpringMvc01" target="1.8" />
-      <module name="Day54" target="1.8" />
-      <module name="Day54_1" target="1.7" />
       <module name="Day54_SpringMvc02" target="1.8" />
       <module name="Day55_SpringMvc03" target="8" />
-      <module name="Day55_SpringMvc03_01_Interceptor" target="1.8" />
-      <module name="Day55_SpringMvc03_02_SSM" target="8" />
-      <module name="Day55_SpringMvc_01_Interceptor" target="1.8" />
-      <module name="Day55_SpringMvc_02_SSM" target="8" />
       <module name="Day56_Maven_SSM" target="1.8" />
       <module name="Day56_Maven_SSM_Parent" target="1.8" />
       <module name="Day57_SSM" target="1.8" />
-      <module name="Day63_Pinyougou" target="1.5" />
+      <module name="Day63_Pinyougou" target="8" />
       <module name="Day84_Spring_Data_Jpa01" target="1.8" />
-      <module name="Day84_Spring_Data_Jpa02" target="1.5" />
       <module name="Day85_Spring_Data_Jpa02" target="1.8" />
       <module name="Day86_Spring_Data_Jpa03" target="1.8" />
-      <module name="Day87_SpringBoot" target="1.8" />
-      <module name="day88demo" target="1.5" />
-      <module name="demo" target="1.8" />
-      <module name="demosssssssssss" target="1.8" />
-      <module name="haha" target="11" />
-      <module name="itcast-crawler-jd" target="1.8" />
-      <module name="itcast-crawler-job" target="1.8" />
-      <module name="itcast-crawler-webmagic" target="1.5" />
+      <module name="Day87_Springboot" target="1.8" />
       <module name="jpa01_specifications" target="1.8" />
       <module name="jpa02_one2many" target="1.8" />
       <module name="jpa03_many2many" target="1.8" />
@@ -165,7 +99,6 @@
       <module name="Mybatis01_02" target="1.8" />
       <module name="Mybatis02_01" target="1.8" />
       <module name="Mybatis02_02" target="1.8" />
-      <module name="mybatis02_02_proxy" target="1.8" />
       <module name="Mybatis04_01" target="1.8" />
       <module name="Mybatis04_02" target="1.8" />
       <module name="pinyougou" target="1.8" />
@@ -183,8 +116,6 @@
       <module name="pinyougou_web_portal" target="1.8" />
       <module name="pinyougou_web_shop" target="1.8" />
       <module name="pinyougou_web_user" target="1.8" />
-      <module name="spring" target="1.5" />
-      <module name="spring02" target="1.8" />
       <module name="Spring02_01_CRUD" target="1.8" />
       <module name="Spring02_02_Annotation" target="1.8" />
       <module name="Spring02_03_Xml_Annotation" target="1.8" />
@@ -195,10 +126,7 @@
       <module name="Spring04_01_JdbcTemplate" target="1.8" />
       <module name="Spring04_02_Transfer_Xml" target="1.8" />
       <module name="Spring04_03_All_Annotation" target="1.8" />
-      <module name="spring04_04_transfer_annotation" target="1.8" />
-      <module name="spring_solrutil" target="1.5" />
-      <module name="SpringBoot" target="1.8" />
-      <module name="springboot" target="1.5" />
+      <module name="spring_solrutil" target="8" />
       <module name="SpringMvc03_01_Interceptor" target="8" />
       <module name="SpringMvc03_02_SSM" target="8" />
       <module name="SSM_dao" target="1.8" />
@@ -206,23 +134,12 @@
       <module name="SSM_service" target="7" />
       <module name="SSM_utils" target="1.8" />
       <module name="SSM_web" target="1.8" />
-      <module name="store" target="1.8" />
-      <module name="Ttt" target="1.8" />
-      <module name="WEB" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Day87_SpringBoot" options="-parameters" />
-      <module name="SpringBoot" options="-parameters" />
-      <module name="Ttt" options="" />
-      <module name="demo" options="-parameters" />
-      <module name="demosssssssssss" options="-parameters" />
-      <module name="itcast-crawler-jd" options="-parameters" />
-      <module name="itcast-crawler-job" options="-parameters" />
+      <module name="Day87_Springboot" options="-parameters" />
       <module name="pinyougou_sms" options="-parameters" />
-      <module name="spring02" options="-parameters" />
-      <module name="springboot" options="-parameters" />
     </option>
   </component>
 </project>
