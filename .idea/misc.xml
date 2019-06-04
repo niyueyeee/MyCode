@@ -22,6 +22,14 @@
     <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web" />
     <file type="web" url="file://$PROJECT_DIR$/Day57_SSM/SSM_web" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_page" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_search" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_sellergoods" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_user" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_manager" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_portal" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_shop" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_user" />
     <file type="web" url="file://$PROJECT_DIR$/haha" />
     <file type="web" url="file://$PROJECT_DIR$/WEB" />
   </component>
@@ -50,11 +58,17 @@
         <option value="$PROJECT_DIR$/Day46_Mybatis02/pom.xml" />
         <option value="$PROJECT_DIR$/Day48_Mybatis04/pom.xml" />
         <option value="$PROJECT_DIR$/Day55_SpringMvc03/pom.xml" />
+        <option value="$PROJECT_DIR$/Day63_Pinyougou/spring_solrutil/pom.xml" />
+        <option value="$PROJECT_DIR$/Day63_Pinyougou/pinyougou_sms/pom.xml" />
+        <option value="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pom.xml" />
+        <option value="$PROJECT_DIR$/Day63_Pinyougou/pom.xml" />
+        <option value="$PROJECT_DIR$/day88demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Day56_Maven_SSM/Maven_SSM_Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_buyer/pom.xml" />
       </set>
     </option>
   </component>

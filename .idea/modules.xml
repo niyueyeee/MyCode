@@ -52,6 +52,7 @@
       <module fileurl="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Day56_Maven_SSM_Parent.iml" filepath="$PROJECT_DIR$/Day56_Maven_SSM_Parent/Day56_Maven_SSM_Parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day57_SSM/Day57_SSM.iml" filepath="$PROJECT_DIR$/Day57_SSM/Day57_SSM.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day62_Lucene/Day62_Lucene.iml" filepath="$PROJECT_DIR$/Day62_Lucene/Day62_Lucene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/Day63_Pinyougou.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/Day63_Pinyougou.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day84_Spring_Data_Jpa01/Day84_Spring_Data_Jpa01.iml" filepath="$PROJECT_DIR$/Day84_Spring_Data_Jpa01/Day84_Spring_Data_Jpa01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day85_Spring_Data_Jpa02/Day85_Spring_Data_Jpa02.iml" filepath="$PROJECT_DIR$/Day85_Spring_Data_Jpa02/Day85_Spring_Data_Jpa02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/Day86_Spring_Data_Jpa03.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/Day86_Spring_Data_Jpa03.iml" />
@@ -82,9 +83,26 @@
       <module fileurl="file://$PROJECT_DIR$/Day52_Spring04/Spring04_03_All_Annotation/Spring04_03_All_Annotation.iml" filepath="$PROJECT_DIR$/Day52_Spring04/Spring04_03_All_Annotation/Spring04_03_All_Annotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_01_Interceptor/SpringMvc03_01_Interceptor.iml" filepath="$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_01_Interceptor/SpringMvc03_01_Interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_02_SSM/SpringMvc03_02_SSM.iml" filepath="$PROJECT_DIR$/Day55_SpringMvc03/SpringMvc03_02_SSM/SpringMvc03_02_SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day88demo/day88demo.iml" filepath="$PROJECT_DIR$/day88demo/day88demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa01_specifications/jpa01_specifications.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa01_specifications/jpa01_specifications.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa02_one2many/jpa02_one2many.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa02_one2many/jpa02_one2many.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa03_many2many/jpa03_many2many.iml" filepath="$PROJECT_DIR$/Day86_Spring_Data_Jpa03/jpa03_many2many/jpa03_many2many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_common/pinyougou_common.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_common/pinyougou_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_dao/pinyougou_dao.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_dao/pinyougou_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_interface/pinyougou_interface.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_interface/pinyougou_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_pojo/pinyougou_pojo.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_pojo/pinyougou_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_buyer/pinyougou_service_buyer.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_buyer/pinyougou_service_buyer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_page/pinyougou_service_page.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_page/pinyougou_service_page.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_search/pinyougou_service_search.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_search/pinyougou_service_search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_sellergoods/pinyougou_service_sellergoods.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_sellergoods/pinyougou_service_sellergoods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_user/pinyougou_service_user.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_user/pinyougou_service_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou_sms/pinyougou_sms.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou_sms/pinyougou_sms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_manager/pinyougou_web_manager.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_manager/pinyougou_web_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_portal/pinyougou_web_portal.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_portal/pinyougou_web_portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_shop/pinyougou_web_shop.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_shop/pinyougou_web_shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_user/pinyougou_web_user.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_web_user/pinyougou_web_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day63_Pinyougou/spring_solrutil/spring_solrutil.iml" filepath="$PROJECT_DIR$/Day63_Pinyougou/spring_solrutil/spring_solrutil.iml" />
     </modules>
   </component>
 </project>
