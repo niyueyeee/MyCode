@@ -12,7 +12,7 @@
 -->
 <mapper namespace="test">
     <!--
-       mapper 一般包含
+       mappers 一般包含
           <select>  <insert>  <update> <delete>
 
 

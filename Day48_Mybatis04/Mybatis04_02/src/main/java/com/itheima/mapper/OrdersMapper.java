@@ -23,7 +23,7 @@ public interface OrdersMapper {
             @Result(column = "createtime", property = "createtime"),
             @Result(column = "note", property = "note"),
             @Result(property = "user", javaType = User.class, column = "user_id",
-                    one = @One(select = "com.itheima.mapper.UserMapper.queryUserById", fetchType = FetchType.LAZY))
+                    one = @One(select = "com.itheima.mappers.UserMapper.queryUserById", fetchType = FetchType.LAZY))
     })
     List<Orders> queryOrdersUser();
 

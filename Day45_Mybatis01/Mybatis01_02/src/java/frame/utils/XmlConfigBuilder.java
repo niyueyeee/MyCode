@@ -70,7 +70,7 @@ public class XmlConfigBuilder {
             }
 
             // 解析出所有的存放sql语句的xml文件
-            List<Element> mapperList = rootElement.selectNodes("//mapper");
+            List<Element> mapperList = rootElement.selectNodes("//mappers");
             //遍历
             if (mapperList != null && mapperList.size() > 0) {
                 for (Element mapper : mapperList) {

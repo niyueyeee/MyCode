@@ -16,54 +16,54 @@
         <module name="pinyougou_common" />
         <module name="Spring02_01_CRUD" />
         <module name="pinyougou_web_user" />
-        <module name="SSM_utils" />
+        <module name="Spring03_01_Transfer" />
         <module name="Spring02_03_Xml_Annotation" />
         <module name="spring_solrutil" />
         <module name="Maven_SSM_Web" />
         <module name="Mybatis04_02" />
         <module name="Mybatis04_01" />
         <module name="Spring02_02_Annotation" />
-        <module name="pinyougou_pojo" />
         <module name="Spring04_02_Transfer_Xml" />
         <module name="pinyougou_web_manager" />
         <module name="Spring03_02_Xml_Aop" />
         <module name="jpa02_one2many" />
         <module name="pinyougou_dao" />
-        <module name="Day49_Spring01" />
         <module name="jpa03_many2many" />
         <module name="Maven_SSM_Service" />
         <module name="spring" />
         <module name="Day54_SpringMvc02" />
-        <module name="SSM_pojo" />
+        <module name="Mybatis02_02" />
         <module name="pinyougou_service_page" />
         <module name="SSM_service" />
         <module name="Day37_Web商城六天项目" />
         <module name="Spring04_03_All_Annotation" />
         <module name="Mybatis02_01" />
-        <module name="spring02" />
+        <module name="SSM_pojo" />
         <module name="Mybatis01_02" />
         <module name="Spring02_04_All_Anncotation" />
         <module name="Spring04_01_JdbcTemplate" />
-        <module name="Mybatis02_02" />
+        <module name="Day87_Springboot" />
+        <module name="Day53_SpringMvc01" />
         <module name="pinyougou_service_user" />
+        <module name="SSM_utils" />
         <module name="jpa01_specifications" />
-        <module name="pinyougou_service_search" />
-        <module name="Day36_Maven" />
+        <module name="pinyougou_web_portal" />
         <module name="pinyougou_service_buyer" />
         <module name="Day63_Pinyougou" />
         <module name="SpringMvc03_01_Interceptor" />
         <module name="Mybatis01_01" />
         <module name="SSM_web" />
         <module name="Maven_SSM_Dao" />
-        <module name="Spring03_01_Transfer" />
-        <module name="Day47_Mybatis03" />
+        <module name="Day49_Spring01" />
         <module name="SpringMvc03_02_SSM" />
+        <module name="Day47_Mybatis03" />
+        <module name="pinyougou_pojo" />
         <module name="pinyougou_service_sellergoods" />
-        <module name="Day53_SpringMvc01" />
-        <module name="pinyougou_web_portal" />
+        <module name="spring02" />
+        <module name="Day36_Maven" />
         <module name="Spring03_03_All_Annotation" />
         <module name="pinyougou_web_shop" />
-        <module name="Day87_Springboot" />
+        <module name="pinyougou_service_search" />
         <module name="SSM_dao" />
       </profile>
     </annotationProcessing>
@@ -84,7 +84,7 @@
       <module name="Day56_Maven_SSM" target="1.8" />
       <module name="Day56_Maven_SSM_Parent" target="1.8" />
       <module name="Day57_SSM" target="1.8" />
-      <module name="Day63_Pinyougou" target="8" />
+      <module name="Day63_Pinyougou" target="1.5" />
       <module name="Day84_Spring_Data_Jpa01" target="1.8" />
       <module name="Day85_Spring_Data_Jpa02" target="1.8" />
       <module name="Day86_Spring_Data_Jpa03" target="1.8" />
@@ -126,7 +126,7 @@
       <module name="Spring04_01_JdbcTemplate" target="1.8" />
       <module name="Spring04_02_Transfer_Xml" target="1.8" />
       <module name="Spring04_03_All_Annotation" target="1.8" />
-      <module name="spring_solrutil" target="8" />
+      <module name="spring_solrutil" target="1.5" />
       <module name="SpringMvc03_01_Interceptor" target="8" />
       <module name="SpringMvc03_02_SSM" target="8" />
       <module name="SSM_dao" target="1.8" />

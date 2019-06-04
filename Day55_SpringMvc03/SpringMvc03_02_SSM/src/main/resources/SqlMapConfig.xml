@@ -24,6 +24,6 @@
     <!--    </environments>-->
 
     <!--    <mappers>-->
-    <!--        <package name="com.itheima.ssm.mapper"></package>-->
+    <!--        <package name="com.itheima.ssm.mappers"></package>-->
     <!--    </mappers>-->
 </configuration>    

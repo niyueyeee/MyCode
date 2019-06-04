@@ -52,7 +52,7 @@ public interface UserMapper {
             @Result(column = "address", property = "address"),
             @Result(column = "birthday", property = "birthday"),
             @Result(property = "ordersList", javaType = List.class, column = "id",
-                    many = @Many(select = "com.itheima.mapper.OrdersMapper.queryOrdersByUid", fetchType = FetchType.LAZY))
+                    many = @Many(select = "com.itheima.mappers.OrdersMapper.queryOrdersByUid", fetchType = FetchType.LAZY))
     })
     List<User> queryUserOrders();
 }

@@ -13,8 +13,6 @@
         <module>pinyougou_pojo</module>
         <module>pinyougou_common</module>
         <module>pinyougou_interface</module>
-        <module>pinyougou_service_buyer</module>
-        <module>pinyougou_service_buyer</module>
         <module>pinyougou_service_page</module>
         <module>pinyougou_service_search</module>
         <module>pinyougou_service_sellergoods</module>
@@ -23,6 +21,7 @@
         <module>pinyougou_web_portal</module>
         <module>pinyougou_web_shop</module>
         <module>pinyougou_web_user</module>
+        <module>pinyougou_service_buyer</module>
     </modules>
 
     <!-- 集中定义依赖版本号 -->
