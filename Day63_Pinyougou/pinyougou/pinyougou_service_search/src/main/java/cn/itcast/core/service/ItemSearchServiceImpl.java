@@ -1,6 +1,6 @@
 package cn.itcast.core.service;
 
-import cn.itcast.core.pojo.item.Item;
+
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,11 +10,8 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.solr.core.SolrTemplate;
 import org.springframework.data.solr.core.query.*;
 import org.springframework.data.solr.core.query.result.*;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.management.Query;
 import java.util.*;
-import java.util.logging.SimpleFormatter;
 
 /**
  * 搜索管理
@@ -61,10 +58,10 @@ public class ItemSearchServiceImpl implements ItemsearchService {
         groupOptions.addGroupByField("item_category");
         query.setGroupOptions(groupOptions);
         //执行查询
-        GroupPage<Item> page = solrTemplate.queryForGroupPage(query, Item.class);
+        GroupPage<cn.itcast.core.pojo.item.Item> page = solrTemplate.queryForGroupPage(query, cn.itcast.core.pojo.item.Item.class);
         //查询分组结果
-        GroupResult<Item> item_category = page.getGroupResult("item_category");
-        Page<GroupEntry<Item>> groupEntries = item_category.getGroupEntries();
+        GroupResult<cn.itcast.core.pojo.item.Item> item_category = page.getGroupResult("item_category");
+        Page<GroupEntry<cn.itcast.core.pojo.item.Item>> groupEntries = item_category.getGroupEntries();
         List<String> categoryList = new ArrayList<>();
         for (GroupEntry<cn.itcast.core.pojo.item.Item> itemGroupEntry : groupEntries.getContent()) {
             categoryList.add(itemGroupEntry.getGroupValue());
@@ -137,17 +134,17 @@ public class ItemSearchServiceImpl implements ItemsearchService {
         highlightOptions.setSimplePostfix("</em>");
         highlightQuery.setHighlightOptions(highlightOptions);
         //执行查询
-        HighlightPage<Item> page = solrTemplate.queryForHighlightPage(highlightQuery, Item.class);
+        HighlightPage<cn.itcast.core.pojo.item.Item> page = solrTemplate.queryForHighlightPage(highlightQuery, cn.itcast.core.pojo.item.Item.class);
         //高亮的数据  entity=Item对象的值
         for (HighlightEntry<cn.itcast.core.pojo.item.Item> itemHighlightEntry : page.getHighlighted()) {
-            Item entity = itemHighlightEntry.getEntity();
+            cn.itcast.core.pojo.item.Item entity = itemHighlightEntry.getEntity();
             List<HighlightEntry.Highlight> highlights = itemHighlightEntry.getHighlights();
             if (null != highlights && highlights.size() > 0) {
                 entity.setTitle(highlights.get(0).getSnipplets().get(0));
             }
         }
         //分页结果集
-        List<Item> content = page.getContent();
+        List<cn.itcast.core.pojo.item.Item> content = page.getContent();
 
         resultMap.put("rows", content);
         //查询总条数
@@ -176,10 +173,10 @@ public class ItemSearchServiceImpl implements ItemsearchService {
         //高亮
 
         //执行查询
-        ScoredPage<Item> page = solrTemplate.queryForPage(query, Item.class);
+        ScoredPage<cn.itcast.core.pojo.item.Item> page = solrTemplate.queryForPage(query, cn.itcast.core.pojo.item.Item.class);
 
         //分页结果集
-        List<Item> content = page.getContent();
+        List<cn.itcast.core.pojo.item.Item> content = page.getContent();
 
         resultMap.put("rows", content);
         //查询总条数

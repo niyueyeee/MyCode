@@ -9,12 +9,7 @@ public class Demo01 {
         ExecutorService service = Executors.newFixedThreadPool(200);
         MyRunnable r = new MyRunnable();
 //        service.submit(r);
-        Callable<Double> c = new Callable<>() {
-            @Override
-            public Double call() throws Exception {
-                return Math.random();
-            }
-        };
+        Callable<Double> c = () -> Math.random();
         Future<Double> f1 = service.submit(c);
         System.out.println(f1.get());
         Future<Double> f2 = service.submit(c);

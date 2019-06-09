@@ -1,17 +1,15 @@
 package cn.itcast.core.service;
 
+
 import cn.itcast.core.dao.user.UserDao;
-import cn.itcast.core.pojo.user.User;
 import com.alibaba.dubbo.config.annotation.Service;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
-import org.springframework.security.core.userdetails.UserDetailsService;
 
 import javax.jms.*;
-import javax.print.attribute.standard.Destination;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -62,7 +60,7 @@ public class UserServiceImpl implements UserService {
 
     //注册
     @Override
-    public void add(String smscode, User user) {
+    public void add(String smscode, cn.itcast.core.pojo.user.User user) {
         //1:判断验证码是否正确
         String code = (String) redisTemplate.boundValueOps(user.getPhone()).get();
         if (null != code) {

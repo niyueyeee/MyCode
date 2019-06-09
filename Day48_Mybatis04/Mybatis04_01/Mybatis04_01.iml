@@ -14,6 +14,7 @@
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="off" />
             <entry key="jrebelEnabled" value="false" />
             <entry key="lastExternalPluginCheckTime" value="1559609887783" />
+            <entry key="rebelXmlGenerationType" value="ide" />
           </map>
         </option>
         <option name="masterModuleName" />

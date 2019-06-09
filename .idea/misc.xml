@@ -22,6 +22,7 @@
     <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/Day56_Maven_SSM_Parent/Maven_SSM_Web" />
     <file type="web" url="file://$PROJECT_DIR$/Day57_SSM/SSM_web" />
+    <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_buyer" />
     <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_page" />
     <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_search" />
     <file type="web" url="file://$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_sellergoods" />
@@ -63,12 +64,16 @@
         <option value="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pom.xml" />
         <option value="$PROJECT_DIR$/Day63_Pinyougou/pom.xml" />
         <option value="$PROJECT_DIR$/Day87_Springboot/pom.xml" />
+        <option value="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_buyer/pom.xml" />
+        <option value="$PROJECT_DIR$/Day_89_Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/Day89_Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/Day89_Elasticsearch/elasticsearch_client/pom.xml" />
+        <option value="$PROJECT_DIR$/Day89_Elasticsearch/springdata_elasticsearch/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Day56_Maven_SSM/Maven_SSM_Service/pom.xml" />
-        <option value="$PROJECT_DIR$/Day63_Pinyougou/pinyougou/pinyougou_service_buyer/pom.xml" />
       </set>
     </option>
   </component>

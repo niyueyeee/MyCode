@@ -11,5 +11,13 @@
 
     <artifactId>Spring03_01_Transfer</artifactId>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/commons-dbutils/commons-dbutils -->
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
+        </dependency>
 
+    </dependencies>
 </project>
