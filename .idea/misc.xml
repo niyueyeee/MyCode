@@ -69,6 +69,7 @@
         <option value="$PROJECT_DIR$/Day89_Elasticsearch/pom.xml" />
         <option value="$PROJECT_DIR$/Day89_Elasticsearch/elasticsearch_client/pom.xml" />
         <option value="$PROJECT_DIR$/Day89_Elasticsearch/springdata_elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/Day90_Vuejs/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
