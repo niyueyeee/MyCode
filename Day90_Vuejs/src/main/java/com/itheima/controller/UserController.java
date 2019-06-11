@@ -2,7 +2,6 @@ package com.itheima.controller;
 
 import com.itheima.pojo.User;
 import com.itheima.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -18,6 +17,9 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    public static void main(String[] args) {
+
+    }
     @GetMapping("/findAll")
     public List<User> findAll() {
         return userService.finaAll();
