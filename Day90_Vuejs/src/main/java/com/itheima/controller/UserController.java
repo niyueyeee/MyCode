@@ -18,6 +18,9 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    public static void main(String[] args) {
+
+    }
     @GetMapping("/findAll")
     public List<User> findAll() {
         return userService.finaAll();
