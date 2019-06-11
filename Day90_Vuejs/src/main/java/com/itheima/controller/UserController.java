@@ -18,7 +18,7 @@ public class UserController {
     private UserService userService;
 
     public static void main(String[] args) {
-
+        System.out.println();
     }
     @GetMapping("/findAll")
     public List<User> findAll() {
