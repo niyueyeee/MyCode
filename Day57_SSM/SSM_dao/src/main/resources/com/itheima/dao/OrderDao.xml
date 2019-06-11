@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.OrderDao">
+    <!--结果映射-->
+    <resultMap id="orderMap" type="order">
+        <id column="id" property="id"></id>
+        <result column="orderNum" property="orderNum"></result>
+        <result column="orderTime" property="orderTime"></result>
+        <result column="orderDesc" property="orderDesc"></result>
+        <result column="peopleCount" property="peopleCount"></result>
+        <result column="orderStatus" property="orderStatus"></result>
+        <result column="payType" property="payType"></result>
+        <!--如果写了一对一，一对多映射，即使属性名与列名一致也需要映射-->
+        <!--映射 product 属性-->
+        <!--
+        association: 映射一个对象
+            property: 属性名
+            javaType: 属性的类型
+            column: 列名（列值作为参数）
+            select :namespace + id = dao接口全名称 + 方法名
+                需要的方法：返回值：Product
+                            参数：产品id
+                          com.itheima.dao.ProductDao.findById
+        -->
+        <association
+                property="product"
+                javaType="Product"
+                column="productId"
+                select="com.itheima.dao.ProductDao.findById"></association>
+    </resultMap>
+    <!--查询所有-->
+    <select id="findAll" resultMap="orderMap">
+        select * from orders
+    </select>
+
+    <insert id="save" parameterType="order">
+        insert into orders values(null,#{orderNum},#{orderTime},#{peopleCount}, #{orderDesc}, #{payType} ,
+        #{orderStatus} , #{product.id})
+    </insert>
+
+</mapper>

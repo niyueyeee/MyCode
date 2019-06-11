@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--
+      扫描 controller层注解
+    -->
+    <context:component-scan base-package="com.itheima.controller"/>
+    <context:component-scan base-package="com.itheima.log"/>
+
+    <!--
+      配置 视图解析器
+         就是根据 路径 找到页面完成页面初始化！！
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/pages/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--mvc注解驱动: 关联转换工厂对象-->
+    <mvc:annotation-driven conversion-service="conversionService"></mvc:annotation-driven>
+
+    <!--声明类型转换器工厂对象-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <!--注入类型转换器-->
+        <property name="converters">
+            <!--注入set集合-->
+            <set>
+                <!--创建类型转换器对象-->
+                <bean class="com.itheima.converter.StringToConverter"></bean>
+            </set>
+        </property>
+    </bean>
+
+    <!--静态资源放行-->
+    <!--<mvc:default-servlet-handler></mvc:default-servlet-handler>-->
+    <mvc:resources mapping="/css/**" location="/css/"></mvc:resources>
+    <mvc:resources mapping="/img/**" location="/img/"></mvc:resources>
+    <mvc:resources mapping="/plugins/**" location="/plugins/"></mvc:resources>
+    <!--开启aop的自动动态代理-->
+    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+</beans>

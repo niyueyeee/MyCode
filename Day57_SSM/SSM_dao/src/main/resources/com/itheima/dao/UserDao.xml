@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <select id="findByUserName" resultMap="userMap" parameterType="string">
+        select * from sys_user where username = #{abc}
+    </select>
+
+    <select id="findAll" resultType="com.itheima.pojo.SysUser">
+        select * from sys_user
+    </select>
+
+    <insert id="save" parameterType="SysUser">
+        insert into sys_user values(null ,#{username},#{email},#{password},#{phoneNum},#{status})
+    </insert>
+
+    <select id="checkUsername" resultType="com.itheima.pojo.SysUser" parameterType="string">
+        select * from sys_user where username = #{abc}
+    </select>
+
+    <select id="findById" resultMap="userMap" parameterType="integer">
+        select * from sys_user where id = #{id}
+    </select>
+    <resultMap id="userMap" type="SysUser">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+
+        <collection property="roleList" ofType="Role" column="id"
+                    select="com.itheima.dao.RoleDao.findRoleListByUserId" fetchType="lazy"></collection>
+    </resultMap>
+
+    <delete id="delRolesFromUser" parameterType="integer">
+        delete from sys_user_role where userId = #{userId}
+    </delete>
+
+    <insert id="addRoleToUser" parameterType="integer">
+        insert into sys_user_role values(#{param1},#{param2})
+    </insert>
+</mapper>

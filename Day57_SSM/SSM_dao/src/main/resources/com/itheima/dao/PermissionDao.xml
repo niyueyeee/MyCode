@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.PermissionDao">
+
+    <select id="findAll" resultType="com.itheima.pojo.Permission">
+        select * from sys_permission
+    </select>
+
+    <select id="findParentPermission" resultType="com.itheima.pojo.Permission">
+        select * from sys_permission where pid = 0
+    </select>
+
+    <insert id="save" parameterType="Permission">
+        insert into sys_permission values(null ,#{permissionName},#{url},#{pid})
+    </insert>
+
+    <select id="findPermissionListByRoleId" resultType="com.itheima.pojo.Permission" parameterType="integer">
+        select p.* from sys_role_permission rp, sys_permission p where rp.permissionId = p.id and rp.roleId = #{roleId}
+    </select>
+</mapper>
