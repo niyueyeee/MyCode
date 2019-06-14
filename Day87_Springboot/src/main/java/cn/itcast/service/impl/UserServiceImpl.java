@@ -41,9 +41,7 @@ public class UserServiceImpl implements UserService {
     public void update() {
         User user = userDao.findById(2).get();
         user.setUsername("小ss黄....");
-
         userDao.save(user);
-
         int i=5/0;
     }
 }

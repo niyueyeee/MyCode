@@ -4,6 +4,7 @@ import cn.itcast.pojo.User;
 import cn.itcast.service.UserService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
@@ -20,6 +21,7 @@ import java.util.List;
  * @author NiYueYeee
  * @create 2019-06-04 19:51
  */
+@Data
 @Controller
 @ConfigurationProperties(prefix = "weixin")
 public class HelloController {
@@ -29,29 +31,6 @@ public class HelloController {
 
     private String miyao;
 
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
-        this.account = account;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getMiyao() {
-        return miyao;
-    }
-
-    public void setMiyao(String miyao) {
-        this.miyao = miyao;
-    }
 
     @Autowired
     private StringRedisTemplate redisTemplate;
