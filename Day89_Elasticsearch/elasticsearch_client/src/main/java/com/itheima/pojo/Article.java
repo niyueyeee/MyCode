@@ -1,5 +1,6 @@
 package com.itheima.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
@@ -10,7 +11,7 @@ import lombok.ToString;
  */
 @Data
 @NoArgsConstructor
-@ToString
+@AllArgsConstructor
 public class Article {
     private Integer id;
     private String title;

@@ -2,8 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
+<!--dao地址-->
 <mapper namespace="com.itheima.dao.UserDao">
+    <!--user: pojo简写-->
     <select id="findById" resultType="user" parameterType="int">
         select * from user where id = #{abc}
     </select>
